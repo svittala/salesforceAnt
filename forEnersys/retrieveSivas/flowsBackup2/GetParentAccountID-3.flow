@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>assign_Parent_ID</name>
+        <label>assign Parent ID</label>
+        <locationX>451</locationX>
+        <locationY>283</locationY>
+        <assignmentItems>
+            <assignToReference>inAccountRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ParentRecordID</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Parent_ID</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>check_if_I_am_global_duns_record</name>
+        <label>check if I am global duns record</label>
+        <locationX>67</locationX>
+        <locationY>125</locationY>
+        <defaultConnector>
+            <targetReference>Update_Parent_ID</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>I_am_not_the_global_duns_record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>inAccountRecord.DunsNumber</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>inAccountRecord.sv_ParentOrHqDunsNumber__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Look_up_parent</targetReference>
+            </connector>
+            <label>I am not the global duns record</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>check_if_parent_id_is_null</name>
+        <label>check if parent id is null</label>
+        <locationX>452</locationX>
+        <locationY>134</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>if_not_null_assign_to_passed_sobject</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ParentRecordID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>assign_Parent_ID</targetReference>
+            </connector>
+            <label>if not null assign to passed sobject</label>
+        </rules>
+    </decisions>
+    <description>Sets the Parent ID of the account - changes to null if parent is already set</description>
+    <interviewLabel>SetParentAccountID {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SetParentAccountID</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Look_up_parent</name>
+        <label>Look up parent</label>
+        <locationX>276</locationX>
+        <locationY>133</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>check_if_parent_id_is_null</targetReference>
+        </connector>
+        <filters>
+            <field>DunsNumber</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>inAccountRecord.sv_ParentOrHqDunsNumber__c</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>ParentRecordID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Parent_ID</name>
+        <label>Update Parent ID</label>
+        <locationX>303</locationX>
+        <locationY>392</locationY>
+        <inputReference>inAccountRecord</inputReference>
+    </recordUpdates>
+    <startElementReference>check_if_I_am_global_duns_record</startElementReference>
+    <variables>
+        <description>Input Accont Record</description>
+        <name>inAccountRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <description>ID of the Parent Duns Record</description>
+        <name>ParentRecordID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+</Flow>
