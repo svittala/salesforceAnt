@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Groupe de lignes de devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Groupes de lignes de devis</value>
+    </caseValues>
+    <fields>
+        <help><!-- Account to which this Quote Line Group references. --></help>
+        <label>Compte</label>
+        <name>Account__c</name>
+        <relationshipLabel>Groupes de lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Default additional discount rate applied to line items in this group. --></help>
+        <label>Remise sup. (%)</label>
+        <name>AdditionalDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the billing frequency. --></help>
+        <label>Fréquence de facturation</label>
+        <name>BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total for this group&apos;s line items before any partner discounts are applied. --></help>
+        <label>Total du client</label>
+        <name>CustomerTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for this group. --></help>
+        <label>Description</label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- End date for subscriptions in this group. --></help>
+        <label>Date de fin</label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Favorite to which this Quote Line Group belongs. --></help>
+        <label>Favori</label>
+        <name>Favorite__c</name>
+        <relationshipLabel>Groupes de lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Total for this group&apos;s line items before any discounts are applied. --></help>
+        <label>Total de la liste</label>
+        <name>ListTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default markup rate applied to line items in this group. This will override the line item level. --></help>
+        <label>Marge (%)</label>
+        <name>MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total for this group&apos;s line items after all discounts are applied. --></help>
+        <label>Total net</label>
+        <name>NetTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sort order of this group within its quote. --></help>
+        <label>Numéro</label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marks the entire group as optional. --></help>
+        <label>Facultatif</label>
+        <name>Optional__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quote process used with this group. Overrides the quote level field. --></help>
+        <label>Processus de devis</label>
+        <name>QuoteProcess__c</name>
+        <relationshipLabel>Groupes de lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Quote to which this group belongs. --></help>
+        <label>Devis</label>
+        <name>Quote__c</name>
+        <relationshipLabel>Groupes de lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to generate a separate contract for subscriptions in this group. --></help>
+        <label>Séparer le contrat</label>
+        <name>SeparateContract__c</name>
+    </fields>
+    <fields>
+        <help><!-- Solution group from which this quote group was generated (if any). --></help>
+        <label>Groupe de solutions</label>
+        <name>SolutionGroup__c</name>
+        <relationshipLabel>Groupes de lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Source of cloned quote line group. --></help>
+        <label>Source</label>
+        <name>Source__c</name>
+        <relationshipLabel>Groupes de lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Start date for subscriptions in this group. --></help>
+        <label>Date de début</label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subscription term used to prorate eligible products in this group. --></help>
+        <label>Durée d&apos;abonnement</label>
+        <name>SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter desired customer amount to automatically calculate additional discount on discountable line items. --></help>
+        <label>Montant client cible</label>
+        <name>TargetCustomerAmount__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Line Group Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du groupe</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

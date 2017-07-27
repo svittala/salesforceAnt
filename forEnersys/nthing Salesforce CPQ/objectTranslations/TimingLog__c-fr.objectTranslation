@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Journal des calculs de temps</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Journaux des calculs de temps</value>
+    </caseValues>
+    <fields>
+        <label>Élément</label>
+        <name>Element__c</name>
+    </fields>
+    <fields>
+        <label>Terminé</label>
+        <name>Finish__c</name>
+    </fields>
+    <fields>
+        <help><!-- Log entry --></help>
+        <label>Journal</label>
+        <name>Log__c</name>
+    </fields>
+    <fields>
+        <help><!-- Starting CPU time --></help>
+        <label>Début</label>
+        <name>Start__c</name>
+    </fields>
+    <fields>
+        <label>Temps processeur total</label>
+        <name>Total__c</name>
+    </fields>
+    <fields>
+        <label>URL</label>
+        <name>URL__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

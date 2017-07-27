@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Lookup to your Amended Contract. --></help>
+        <label>Contrat amendé</label>
+        <name>AmendedContract__c</name>
+        <relationshipLabel>Opportunités d&apos;amendement</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Salesforce CPQ uses this field to automatically convert assets and subscriptions. --></help>
+        <label>Contracté</label>
+        <name>Contracted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to create Contracted Prices without creating a Contract. --></help>
+        <label>Créer des prix contractés</label>
+        <name>CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to automatically create an order from the primary quote. --></help>
+        <label><!-- Ordered --></label>
+        <name>Ordered__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce CPQ uses this to point to the primary quote on this opportunity. --></help>
+        <label>Devis principal</label>
+        <name>PrimaryQuote__c</name>
+        <relationshipLabel>Opportunités</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID du catalogue de prix du devis</label>
+        <name>QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this opportunity is a renewal opportunity. --></help>
+        <label>Renouvellement</label>
+        <name>Renewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract being renewed by this renewal opportunity. If the several contracts roll up to this opportunity, this points at the master contract. --></help>
+        <label>Contrat renouvelé</label>
+        <name>RenewedContract__c</name>
+        <relationshipLabel>Opportunités de renouvellement</relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label>Amender le contrat</label>
+        <name>Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label>Créer une commande</label>
+        <name>CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label>Inclure le document</label>
+        <name>Include_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

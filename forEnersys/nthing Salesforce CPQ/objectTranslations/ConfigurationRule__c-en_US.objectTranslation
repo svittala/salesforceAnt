@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuration Rule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configuration Rules</value>
+    </caseValues>
+    <fields>
+        <help><!-- Indicates whether this rule should be used in validating configurations. --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include ancestor options to the specified level when evaluating this rule&apos;s conditions in the configurator. --></help>
+        <label><!-- Ascending Nested Condition Level --></label>
+        <name>AscendingNestedLevel__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Allow descendent options up to the specified level to be targeted by this rule&apos;s actions when executing in the configurator. --></help>
+        <label><!-- Descending Nested Action Level --></label>
+        <name>DescendingActionNesting__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Include descendant options to the specified level when evaluating this rule&apos;s conditions in the configurator. --></help>
+        <label><!-- Descending Nested Condition Level --></label>
+        <name>DescendingNestedLevel__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the product feature you want this rule to validate. --></help>
+        <label><!-- Product Feature --></label>
+        <name>ProductFeature__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the product rule that contains the logic to validate your product configurations. --></help>
+        <label><!-- Product Rule --></label>
+        <name>ProductRule__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the configured product you want this rule to validate. --></help>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specify when this rule should be evaluated. --></help>
+        <label><!-- Rule Evaluation Event --></label>
+        <name>RuleEvaluationEvent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of product rule referenced by this configuration rule. --></help>
+        <label><!-- Rule Type --></label>
+        <name>RuleType__c</name>
+    </fields>
+    <layouts>
+        <layout>Configuration Rule Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Nested Level only supported for Validation, Alert and Selection product rules. --></errorMessage>
+        <name>Ensure_rule_type_nested_level</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The maximum supported Nested Level is 1. --></errorMessage>
+        <name>Ensure_supported_nested_level</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Niveau de prix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Niveaux de prix</value>
+    </caseValues>
+    <fields>
+        <help><!-- Discount amount applied when quantity falls in this tier. --></help>
+        <label>Remise ({0})</label>
+        <name>DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount percentage applied when quantity falls in this tier. --></help>
+        <label>Remise (%)</label>
+        <name>DiscountPercentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lower bound of the quantity range for this tier. --></help>
+        <label>Limite inférieure</label>
+        <name>LowerBound__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number indicating this tier&apos;s position within the schedule. --></help>
+        <label>Numéro</label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The block price where this price tier is originated from. --></help>
+        <label>Prix d&apos;origine par bloc</label>
+        <name>OriginalBlockPrice__c</name>
+        <relationshipLabel>Niveau de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The discount tier where this price tier is originated from. --></help>
+        <label>Niveau de remise d&apos;origine</label>
+        <name>OriginalDiscountTier__c</name>
+        <relationshipLabel>Niveau de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The price model that determines how the prices are calculated. --></help>
+        <label>Modèle de prix</label>
+        <name>PriceModel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Price Schedule to which this tier belongs. --></help>
+        <label>Barème</label>
+        <name>PriceSchedule__c</name>
+        <relationshipLabel>Niveau de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The actual price of this Price Tier. This field will be populated when a new set of Price Schedules are created for a new Order record. --></help>
+        <label>Prix</label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total term discount taken for this tier. --></help>
+        <label>Remise sur la durée</label>
+        <name>TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Upper bound of the quantity range for this tier. --></help>
+        <label>Limite supérieure</label>
+        <name>UpperBound__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total volume discount taken for this tier. --></help>
+        <label>Remise sur volume</label>
+        <name>VolumnDiscount__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Price Tier Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Price Information --></label>
+            <section>Price Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du niveau</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

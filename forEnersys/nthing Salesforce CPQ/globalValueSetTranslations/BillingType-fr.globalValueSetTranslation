@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Advance</masterLabel>
+        <translation><!-- Advance --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Arrears</masterLabel>
+        <translation><!-- Arrears --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

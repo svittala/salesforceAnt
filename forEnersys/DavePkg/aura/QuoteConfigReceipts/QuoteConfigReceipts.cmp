@@ -1,0 +1,69 @@
+<aura:component controller="QuoteConfigReceiptsController" implements="force:appHostable,force:lightningQuickActionWithoutHeader,flexipage:availableForAllPageTypes,force:hasRecordId">
+  	<ltng:require styles="/resource/SLDS221/assets/styles/salesforce-lightning-design-system-ltng.css"/>
+
+	<aura:attribute name="quoteNumber" type="String" />
+	<aura:attribute name="recordId" type="Id"/>
+	<aura:attribute name="externalConfigurations" type="QuoteConfigReceiptsController.ExternalConfigResult[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+	<aura:attribute name="pushTopicName" type="String" />
+	<!-- <c:*Streamer* topic="{!v.pushTopicName}" /> -->
+	<!-- <aura:handler event="c:*StreamerEvent*" action="{!c.refreshDataComp}" includeFacets="true"/> -->
+
+	<aura:attribute name="userMessage" type="String" />
+
+    <div class="enersys">
+
+	<div aura:id="userMessageBox" class="slds-tile slds-hide">
+	  <div class="slds-notify slds-notify--toast slds-theme--error" role="alert">
+	    <span class="slds-assistive-text">Error</span>
+	    <h2>
+	        <span class="slds-icon slds-icon--small slds-m-right--x-small" title="description of icon when needed">
+				<c:svgIcon svgPath="/resource/SLDS221/assets/icons/utility-sprite/svg/symbols.svg#ban" category="utility" size="small" name="ban" />
+			</span>{!v.userMessage}</h2>
+	  </div>
+	</div>
+
+	<aura:iteration items="{!v.externalConfigurations}" var="ec">
+
+		<article class="slds-card">
+		  <div class="slds-card__header slds-grid">
+		    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+		      <div class="slds-media__figure">
+		        <span class="slds-icon_container slds-icon-custom-custom23" title="description of icon when needed">
+					<c:svgIcon svgPath="/resource/SLDS221/assets/icons/custom-sprite/svg/symbols.svg#custom23" category="custom" size="small" name="email" />
+				</span>
+		      </div>
+		      <div class="slds-media__body">
+		        <h2>
+		          Configuration Received for {!ec.quoteSoldToName}, {!ec.quoteOpptyName}, Quote <ui:outputURL value="{!'/' + ec.quoteId}" label="{!ec.quoteNumber}" />
+		        </h2>
+		      </div>
+		    </header>
+		  </div>
+
+	    <section class="slds-card__body">
+	      <div class="slds-card__body--inner">
+	        <div class="slds-tile">
+	          <!-- <p class="slds-truncate" title="External Configuration Name"><ui:outputURL value="{!'/' + ec.id}" label="{!ec.name}" /></p> -->
+	          <div class="slds-tile__detail slds-text-body--small">
+	            <dl class="slds-dl--horizontal">
+	              <dt class="slds-dl--horizontal__label">
+	                <p title="Notification">Received from {!ec.configuratorName} on {!ec.createdDate}</p>
+	              </dt>
+	              <dd class="slds-dl--horizontal__detail slds-tile__meta">
+	                <p title="Details">{!ec.quoteLineCreationWarnings}&nbsp;{!ec.quoteLineCreationErrors}</p>
+	              </dd>
+	            </dl>
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+
+		</article>
+
+	</aura:iteration>
+             
+	</div>
+
+</aura:component>

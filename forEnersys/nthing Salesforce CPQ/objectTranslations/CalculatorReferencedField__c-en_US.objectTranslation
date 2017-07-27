@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Calculator Referenced Field</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Calculator Referenced Field</value>
+    </caseValues>
+    <fields>
+        <help><!-- Name of referenced field. --></help>
+        <label><!-- Field Name --></label>
+        <name>FieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lookup Name --></label>
+        <name>LookupName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>ObjectName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Object Name --></label>
+        <name>ParentObjectName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of times this field is referenced. --></help>
+        <label><!-- Usage Count --></label>
+        <name>UsageCount__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

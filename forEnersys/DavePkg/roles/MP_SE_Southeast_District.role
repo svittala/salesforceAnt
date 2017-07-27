@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>MP - South East</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>MP - SE - Southeast District</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>MP_South_East</parentRole>
+</Role>

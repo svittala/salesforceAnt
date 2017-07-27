@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Defines the billing frequency. --></help>
+        <label>Fréquence de facturation</label>
+        <name>BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the order is contracted. --></help>
+        <label>Contractée</label>
+        <name>Contracted__c</name>
+    </fields>
+    <fields>
+        <help><!-- The payment term for this order. --></help>
+        <label>Conditions de paiement</label>
+        <name>PaymentTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- The price calculation status message --></help>
+        <label><!-- Price Calculation Status Message --></label>
+        <name>PriceCalcStatusMessage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the order price calculation job status.  It is set by the system. --></help>
+        <label><!-- Price Calculation Status --></label>
+        <name>PriceCalcStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- The quote where the order is created from. --></help>
+        <label>Devis</label>
+        <name>Quote__c</name>
+        <relationshipLabel>Commandes</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The tax amount --></help>
+        <label><!-- Tax --></label>
+        <name>TaxAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total order amount with tax included --></help>
+        <label><!-- Total Amount (With Tax) --></label>
+        <name>TotalAmount__c</name>
+    </fields>
+    <layouts>
+        <layout>CPQ Order Layout</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Quote and Opportunity --></label>
+            <section>Quote and Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Information --></label>
+            <section>Shipping and Billing Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QTC Order Layout</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Quote and Opportunity --></label>
+            <section>Quote and Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Information --></label>
+            <section>Shipping and Billing Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label>Modifier les produits commandés</label>
+        <name>EditOrderProducts</name>
+    </webLinks>
+</CustomObjectTranslation>

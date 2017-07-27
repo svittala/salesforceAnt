@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fiori Canvas Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fiori Canvas Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Put a record URL in Fiori with the record ID changed to %ID%. E.g. for the following record URL: https://fiori.enersys.com/sap#myQuotation&amp;/detail/220000016 put https://fiori.enersys.com/sap#myQuotation&amp;/detail/%ID% in this field --></help>
+        <label><!-- Record URL --></label>
+        <name>Record_URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

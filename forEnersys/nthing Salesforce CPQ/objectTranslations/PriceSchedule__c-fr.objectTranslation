@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Barème de prix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Barèmes de prix</value>
+    </caseValues>
+    <fields>
+        <help><!-- Account that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI. --></help>
+        <label>Compte</label>
+        <name>Account__c</name>
+        <relationshipLabel>Barèmes de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specify how to aggregate quantities of quote lines for products using this schedule. By default quantity of each line (even for the same product) is considered independently. --></help>
+        <label>Étendue de l&apos;agrégation</label>
+        <name>AggregationScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the field that you want to match against the same field on the quote. --></help>
+        <label>Champ de contrainte</label>
+        <name>ConstraintField__c</name>
+        <picklistValues>
+            <masterLabel>Account__c</masterLabel>
+            <translation><!-- Account__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox if you want to extend volume discounts on total volume owned by customer (i.e. quantity quoted plus prior purchases). --></help>
+        <label>Commandes croisées</label>
+        <name>CrossOrders__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to aggregate quantities of all products using this schedule for the purpose of volume discount calculation. Slab discounts cannot be used for Cross Product discounts. --></help>
+        <label>Produits croisés</label>
+        <name>CrossProducts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for this Price Schedule. --></help>
+        <label>Description</label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the Discount Unit: Amount or Percent. --></help>
+        <label>Unité de remise</label>
+        <name>DiscountUnit__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation><!-- Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation><!-- Percent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a list of price book IDs separated by commas that should not be applied to this Price Schedule. --></help>
+        <label>ID des catalogues de prix exclus</label>
+        <name>ExcludedPricebookIds__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the Quantities of Bundled Product Options will be included in the Aggregation Scope --></help>
+        <label>Inclure les quantités d&apos;offres groupées</label>
+        <name>IncludeBundledProducts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order product that this Price Schedule applies to. --></help>
+        <label>Produit commandé</label>
+        <lookupFilter>
+            <errorMessage><!-- Please select Order Products of the associated order. --></errorMessage>
+        </lookupFilter>
+        <name>OrderProduct__c</name>
+        <relationshipLabel>Barèmes de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Order that this Price Schedule applies to. --></help>
+        <label>Commande</label>
+        <name>Order__c</name>
+        <relationshipLabel>Barèmes de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The discount schedule that this price schedule is originated from. --></help>
+        <label>Barème de remise d&apos;origine</label>
+        <name>OriginalDiscountSchedule__c</name>
+        <relationshipLabel>Barèmes de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Determines if the current Discount Tier that the product falls within is editable, if all Discount Tiers are editable, or none. --></help>
+        <label>Comportement de remplacement</label>
+        <name>OverrideBehavior__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Tier Only</masterLabel>
+            <translation><!-- Current Tier Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Decimal places for prices produced by this Price Schedule. --></help>
+        <label>Échelle de prix</label>
+        <name>PriceScale__c</name>
+    </fields>
+    <fields>
+        <help><!-- The price type that determines how the prices or discounts are calculated. --></help>
+        <label>Type</label>
+        <name>PriceType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Price book that this Price Schedule applies to. Only used in combination with Product lookup to assign product/price book specific schedule. --></help>
+        <label>Catalogue de prix</label>
+        <name>Pricebook__c</name>
+        <relationshipLabel>Barèmes de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product that this Price Schedule applies to. Only used in combination with Price Book lookup to assign product/price book specific schedule. --></help>
+        <label>Produit</label>
+        <name>Product__c</name>
+        <relationshipLabel>Barèmes de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field used to calculate Price Schedule pricing. --></help>
+        <label>Champ de quantité de ligne de devis</label>
+        <name>QuoteLineQuantityField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation><!-- Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Quote Line that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI. --></help>
+        <label>Ligne de devis</label>
+        <name>QuoteLine__c</name>
+        <relationshipLabel>Barèmes de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Quote that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI. --></help>
+        <label>Devis</label>
+        <name>Quote__c</name>
+        <relationshipLabel>Barèmes de prix</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Term discount in total applied to this price schedule.  The value is available only for Tiered price type.  For Volume price type, the term discount is available for each price tier. --></help>
+        <label>Remise sur la durée</label>
+        <name>TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the user defined Price Schedule&apos;s Discount Unit will be set to Price. --></help>
+        <label>Utiliser le prix pour le montant</label>
+        <name>UsePriceForAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies whether this schedule was created by an end user or an admin. --></help>
+        <label>Défini par l&apos;utilisateur</label>
+        <name>UserDefined__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Price Schedule Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Snapshot Information --></label>
+            <section>Snapshot Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du barème</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label>Modifier le niveau</label>
+        <name>EditTiers</name>
+    </webLinks>
+</CustomObjectTranslation>

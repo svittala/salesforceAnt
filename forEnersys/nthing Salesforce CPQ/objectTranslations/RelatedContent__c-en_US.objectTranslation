@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Additional Document</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Additional Documents</value>
+    </caseValues>
+    <fields>
+        <help><!-- Set the order in which this item will appear to a sales user in the Related Content menu. If blank, the content will be sorted last. --></help>
+        <label><!-- Display Order --></label>
+        <name>DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a file name for the related content. --></help>
+        <label><!-- Document Name --></label>
+        <name>DocumentName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Record ID that contains the content, such as document or Salesforce content. --></help>
+        <label><!-- External Id --></label>
+        <name>ExternalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Opportunity related to this content. --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product related to this content. --></help>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Template related to this content. --></help>
+        <label><!-- Quote Template --></label>
+        <name>QuoteTemplate__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Quote related to this content. --></help>
+        <label><!-- Quote --></label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox if this content is required for the product. Users must include it when generating a quote document. --></help>
+        <label><!-- Required --></label>
+        <name>Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Template Section related to this content. --></help>
+        <label><!-- Template Section --></label>
+        <name>TemplateSection__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Related Content Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- NewQuoteRelatedContent --></label>
+        <name>NewQuoteRelatedContent</name>
+    </webLinks>
+</CustomObjectTranslation>

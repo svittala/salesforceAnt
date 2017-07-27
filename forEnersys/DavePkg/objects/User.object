@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>User_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>User_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <label>User Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Company_Code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>EnerSys legal entity that the employee works for</inlineHelpText>
+        <label>Company Code</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Company_Number</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DB_Region__c</fullName>
+        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field.</description>
+        <externalId>false</externalId>
+        <label>DB Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NA</fullName>
+                    <color>#009900</color>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <color>#3333FF</color>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+                <value>
+                    <fullName>APAC</fullName>
+                    <color>#CC6600</color>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>LA</fullName>
+                    <color>#990000</color>
+                    <default>false</default>
+                    <label>LA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GM__c</fullName>
+        <description>GM Approver for Quotes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the GM that you report too.</inlineHelpText>
+        <label>GM Approver</label>
+        <relationshipName>Manager</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Approver__c</fullName>
+        <description>Marketing Approver for Quotes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the Marketing User that will approve quotes.</inlineHelpText>
+        <label>Marketing Approver</label>
+        <relationshipName>GM_c</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Sales_Rep__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Use for Account integration</description>
+        <externalId>true</externalId>
+        <label>SAP Sales Rep #</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DefaultProductLookupTab__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default tab for this user in Product Lookup page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customize default tab in Product Lookup page.</inlineHelpText>
+        <label>Default Product Lookup Tab</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Guided Selling</fullName>
+                    <default>true</default>
+                    <label>Guided Selling</label>
+                </value>
+                <value>
+                    <fullName>Search Filters</fullName>
+                    <default>false</default>
+                    <label>Search Filters</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OutputFormatChangeAllowed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that indicates whether this user is allowed to change output format of quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check to allow this user to change output format of quote documents.</inlineHelpText>
+        <label>Allow Output Format Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductSortPreference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Product sort preference for this user. Currently only Chatter Follows are supported.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select &quot;Followed&quot; to display products you follow in Chatter before others when adding to quote.</inlineHelpText>
+        <label>Product Sort Preference</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Followed</fullName>
+                    <default>false</default>
+                    <label>Followed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ResetProductLookup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that determines whether Product Lookup data (guided selling questions, search filters and search results) are cleared after user selects desired products.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check to clear search filters and results every time you add products to your quotes. Otherwise, your previous selections are kept.</inlineHelpText>
+        <label>Reset Product Lookup</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Theme__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field that will be set by Select Theme custom link, once one is selected.</description>
+        <externalId>false</externalId>
+        <label>Theme</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBU__c</fullName>
+        <description>SBU - This needs to be filled out so that it will be the default for opportunities and quotes.</description>
+        <externalId>false</externalId>
+        <label>SBU</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SBU</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Sales Rep Number for integration to assign ownership.</description>
+        <externalId>true</externalId>
+        <label>BaaN Sales Rep#</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Start__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Start</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>ActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>SBU__c</columns>
+        <columns>Company_Code__c</columns>
+        <columns>Sales_Rep__c</columns>
+        <columns>SAP_Sales_Rep__c</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AdminUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>System Administrator,EnerSys Integration</value>
+        </filters>
+        <label>Admin Users</label>
+    </listViews>
+    <listViews>
+        <fullName>AllUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>LANGUAGE</columns>
+        <columns>LOCALE</columns>
+        <columns>TIMEZONE</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CREATED_BY_NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Americas_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>LANGUAGE</columns>
+        <columns>LOCALE</columns>
+        <columns>TIMEZONE</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>startsWith</operation>
+            <value>Americas</value>
+        </filters>
+        <label>All Americas Users</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Americas_Users_Chatter</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>LANGUAGE</columns>
+        <columns>LOCALE</columns>
+        <columns>TIMEZONE</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Chatter</value>
+        </filters>
+        <label>All Americas Users - Chatter</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Americas_Users_NON_Chatter</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>LANGUAGE</columns>
+        <columns>LOCALE</columns>
+        <columns>TIMEZONE</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>Chatter</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>EMEA</value>
+        </filters>
+        <label>All Americas Users - NON Chatter</label>
+    </listViews>
+    <listViews>
+        <fullName>All_EMEA_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>LANGUAGE</columns>
+        <columns>LOCALE</columns>
+        <columns>TIMEZONE</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>START_OF_DAY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>startsWith</operation>
+            <value>EMEA</value>
+        </filters>
+        <label>All EMEA Users</label>
+    </listViews>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>CORE.USER_ROLE.NAME</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <webLinks>
+        <fullName>SBQQ__Select_Theme</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Select Theme</masterLabel>
+        <openType>newWindow</openType>
+        <page>SBQQ__ThemeLookup</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+</CustomObject>

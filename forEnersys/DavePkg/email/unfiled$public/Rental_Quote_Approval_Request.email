@@ -1,0 +1,21 @@
+The Following Rental Quote is waiting for your approval:
+
+Quote Number:  {!SBQQ__Quote__c.Name}
+
+Rental quotes require approval based on the following:
+
+1.  The discounts for the sale of the product  are subject to regular sales quotation discounts.  Or...
+2.  The distributor discount is greater than 20%.  Or...
+3.  The rental rate for any line item is less than 4%.
+
+List Amount: {!SBQQ__Quote__c.SBQQ__RegularAmount__c} 
+Discount %: {!SBQQ__Quote__c.SBQQ__AverageCustomerDiscount__c} 
+Net Amount: {!SBQQ__Quote__c.SBQQ__NetAmount__c} 
+
+Reason for Discount:
+
+{!SBQQ__Quote__c.Reason_for_Discount__c} 
+
+
+View the Quote by following this link:
+{!SBQQ__Quote__c.Link}

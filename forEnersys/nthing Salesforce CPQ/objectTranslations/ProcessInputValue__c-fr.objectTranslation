@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Valeur d&apos;entrée du processus</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Valeurs d&apos;entrée du processus</value>
+    </caseValues>
+    <fields>
+        <help><!-- Choose the Process Input that the object belongs to. --></help>
+        <label>ID de l&apos;entrée de processus</label>
+        <name>ProcessInputID__c</name>
+        <relationshipLabel>Valeurs d&apos;entrée de processus</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Id of the Quote that this Process Input Value belongs to. --></help>
+        <label>ID du devis</label>
+        <name>QuoteId__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This Process Input value belongs to the user. --></help>
+        <label>ID d&apos;utilisateur</label>
+        <name>UserID__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the answer to the input process value. --></help>
+        <label>Valeur</label>
+        <name>Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Process Input Values Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la valeur du processus de devis</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Approve Sales or Rental Quotes - Auto approve or send to Approval Process</description>
+    <label>Approve Quote</label>
+    <processType>Workflow</processType>
+</Flow>

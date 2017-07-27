@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>EMEA Leads Assignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>AD_Air_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISPICKVAL(SBU__c ,&apos;EAS - EMEA&apos;),  ISPICKVAL(Industry_AD__c ,&apos;Land&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AD_Sea_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c ,&apos;EAS - EMEA&apos;),  ISPICKVAL(Industry_AD__c ,&apos;Sea&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AD_Air_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c ,&apos;EAS - EMEA&apos;),  ISPICKVAL(Industry_AD__c ,&apos;Air&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Arab_Countries_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;Algeria&apos;, Country = &apos;Bahrain&apos;, Country = &apos;Comoros&apos;, Country = &apos;Djibouti&apos;, Country = &apos;Egypt&apos;, Country = &apos;Iraq&apos;, Country = &apos;Jordan&apos;, Country = &apos;Kuwait&apos;, Country = &apos;Lebanon&apos;, Country = &apos;Libya&apos;, Country = &apos;Morocco&apos;, Country = &apos;Mauritania&apos;, Country = &apos;Oman&apos;, Country = &apos;Palestine&apos;, Country = &apos;Qatar&apos;, Country = &apos;Saudi Arabia&apos;, Country = &apos;Somalia&apos;, Country = &apos;Sudan&apos;, Country = &apos;Syria&apos;, Country = &apos;Tunisia&apos;, Country = &apos;United Arab Emirates&apos;, Country = &apos;Yemen&apos;), ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Arab_Countries_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;Algeria&apos;, Country = &apos;Bahrain&apos;, Country = &apos;Comoros&apos;, Country = &apos;Djibouti&apos;, Country = &apos;Egypt&apos;, Country = &apos;Iraq&apos;, Country = &apos;Jordan&apos;, Country = &apos;Kuwait&apos;, Country = &apos;Lebanon&apos;, Country = &apos;Libya&apos;, Country = &apos;Morocco&apos;, Country = &apos;Mauritania&apos;, Country = &apos;Oman&apos;, Country = &apos;Palestine&apos;, Country = &apos;Qatar&apos;, Country = &apos;Saudi Arabia&apos;, Country = &apos;Somalia&apos;, Country = &apos;Sudan&apos;, Country = &apos;Syria&apos;, Country = &apos;Tunisia&apos;, Country = &apos;United Arab Emirates&apos;, Country = &apos;Yemen&apos;), ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Austria_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Austria&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Austria_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Austria&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Balkans_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;Albania&apos;,  Country = &apos;Bosnia and Herzegovina&apos;,  Country = &apos;Kosovo&apos;,  Country = &apos;Macedonia, the former Yugoslav Republic of&apos;,  Country = &apos;Montenegro&apos;,  Country = &apos;Croatia&apos;, Country = &apos;Serbia&apos;), ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Balkans_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;Albania&apos;,  Country = &apos;Bosnia and Herzegovina&apos;,  Country = &apos;Kosovo&apos;,  Country = &apos;Macedonia, the former Yugoslav Republic of&apos;,  Country = &apos;Montenegro&apos;,  Country = &apos;Croatia&apos;, Country = &apos;Serbia&apos;), ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Baltic_States_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;Estonia&apos;, Country = &apos;Latvia&apos;,  Country = &apos;Lithuania&apos;), ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Baltic_States_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;Estonia&apos;, Country = &apos;Latvia&apos;,  Country = &apos;Lithuania&apos;), ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Belgium_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Belgium&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Belgium_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Belgium&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Caucasian_Eastern_Countries_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;Armenia&apos;,  Country = &apos;Azerbaijan&apos;,  Country = &apos;Belarus&apos;, Country = &apos;Georgia&apos;, Country = &apos;Kazakhstan&apos;,  Country = &apos;Kyrgyzstan&apos;, Country = &apos;Moldova, Republic of&apos;,  Country = &apos;Turkmenistan&apos;, Country = &apos;Uzbekistan&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Caucasian_Eastern_Countries_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;Armenia&apos;,  Country = &apos;Azerbaijan&apos;,  Country = &apos;Belarus&apos;, Country = &apos;Georgia&apos;, Country = &apos;Kazakhstan&apos;,  Country = &apos;Kyrgyzstan&apos;, Country = &apos;Moldova, Republic of&apos;,  Country = &apos;Turkmenistan&apos;, Country = &apos;Uzbekistan&apos;), ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Czech_and_Slovakia_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;Czech Republic&apos;,  Country = &apos;Slovakia&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Czech_and_Slovakia_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;Czech Republic&apos;,  Country = &apos;Slovakia&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Denmark_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Denmark&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Denmark_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Denmark&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Finland_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Finland&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Finland_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Finland&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_France_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;France&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_France_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;France&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Germany_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c,&apos;RP - EMEA&apos;),  Country = &apos;Germany&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Germany_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c,&apos;MP - EMEA&apos;),  Country = &apos;Germany&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Greece_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Greece&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Greece_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Greece&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Hungary_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Hungary&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Hungary_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Hungary&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Italy_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Italy&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Italy_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Italy&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Netherlands_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Netherlands&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Netherlands_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Netherlands&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Norway_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Norway&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Norway_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Norway&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Poland_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Poland&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Poland_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Poland&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Rest_of_Africa_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;Angola&apos;,  Country = &apos;Benin&apos;,  Country = &apos;Botswana&apos;,  Country = &apos;Burkina Faso&apos;,  Country = &apos;Burundi&apos;,  Country = &apos;Cameroon&apos;,  Country = &apos;Cape Verde&apos;,  Country = &apos;Central African Republic&apos;,  Country = &apos;Chad&apos;,  Country = &apos;Congo&apos;,  Country = &apos;Congo, the Democratic Republic of the&apos;,  Country = &apos;Cote d’Ivoire&apos;,  Country = &apos;Equatorial Guinea&apos;,  Country = &apos;Eritrea&apos;,  Country = &apos;Ethiopia&apos;,  Country = &apos;Gabon&apos;,  Country = &apos;Gambia&apos;,  Country = &apos;Ghana&apos;,  Country = &apos;Guinea&apos;,  Country = &apos;Guinea-Bissau&apos;,  Country = &apos;Kenya&apos;,  Country = &apos;Lesotho&apos;,  Country = &apos;Liberia&apos;,  Country = &apos;Madagascar&apos;,  Country = &apos;Malawi&apos;,  Country = &apos;Mali&apos;,  Country = &apos;Mauritius&apos;,  Country = &apos;Mozambique&apos;,  Country = &apos;Namibia&apos;,  Country = &apos;Niger&apos;,  Country = &apos;Nigeria&apos;,  Country = &apos;Rwanda&apos;,  Country = &apos;Saint Helena, Ascension and Tristan da Cunha&apos;,  Country = &apos;Sao Tome and Principe&apos;,  Country = &apos;Senegal&apos;,  Country = &apos;Seychelles&apos;,  Country = &apos;Sierra Leone&apos;,  Country = &apos;South Sudan&apos;,  Country = &apos;Swaziland&apos;,  Country = &apos;Tanzania, United Republic of&apos;,  Country = &apos;Togo&apos;,  Country = &apos;Tunisia&apos;,  Country = &apos;Uganda&apos;,  Country = &apos;Western Sahara&apos;,  Country = &apos;Zambia&apos;,  Country = &apos;Zimbabwe&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Rest_of_Africa_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;Angola&apos;,  Country = &apos;Benin&apos;,  Country = &apos;Botswana&apos;,  Country = &apos;Burkina Faso&apos;,  Country = &apos;Burundi&apos;,  Country = &apos;Cameroon&apos;,  Country = &apos;Cape Verde&apos;,  Country = &apos;Central African Republic&apos;,  Country = &apos;Chad&apos;,  Country = &apos;Congo&apos;,  Country = &apos;Congo, the Democratic Republic of the&apos;,  Country = &apos;Cote d’Ivoire&apos;,  Country = &apos;Equatorial Guinea&apos;,  Country = &apos;Eritrea&apos;,  Country = &apos;Ethiopia&apos;,  Country = &apos;Gabon&apos;,  Country = &apos;Gambia&apos;,  Country = &apos;Ghana&apos;,  Country = &apos;Guinea&apos;,  Country = &apos;Guinea-Bissau&apos;,  Country = &apos;Kenya&apos;,  Country = &apos;Lesotho&apos;,  Country = &apos;Liberia&apos;,  Country = &apos;Madagascar&apos;,  Country = &apos;Malawi&apos;,  Country = &apos;Mali&apos;,  Country = &apos;Mauritius&apos;,  Country = &apos;Mozambique&apos;,  Country = &apos;Namibia&apos;,  Country = &apos;Niger&apos;,  Country = &apos;Nigeria&apos;,  Country = &apos;Rwanda&apos;,  Country = &apos;Saint Helena, Ascension and Tristan da Cunha&apos;,  Country = &apos;Sao Tome and Principe&apos;,  Country = &apos;Senegal&apos;,  Country = &apos;Seychelles&apos;,  Country = &apos;Sierra Leone&apos;,  Country = &apos;South Sudan&apos;,  Country = &apos;Swaziland&apos;,  Country = &apos;Tanzania, United Republic of&apos;,  Country = &apos;Togo&apos;,  Country = &apos;Tunisia&apos;,  Country = &apos;Uganda&apos;,  Country = &apos;Western Sahara&apos;,  Country = &apos;Zambia&apos;,  Country = &apos;Zimbabwe&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Romania_and_Bulgaria_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;Romania&apos;,  Country = &apos;Bulgaria&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Romania_and_Bulgaria_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;Romania&apos;,  Country = &apos;Bulgaria&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Russia_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Russian Federation&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Russia_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Russian Federation&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Slovenia_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Slovenia&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Slovenia_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Slovenia&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_South_Africa_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;South Africa&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_South_Africa_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;South Africa&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Spain_and_Portugal_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;Spain&apos;,  Country = &apos;Portugal&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Spain_and_Portugal_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;Spain&apos;,  Country = &apos;Portugal&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Sweden_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Sweden&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Sweden_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Sweden&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Switzerland_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Switzerland&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Switzerland_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Switzerland&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Turkey_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Turkey&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Turkey_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Turkey&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_UK_and_Ireland_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;United Kingdom&apos;,  Country = &apos;Ireland&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_UK_and_Ireland_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;United Kingdom&apos;,  Country = &apos;Ireland&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Ukraine_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  Country = &apos;Ukraine&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Ukraine_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  Country = &apos;Ukraine&apos;,  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_North_America_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;MP - EMEA&apos;),  OR(Country = &apos;United States&apos;,  Country = &apos;Canada&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_North_America_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c, &apos;RP - EMEA&apos;),  OR(Country = &apos;United States&apos;,  Country = &apos;Canada&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MP_Other_European_Countries</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c ,&apos;MP - EMEA&apos;),  OR(Country = &apos;Cyprus&apos;,  Country = &apos;Greenland&apos;,  Country = &apos;Holy See (Vatican City State)&apos;,  Country = &apos;Iceland&apos;,  Country = &apos;Israel&apos;,  Country = &apos;Liechtenstein&apos;,  Country = &apos;Luxembourg&apos;,  Country = &apos;Monaco&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RP_Other_European_Countries</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISPICKVAL(SBU__c ,&apos;RP - EMEA&apos;),  OR(Country = &apos;Cyprus&apos;,  Country = &apos;Greenland&apos;,  Country = &apos;Holy See (Vatican City State)&apos;,  Country = &apos;Iceland&apos;,  Country = &apos;Israel&apos;,  Country = &apos;Liechtenstein&apos;,  Country = &apos;Luxembourg&apos;,  Country = &apos;Monaco&apos;),  ISNEW()  )</formula>
+            <template>unfiled$public/Lead_Assignment_Notification</template>
+        </ruleEntry>
+        <ruleEntry/>
+    </assignmentRule>
+</AssignmentRules>

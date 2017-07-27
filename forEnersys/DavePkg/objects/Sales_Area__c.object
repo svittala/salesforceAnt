@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Sales_Area_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Sales_Area_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Sales_Organization__c</fields>
+        <fields>Distribution_Channel_Code__c</fields>
+        <fields>Description__c</fields>
+        <fields>Division_Code__c</fields>
+        <label>Sales Area Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Description_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  Sales_Organization__c   = &quot;0001&quot;, &quot;Hawker GmbH&quot;,
+IF(  Sales_Organization__c   = &quot;0100&quot;, &quot;Enersys&quot;,
+IF(  Sales_Organization__c   = &quot;0102&quot;, &quot;Enersys Sp. z o. o.&quot;,
+IF(  Sales_Organization__c   = &quot;0201&quot;, &quot;Enersys S.A.R.L.&quot;,
+IF(  Sales_Organization__c   = &quot;0301&quot;, &quot;Division RP&quot;,
+IF(  Sales_Organization__c   = &quot;0302&quot;, &quot;EH Europe GmbH    PL&quot;,
+IF(  Sales_Organization__c   = &quot;0303&quot;, &quot;EH Europe GmbH    UK&quot;,
+IF(  Sales_Organization__c   = &quot;0306&quot;, &quot;EH Europe GmbH    DE&quot;,
+IF(  Sales_Organization__c   = &quot;0308&quot;, &quot;EH Europe GmbH    FR&quot;,
+IF(  Sales_Organization__c   = &quot;0310&quot;, &quot;EH Europe Trading&quot;,
+IF(  Sales_Organization__c   = &quot;0320&quot;, &quot;EH Europe GmbH -Oer.&quot;,
+IF(  Sales_Organization__c   = &quot;0321&quot;, &quot;EH Europe GmbH -Oer.&quot;,
+IF(  Sales_Organization__c   = &quot;0330&quot;, &quot;EH Europe Trading WM&quot;,
+IF(  Sales_Organization__c   = &quot;0401&quot;, &quot;EnerSys  AD&quot;,
+IF(  Sales_Organization__c   = &quot;0601&quot;, &quot;EnerSys Ltd&quot;,
+IF(  Sales_Organization__c   = &quot;0701&quot;, &quot;EnerSys CZ&quot;,
+IF(  Sales_Organization__c   = &quot;0702&quot;, &quot;EnerSys SK&quot;,
+IF(  Sales_Organization__c   = &quot;9001&quot;, &quot;EnerSys GmbH&quot;,
+IF(  Sales_Organization__c   = &quot;9003&quot;, &quot;EnerSys A/S DENMARK&quot;,
+IF(  Sales_Organization__c   = &quot;9004&quot;, &quot;Enersys Europe OY&quot;,
+IF(  Sales_Organization__c   = &quot;9006&quot;, &quot;EnerSys IT&quot;,
+IF(  Sales_Organization__c   = &quot;9007&quot;, &quot;EnerSys BV&quot;,
+IF(  Sales_Organization__c   = &quot;9008&quot;, &quot;Enersys AS&quot;,
+IF(  Sales_Organization__c   = &quot;9010&quot;, &quot;Enersys JSC - Russia&quot;,
+IF(  Sales_Organization__c   = &quot;9012&quot;, &quot;Enersys AB&quot;,
+IF(  Sales_Organization__c   = &quot;9013&quot;, &quot;EnerSys B.V.B.A.&quot;,
+IF(  Sales_Organization__c   = &quot;9015&quot;, &quot;Enersys Aku Ltd Sti&quot;,
+IF(  Sales_Organization__c   = &quot;EH02&quot;, &quot;EH Europe GmbH    PL&quot;,
+IF(  Sales_Organization__c   = &quot;EH03&quot;, &quot;EH Europe GmbH    UK&quot;,
+IF(  Sales_Organization__c   = &quot;EH06&quot;, &quot;EH Europe GmbH    DE&quot;,
+IF(  Sales_Organization__c   = &quot;EH08&quot;, &quot;EH Europe GmbH    FR&quot;,
+&quot;&quot;
+)))))))))))))))))))))))))))))))
++
+
+
+
+IF(  Distribution_Channel_Code__c  = &quot;01&quot;, &quot;, Domestic&quot;, 
+IF(  Distribution_Channel_Code__c  = &quot;02&quot;, &quot;, Export&quot;, 
+IF(  Distribution_Channel_Code__c  = &quot;03&quot;, &quot;, Inter - Company&quot;, 
+IF(  Distribution_Channel_Code__c  = &quot;04&quot;, &quot;, Special business&quot;, 
+IF(  Distribution_Channel_Code__c  = &quot;10&quot;, &quot;, Domestic Oldham&quot;, 
+
+&quot;&quot;
+))))) +
+
+
+
+
+
+
+
+
+IF( Division_Code__c = &quot;01&quot;, &quot;, Traction&quot;, 
+IF( Division_Code__c = &quot;02&quot;, &quot;, Stationary&quot;, 
+IF( Division_Code__c = &quot;03&quot;, &quot;, Aerospace &amp; Defense&quot;, 
+&quot;&quot;
+)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Description Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Distribution_Channel_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Distribution Channel Code</label>
+        <length>2</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Division_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Division Code</label>
+        <length>2</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Organization__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Organization</label>
+        <length>4</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Sales Area</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Sales area Code</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Sales Areas</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Sales_Organization__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Distribution_Channel_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Division_Code__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Description_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Sales_Organization__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Distribution_Channel_Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Division_Code__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Sales_Organization__c</searchFilterFields>
+        <searchFilterFields>Distribution_Channel_Code__c</searchFilterFields>
+        <searchFilterFields>Division_Code__c</searchFilterFields>
+        <searchFilterFields>Description__c</searchFilterFields>
+        <searchResultsAdditionalFields>Description_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sales_Organization__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Distribution_Channel_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Division_Code__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

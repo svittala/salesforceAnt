@@ -1,0 +1,37 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+                access="global" 
+                controller="QuoteController">
+    
+    <aura:attribute name="spinner" type="boolean" default="false"/>
+    <aura:attribute name="quote" type="SBQQ__Quote__c"/>
+    <aura:attribute name="finish" type="Boolean" default="false"/>
+    
+    <aura:handler name="init"
+                  value="{!this}"
+                  action="{!c.createQuote}"/>
+    
+    <aura:if isTrue="{!v.spinner}">
+        <div class="slds-is-relative" style="padding-top:10.5rem">
+            <lightning:spinner variant="brand" size="medium"/>
+        </div>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.finish}">
+        <div class="slds-grid slds-wrap slds-grid_pull-padded">
+            <div class="slds-p-horizontal_small slds-size_1-of-1">
+                <div class="slds-text-heading_small slds-p-top_medium">
+                    <strong>{!v.quote.Name}</strong> has been created and is listed in the Quotes related list on this opportunity.  
+                    Click Go To Quote to complete the process and be redirected to the new Quote.</div>
+            </div>
+            <!-- <div class="slds-p-horizontal_small slds-size_1-of-1">
+                <div class="slds-grid slds-grid_align-end">
+                    <div class="slds-p-top_xx-large">
+                        <lightning:button variant="brand" label="Go To Quote" iconName="utility:forward"
+                                          iconPosition="right" onclick="{!c.finish}" />
+                    </div>
+                </div>
+            </div -->
+        </div>
+    </aura:if>
+    
+</aura:component>

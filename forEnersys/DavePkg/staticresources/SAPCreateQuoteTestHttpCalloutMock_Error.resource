@@ -1,0 +1,1 @@
+{"returns":[{"SAP_TYPE":"E","SAP_SYSTEM":null,"SAP_NUMBER":"311","ROW":null,"PARAMETER":null,"MESSAGE_V4":null,"MESSAGE_V3":null,"MESSAGE_V2":"12345","MESSAGE_V1":null,"MESSAGE":"Error returned by SAP","LOG_NO":null,"LOG_MSG_NO":null,"ID":"V1","FIELD":null}]}

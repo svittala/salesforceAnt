@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Angebotszeile</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Angebotszeilen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotszeile --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotszeilen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotszeile --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotszeilen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotszeile --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotszeilen --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Prod. Appr. Code --></label>
+        <name>Approval_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Level --></label>
+        <name>Approval_Level_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Level_I --></label>
+        <name>Approval_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prod. Appr. Req&apos;d --></label>
+        <name>Approval_Required_Final__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Required For Quote Line --></label>
+        <name>Approval_Required_For_Quote_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Required For Rollup --></label>
+        <name>Approval_Required_For_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Required --></label>
+        <name>Approval_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery A.H./KWH --></label>
+        <name>Battery_AH_KWH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery\Charger Termination --></label>
+        <name>Battery_Charger_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Dimensions --></label>
+        <name>Battery_Dimensions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Family --></label>
+        <name>Battery_Family__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Notes --></label>
+        <name>Battery_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Part # --></label>
+        <name>Battery_Part__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Product --></label>
+        <name>Battery_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Type --></label>
+        <name>Battery_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Weight --></label>
+        <name>Battery_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Family/Charger Part # --></label>
+        <name>Charger_Family_Charger_Part__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Input AC Amps Selected --></label>
+        <name>Charger_Input_AC_Amps_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Max AH Selected --></label>
+        <name>Charger_Max_AH_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Max A.H. --></label>
+        <name>Charger_Max_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Max (A) In AC / Out DC --></label>
+        <name>Charger_Max_A_In_AC_Out_DC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger # Mod/Cab --></label>
+        <name>Charger_Mod_Cab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Notes --></label>
+        <name>Charger_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Output DC Amps Selected --></label>
+        <name>Charger_Output_DC_Amps_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Product --></label>
+        <name>Charger_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chgr VAC Options --></label>
+        <name>Charger_VAC_Options_Read_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger VAC Options --></label>
+        <name>Charger_VAC_Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger VAC Selected --></label>
+        <name>Charger_VAC_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger VAC --></label>
+        <name>Charger_VAC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Volt/Phase --></label>
+        <name>Charger_Volt_Phase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chgr Volt. Options --></label>
+        <name>Charger_Voltage_Options_Read_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Voltage Options --></label>
+        <name>Charger_Voltage_Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charger Voltage --></label>
+        <name>Charger_Voltage_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Price --></label>
+        <name>CostPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Material Number --></label>
+        <name>Customer_Material_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Calculat. sconto Amount --></label>
+        <name>EMEA_Calculat_sconto_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Calculat. sconto --></label>
+        <name>EMEA_Calculat_sconto__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Comission Costs Amount --></label>
+        <name>EMEA_Comission_Costs_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Comission Costs --></label>
+        <name>EMEA_Comission_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Discount From Gross Pricelist Total --></label>
+        <name>EMEA_Discount_From_Gross_Pricelist_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Discount From Gross Pricelist --></label>
+        <name>EMEA_Discount_From_Gross_Pricelist__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Eco Contribution Total --></label>
+        <name>EMEA_Eco_Contribution_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Eco Contribution --></label>
+        <name>EMEA_Eco_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA External Discount Total --></label>
+        <name>EMEA_External_Discount_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA External Discount --></label>
+        <name>EMEA_External_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Freight Amount --></label>
+        <name>EMEA_Freight_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Freight --></label>
+        <name>EMEA_Freight__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Guarantee Costs Amount --></label>
+        <name>EMEA_Guarantee_Costs_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Guarantee Costs --></label>
+        <name>EMEA_Guarantee_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Internal Discount Total --></label>
+        <name>EMEA_Internal_Discount_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Internal Discount --></label>
+        <name>EMEA_Internal_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Lead Adjuster Total --></label>
+        <name>EMEA_Lead_Adjuster_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Lead Adjuster --></label>
+        <name>EMEA_Lead_Adjuster__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA List Price --></label>
+        <name>EMEA_List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA List Total --></label>
+        <name>EMEA_List_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Net Total --></label>
+        <name>EMEA_Net_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Other SDCS Amount --></label>
+        <name>EMEA_Other_SDCS_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Other SDCS --></label>
+        <name>EMEA_Other_SDCS__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Packing Costs Amount --></label>
+        <name>EMEA_Packing_Costs_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Packing Costs --></label>
+        <name>EMEA_Packing_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Packing Expenses Total --></label>
+        <name>EMEA_Packing_Expenses_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Packing Expenses --></label>
+        <name>EMEA_Packing_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Price Unit --></label>
+        <name>EMEA_Price_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Profit Margin Amount --></label>
+        <name>EMEA_Profit_Margin_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Profit Margin --></label>
+        <name>EMEA_Profit_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Raw Material Adjuster Amount --></label>
+        <name>EMEA_Raw_Material_Adjuster_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Raw Material Adjuster --></label>
+        <name>EMEA_Raw_Material_Adjuster__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Shipment Costs Amount --></label>
+        <name>EMEA_Shipment_Costs_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Shipment Costs --></label>
+        <name>EMEA_Shipment_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Transport Amount --></label>
+        <name>EMEA_Transport_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Transport --></label>
+        <name>EMEA_Transport__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA VAT Amount --></label>
+        <name>EMEA_VAT_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA VAT Rate --></label>
+        <name>EMEA_VAT_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Volume Discount Total --></label>
+        <name>EMEA_Volume_Discount_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Volume Discount --></label>
+        <name>EMEA_Volume_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Volume Rebate Amount --></label>
+        <name>EMEA_Volume_Rebate_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Volume Rebate --></label>
+        <name>EMEA_Volume_Rebate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines the discount on a line item: 
+- If list price = 0 the effective discount is set to 0 
+- If the discount percentage is 0 the effective discount is set to discount amount/list price otherwise it is set to the discount percentage --></help>
+        <label><!-- Effective Discount % --></label>
+        <name>Effective_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Configuration --></label>
+        <name>External_Configuration__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Group Desc --></label>
+        <name>Item_Group_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Group --></label>
+        <name>Item_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Type --></label>
+        <name>Item_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSON Pricing Conditions --></label>
+        <name>JSON_Pricing_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSON SAP configuration --></label>
+        <name>JSON_SAP_configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB Number --></label>
+        <name>LOB_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB --></label>
+        <name>LOB__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead Time --></label>
+        <name>Lead_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Approved --></label>
+        <name>Line_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Line_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Rent --></label>
+        <name>Monthly_Rental_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Rental Rate --></label>
+        <name>Monthly_Rental_Rate_ea__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nominal Voltage --></label>
+        <name>Nominal_Voltage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Selection Confirmed --></label>
+        <name>Product_Selection_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rental Rate % --></label>
+        <name>Rental_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Line Number --></label>
+        <name>SAP_Line_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Material Number --></label>
+        <name>SAP_Material_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Highlight --></label>
+        <name>Sales_Highlight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Type --></label>
+        <name>Sort_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 1 --></label>
+        <name>Tier1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 2 --></label>
+        <name>Tier2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 3 --></label>
+        <name>Tier3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 1 --></label>
+        <name>Tier_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 2 --></label>
+        <name>Tier_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier 3 --></label>
+        <name>Tier_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Watts/Cell --></label>
+        <name>Watts_Cell__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Name des Belegpostens</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The discount must be no more than 100 % of the list price of the product --></errorMessage>
+        <name>Max_disc_amt_less_than_list_price</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The discount must be no more than 100 % --></errorMessage>
+        <name>Max_discount_100</name>
+    </validationRules>
+</CustomObjectTranslation>

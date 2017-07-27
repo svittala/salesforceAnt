@@ -1,0 +1,6 @@
+<design:component label="Salesforce CPQ Panel">
+	<design:attribute name="title" label="Title"/>
+	<design:attribute name="orientation" label="Orientation" datasource="Horizontal, Vertical" default="Horizontal"/>
+	<design:attribute name="recordId" label="Record Id" default="{!recordId}"/>
+	<design:attribute name="style" label="Style"/>
+</design:component>

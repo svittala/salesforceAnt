@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>RP - GL-Specialty Territory</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>RP - GL-Specialty Territory</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>RP_GL_Specialty_District</parentRole>
+</Role>

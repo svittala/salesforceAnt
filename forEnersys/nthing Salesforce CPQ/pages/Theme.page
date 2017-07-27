@@ -1,0 +1,245 @@
+<apex:page standardController="SBQQ__Theme__c" extensions="SBQQ.ThemeSettingsController" standardStylesheets="false">
+	<apex:includeScript value="{!$Resource.SBQQ__WebUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQueryUI}"/>
+    <apex:includeScript value="{!$Resource.SBQQ__Spectrum}"/>
+    <apex:includeScript value="{!$Resource.SBQQ__Less}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__ThemeEditorUI}"/>
+    <apex:stylesheet value="{!$Resource['sb']}"/>
+    <link rel="stylesheet" type="text/css" href="{!$Resource.SpectrumStyle}"></link>
+    <div class="styleSheet">
+	    <c:container bodyRendered="{!NOT(SBQQ__Theme__c.SBQQ__DocumentId__c='')}">
+			<apex:stylesheet value="/servlet/servlet.FileDownload?file={!SBQQ__Theme__c.SBQQ__DocumentId__c}" />
+		</c:container>
+	</div>
+    <div id="qq" class="sb">
+		<div id="mainContent">
+			<apex:form >
+				<div class="themePage">
+					<c:pageHeader subtitle="{!SBQQ__Theme__c.Name}" title="{!$Label.sbqq__lbl_steelbrick_cpq} {!$ObjectType.SBQQ__Theme__c.Label}">
+						<div class="sbButtons">
+					 		<input type="button" class="sbBtn" value="{!$Label.lbl_preview}" onclick="compileLess('preview');"/>
+					 		<input type="button" class="sbBtn" value="{!$Label.sbqq__lbl_publish}" onclick="compileLess('publish');"/>
+						</div>
+						<div class="sbButtons">
+              				<apex:commandButton styleClass="sbBtn" action="{!list}" value="{!$Label.sbqq__lbl_cancel}"/>
+					 		<input type="button" class="sbBtn" value="{!$Label.lbl_revert}" onclick="revert()"/>
+						</div>
+					</c:pageHeader>
+					<div class="content">
+						<apex:pageMessages />
+				 		<div class="themeHeader">
+							<h3>{!$Label.lbl_header}</h3>
+						</div>
+				 		<div class ="colorPickWrapper">
+							<span>{!$ObjectType.Theme__c.fields.HeaderColor__c.Label}</span>
+							<apex:inputField styleClass="theme headerColor" value="{!SBQQ__Theme__c.SBQQ__HeaderColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.SecondaryHeaderColor__c.Label}</span>
+							<apex:inputField styleClass="theme secondaryHeaderColor" value="{!SBQQ__Theme__c.SBQQ__SecondaryHeaderColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.HeaderBorderColor__c.Label}</span>
+							<apex:inputField styleClass="theme headerBorderColor" value="{!SBQQ__Theme__c.SBQQ__HeaderBorderColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.HeaderFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme headerFontColor" value="{!SBQQ__Theme__c.SBQQ__HeaderFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.HeaderSecondaryFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme headerSecondaryFontColor" value="{!SBQQ__Theme__c.SBQQ__HeaderSecondaryFontColor__c}"/>
+						</div>
+				 		<div class="themeHeader">
+							<h3>{!$Label.lbl_general}</h3>
+						</div>
+				 		<div class ="colorPickWrapper">
+							<span>{!$ObjectType.Theme__c.fields.GeneralColor__c.Label}</span>
+							<apex:inputField styleClass="theme generalColor" value="{!SBQQ__Theme__c.SBQQ__GeneralColor__c}"/>
+						</div>
+				 		<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.DetailColor__c.Label}</span>
+							<apex:inputField styleClass="theme detailColor" value="{!SBQQ__Theme__c.SBQQ__DetailColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.GeneralFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme generalFontColor" value="{!SBQQ__Theme__c.SBQQ__GeneralFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.SecondaryFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme generalFontSecondaryColor" value="{!SBQQ__Theme__c.SBQQ__SecondaryFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.GeneralBorderColor__c.Label}</span>
+							<apex:inputField styleClass="theme generalBorderColor" value="{!SBQQ__Theme__c.SBQQ__GeneralBorderColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.TabSelectedColor__c.Label}</span>
+							<apex:inputField styleClass="theme tabSelectedColor" value="{!SBQQ__Theme__c.SBQQ__TabSelectedColor__c}"/>
+				 		</div>
+				 		<div class="themeHeader">
+							<h3>{!$Label.lbl_group_buttons}</h3>
+						</div>
+				 		<div class ="colorPickWrapper">
+							<span>{!$ObjectType.Theme__c.fields.GroupButtonColor__c.Label}</span>
+							<apex:inputField styleClass="theme groupButtonColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.GroupButtonBorderColor__c.Label}</span>
+							<apex:inputField styleClass="theme groupButtonBorderColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonBorderColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.GroupButtonFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme groupButtonFontColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.GroupButtonHoverColor__c.Label}</span>
+							<apex:inputField styleClass="theme groupButtonHoverColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonHoverColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.GroupButtonHoverFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme groupButtonHoverFontColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonHoverFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.GroupButtonDisabledFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme groupButtonDisabledFontColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonDisabledFontColor__c}"/>
+				 		</div>
+				 		<div class="themeHeader">
+							<h3>{!$Label.lbl_table}</h3>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.TableHeaderFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme tableHeaderFontColor" value="{!SBQQ__Theme__c.SBQQ__TableHeaderFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.TableRowHoverColor__c.Label}</span>
+							<apex:inputField styleClass="theme tableRowHoverColor" value="{!SBQQ__Theme__c.SBQQ__TableRowHoverColor__c}"/>
+				 		</div>
+				 		<div class="demoItems">
+				 			<div>{!$Label.lbl_preview_area}</div><br/>
+					 		<table class="sbTable">
+					 			<thead>
+					 				<tr>
+					 					<th>{!$Label.lbl_table} {!$Label.lbl_header}</th>
+					 					<th></th>
+					 					<th></th>
+					 				</tr>
+					 			</thead>
+					 			<tbody>
+						 			<tr>
+						 				<td>{!$Label.lbl_sample_text}</td>
+						 				<td>{!$Label.lbl_sample_text}</td>
+						 				<td>{!$Label.lbl_sample_text}</td>
+						 			</tr>
+						 			<tr>
+						 				<td>{!$Label.lbl_sample_text}</td>
+						 				<td>{!$Label.lbl_sample_text}</td>
+						 				<td>{!$Label.lbl_sample_text}</td>
+						 			</tr>
+						 		</tbody>
+					 		</table>
+					 	</div>
+				 		<div class="themeHeader">
+							<h3>{!$Label.lbl_primary_buttons}</h3>
+						</div>
+				 		<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.PrimaryButtonColor__c.Label}</span>
+							<apex:inputField styleClass="theme primaryButtonColor" value="{!SBQQ__Theme__c.SBQQ__PrimaryButtonColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.PrimaryButtonFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme primaryButtonFontColor" value="{!SBQQ__Theme__c.SBQQ__PrimaryButtonFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.PrimaryButtonHoverColor__c.Label}</span>
+							<apex:inputField styleClass="theme primaryButtonHoverColor" value="{!SBQQ__Theme__c.SBQQ__PrimaryButtonHoverColor__c}"/>
+						</div>
+						<div class="demoItems">
+							<div>{!$Label.lbl_preview_area}</div><br/>
+							<input type="button" class="sbBtn sbPrimaryAction" value="{!$Label.lbl_sample}"/>
+						</div>
+				 		<div class="themeHeader">
+							<h3>{!$Label.lbl_icons}</h3>
+						</div>
+				 		<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.IconFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme iconFontColor" value="{!SBQQ__Theme__c.SBQQ__IconFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.AccentIconFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme accentIconFontColor" value="{!SBQQ__Theme__c.SBQQ__AccentIconFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.AccentIconHoverFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme accentIconHoverFontColor" value="{!SBQQ__Theme__c.SBQQ__AccentIconHoverFontColor__c}"/>
+						</div>
+						<div class ="colorPickWrapper">
+                            <span>{!$ObjectType.Theme__c.fields.AccentIconDisabledFontColor__c.Label}</span>
+							<apex:inputField styleClass="theme accentIconDisabledFontColor" value="{!SBQQ__Theme__c.SBQQ__AccentIconDisabledFontColor__c}"/>
+						</div>
+						<div class ="fieldWrapper">
+							<span>{!$ObjectType.Theme__c.fields.HideIcons__c.Label}</span>
+							<apex:inputField styleClass="hideIcons" value="{!SBQQ__Theme__c.SBQQ__HideIcons__c}"/>
+						</div>
+						<div class="demoItems">
+							<div>{!$Label.lbl_preview_area}</div><br/>
+							{!$Label.lbl_normal}<i class="sf-icon-copy normal"></i>
+							{!$Label.lbl_accent}<i class="sf-icon-copy accent"></i>
+							{!$Label.lbl_disabled}<i class="sf-icon-copy disabled"></i>
+						</div>
+						<!--Element to hold LessTheme.Resource for ease of use when compiling-->
+						<div id="themeLess" style="display:none;">
+							{!themeLess}
+						</div>
+						<!--Hidden Command Button for asynchronous javascript hack -->
+						<apex:commandButton styleClass="backgroundHide hiddenPublish" action="{!publish}" value="{!$Label.sbqq__lbl_publish}"/>
+						<!--Style element which the preview will be compiled to-->
+						<style>
+						</style>
+						<!--Hidden Form Inputs-->
+				 		<apex:inputField styleClass="backgroundHide themeDocId" value="{!SBQQ__Theme__c.SBQQ__DocumentId__c}"/>
+				 		<apex:inputField styleClass="backgroundHide themeName" value="{!SBQQ__Theme__c.name}"/>
+				 		<apex:inputText styleClass="backgroundHide compiledCSS" value="{!SBQQ__Theme__c.SBQQ__CompiledCSS__c}"></apex:inputText>
+				 		<!--Default Divs Containing Default Class Colors To Pull in Default Values-->
+							<div class="sbHeaderBgColor"></div>
+							<div class="sbHeaderSecondaryBgColor"></div>
+							<div class="sbHeaderBorderColor"></div>
+							<div class="sbHeaderFontColor"></div>
+							<div class="sbHeaderSupportFontColor"></div>
+							<div class="sbBgColor"></div>
+							<div class="sbDetailBgColor"></div>
+							<div class="sbFontColor"></div>
+							<div class="sbSecondaryFontColor"></div>
+							<div class="sbBorderColor"></div>
+							<div class="sbTableHeaderFontColor"></div>
+							<div class="sbTableRowHoverColor"></div>
+							<div class="sbGroupBtnBgColor"></div>
+							<div class="sbGroupBtnBorderColor"></div>
+							<div class="sbGroupBtnFontColor"></div>
+							<div class="sbGroupBtnHoverBgColor"></div>
+							<div class="sbGroupBtnHoverFontColor"></div>
+							<div class="sbGroupBtnDisabledFontColor"></div>
+							<div class="sbPrimaryBtnBgColor"></div>
+							<div class="sbPrimaryBtnFontColor"></div>
+							<div class="sbPrimaryBtnHoverBgColor"></div>
+							<div class="sbAccentIconColor"></div>
+							<div class="sbAccentIconHoverColor"></div>
+							<div class="sbAccentIconDisabledColor"></div>
+							<div class="sbIconColor"></div>
+							<div class="sbTabSelectedColor"></div>
+						<!--bottom padding-->
+							<div class="bottomPadding">
+						</div>
+					</div>
+				</div>
+			</apex:form>
+		</div>
+	</div>
+	<script>
+		handleFixedPageHeader();
+		$(window).load( function() {
+			$(window).scroll();
+		});
+	</script>
+</apex:page>

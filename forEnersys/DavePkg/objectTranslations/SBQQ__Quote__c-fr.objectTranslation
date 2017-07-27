@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Devis</value>
+    </caseValues>
+    <fields>
+        <label><!-- Auto Approval Flag --></label>
+        <name>Auto_Approval_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>Bill_To_Lookup__c</name>
+        <relationshipLabel><!-- Quotes (Bill To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bill To Phone --></label>
+        <name>Bill_To_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To (Delete) --></label>
+        <name>Bill_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Area EMEA --></label>
+        <name>Business_Area_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Air defence vehicle</masterLabel>
+            <translation><!-- Air defence vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amphibious vehicle</masterLabel>
+            <translation><!-- Amphibious vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoured car</masterLabel>
+            <translation><!-- Armoured car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armoured engineering vehicle</masterLabel>
+            <translation><!-- Armoured engineering vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive</masterLabel>
+            <translation><!-- Automotive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FMCG</masterLabel>
+            <translation><!-- FMCG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing</masterLabel>
+            <translation><!-- Fixed wing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing - General aviation</masterLabel>
+            <translation><!-- Fixed wing - General aviation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing - business jet</masterLabel>
+            <translation><!-- Fixed wing - business jet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing - narrow body</masterLabel>
+            <translation><!-- Fixed wing - narrow body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed wing - wide body</masterLabel>
+            <translation><!-- Fixed wing - wide body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Retailers</masterLabel>
+            <translation><!-- Food Retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heavy lift launch vehicle</masterLabel>
+            <translation><!-- Heavy lift launch vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistic Operators</masterLabel>
+            <translation><!-- Logistic Operators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium lift launch vehicle</masterLabel>
+            <translation><!-- Medium lift launch vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Food Retailers</masterLabel>
+            <translation><!-- Non Food Retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Industries</masterLabel>
+            <translation><!-- Other Industries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ports and Warehouses</masterLabel>
+            <translation><!-- Ports and Warehouses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rotary wing</masterLabel>
+            <translation><!-- Rotary wing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small lift launch vehicle</masterLabel>
+            <translation><!-- Small lift launch vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steel and Metal Industry</masterLabel>
+            <translation><!-- Steel and Metal Industry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submarine - diesel electric</masterLabel>
+            <translation><!-- Submarine - diesel electric --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submarine - nuclear</masterLabel>
+            <translation><!-- Submarine - nuclear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Super heavy lift launch vehicle</masterLabel>
+            <translation><!-- Super heavy lift launch vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface vessel</masterLabel>
+            <translation><!-- Surface vessel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tank</masterLabel>
+            <translation><!-- Tank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troop carrier</masterLabel>
+            <translation><!-- Troop carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trucks</masterLabel>
+            <translation><!-- Trucks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cells --></label>
+        <name>Cells__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor(s) --></label>
+        <name>Competitor_s__c</name>
+        <picklistValues>
+            <masterLabel>AeroVironment</masterLabel>
+            <translation><!-- AeroVironment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alcad</masterLabel>
+            <translation><!-- Alcad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAE</masterLabel>
+            <translation><!-- BAE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Battery Builder</masterLabel>
+            <translation><!-- Battery Builder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulldog</masterLabel>
+            <translation><!-- Bulldog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C&amp;D</masterLabel>
+            <translation><!-- C&amp;D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSB</masterLabel>
+            <translation><!-- CSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crown</masterLabel>
+            <translation><!-- Crown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deka</masterLabel>
+            <translation><!-- Deka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Penn</masterLabel>
+            <translation><!-- East Penn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiamm</masterLabel>
+            <translation><!-- Fiamm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GD Yuasa</masterLabel>
+            <translation><!-- GD Yuasa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GNB</masterLabel>
+            <translation><!-- GNB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GNB/Exide</masterLabel>
+            <translation><!-- GNB/Exide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haze</masterLabel>
+            <translation><!-- Haze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoppecke</masterLabel>
+            <translation><!-- Hoppecke --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leoch</masterLabel>
+            <translation><!-- Leoch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Narada</masterLabel>
+            <translation><!-- Narada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northstar</masterLabel>
+            <translation><!-- Northstar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optima</masterLabel>
+            <translation><!-- Optima --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ritar</masterLabel>
+            <translation><!-- Ritar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saft</masterLabel>
+            <translation><!-- Saft --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Connector --></label>
+        <name>Connector__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Contract Pricing From --></label>
+        <name>ContractedAccountID__c</name>
+        <relationshipLabel><!-- Quotes (ContractedAccountID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This flag indicates there is at least one line item on this quote that is under a contract price and has been discounted additionally.  This quote is subject to further approval if checked. --></help>
+        <label><!-- Contracted Price w Discount Flag --></label>
+        <name>Contracted_Price_w_Discount_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cover Letter Text --></label>
+        <name>Cover_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Date --></label>
+        <name>Customer_Requested_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSM/ASM Approval --></label>
+        <name>DSM_ASM_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deliver Term Change Flag --></label>
+        <name>Deliver_Term_Change_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Terms Text (for printing) --></label>
+        <name>Delivery_Terms_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Terms --></label>
+        <name>Delivery_Terms__c</name>
+        <relationshipLabel><!-- Quotes (Delivery Terms) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Do not Display - field is updated by a PB when the record is created and the delivery terms added to the quote from the account. --></help>
+        <label><!-- Delivery Terms on Creation --></label>
+        <name>Delivery_Terms_on_Creation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Estimated Tax_Flag --></label>
+        <name>Display_Estimated_Tax_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Tax Disclaimer --></label>
+        <name>Display_Tax_Disclaimer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel EMEA --></label>
+        <name>Distribution_Channel_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Battery Dealers and Distributor</masterLabel>
+            <translation><!-- Battery Dealers and Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Civil</masterLabel>
+            <translation><!-- Civil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor / Agent (excluding VADs)</masterLabel>
+            <translation><!-- Distributor / Agent (excluding VADs) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End User</masterLabel>
+            <translation><!-- End User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key End User</masterLabel>
+            <translation><!-- Key End User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Military</masterLabel>
+            <translation><!-- Military --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power System Provider</masterLabel>
+            <translation><!-- Power System Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Dealer</masterLabel>
+            <translation><!-- Truck Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VADs/System Integrator</masterLabel>
+            <translation><!-- VADs/System Integrator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Currency --></label>
+        <name>Document_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Final Amount --></label>
+        <name>EMEA_Final_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMEA Items Total --></label>
+        <name>EMEA_Items_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- EditLinesFieldSetName --></label>
+        <name>EditLinesFieldSetName__c</name>
+    </fields>
+    <fields>
+        <label><!-- End User Address --></label>
+        <name>End_User_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- End User City --></label>
+        <name>End_User_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- End User ID --></label>
+        <name>End_User_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- End User Phone --></label>
+        <name>End_User_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- End User State --></label>
+        <name>End_User_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- End User Street --></label>
+        <name>End_User_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- End User Zip --></label>
+        <name>End_User_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- End User --></label>
+        <name>End_User__c</name>
+        <relationshipLabel><!-- Quotes (End User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End User (Delete) --></label>
+        <name>End_User_temp__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Voltage --></label>
+        <name>End_Voltage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engineering Approval Count --></label>
+        <name>Engineering_Approval_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will display on the quote if selected and is intended to be an ESTIMATED amount of tax the customer may pay for this quotation --></help>
+        <label><!-- Estimated Tax Amount --></label>
+        <name>Estimated_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Value of Rental --></label>
+        <name>Estimated_Value_of_Rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feasability Study Approval Number --></label>
+        <name>Feasability_Study_Approval_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feasibility Study Approval Number --></label>
+        <name>Feasibility_Study_Approval_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- GM Approver --></label>
+        <name>GM_Approver__c</name>
+        <relationshipLabel><!-- Quotes (GM Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- GSM\Dir Approval --></label>
+        <name>GSM_Dir_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Shipping Address --></label>
+        <name>Has_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inconterms --></label>
+        <name>Inconterms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoterm --></label>
+        <name>Incoterm__c</name>
+        <relationshipLabel><!-- Quotes (Incoterm) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incoterms2 --></label>
+        <name>Incoterms2_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoterms2 --></label>
+        <name>Incoterms2__c</name>
+        <relationshipLabel><!-- Quotes (Incoterms2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incoterms --></label>
+        <name>Incoterms__c</name>
+        <relationshipLabel><!-- Quotes (Incoterms) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Industry EMEA --></label>
+        <name>Industry_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>AGV-LGV</masterLabel>
+            <translation><!-- AGV-LGV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Air</masterLabel>
+            <translation><!-- Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS [Battery Monitoring System]</masterLabel>
+            <translation><!-- BMS [Battery Monitoring System] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleaning machines</masterLabel>
+            <translation><!-- Cleaning machines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forklifts and Industrial trucks</masterLabel>
+            <translation><!-- Forklifts and Industrial trucks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land</masterLabel>
+            <translation><!-- Land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics</masterLabel>
+            <translation><!-- Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing Plants</masterLabel>
+            <translation><!-- Manufacturing Plants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other End Users MP</masterLabel>
+            <translation><!-- Other End Users MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail</masterLabel>
+            <translation><!-- Rail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail MP</masterLabel>
+            <translation><!-- Rail MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewables</masterLabel>
+            <translation><!-- Renewables --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sea</masterLabel>
+            <translation><!-- Sea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Space (Launcher)</masterLabel>
+            <translation><!-- Space (Launcher) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty</masterLabel>
+            <translation><!-- Specialty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecom</masterLabel>
+            <translation><!-- Telecom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSON Pricing Conditions --></label>
+        <name>JSON_Pricing_Conditions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Power requirement from the customer --></help>
+        <label><!-- KWb --></label>
+        <name>KWb__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB# --></label>
+        <name>LOB_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB --></label>
+        <name>LOB__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- L x W X H --></label>
+        <name>L_x_W_X_H__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Message --></label>
+        <name>Last_Inbound_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Tag --></label>
+        <name>Last_Inbound_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Time --></label>
+        <name>Last_Inbound_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Time --></label>
+        <name>Lead_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of Rental (Months) --></label>
+        <name>Length_of_Rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Approver --></label>
+        <name>Manager_Approver__c</name>
+        <relationshipLabel><!-- Quotes (Manager Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Approval Items Count --></label>
+        <name>Marketing_Approval_Items_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Approver --></label>
+        <name>Marketing_Approver__c</name>
+        <relationshipLabel><!-- Quotes (Marketing Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Model\Class --></label>
+        <name>Model_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- End User (Template) --></label>
+        <name>Opp_End_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Code --></label>
+        <name>Partner_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria for Payment Terms --></errorMessage>
+        </lookupFilter>
+        <name>Payment_Terms_SAP__c</name>
+        <relationshipLabel><!-- Quotes (Payment Terms) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>Payment_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO # --></label>
+        <name>PoNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Date --></label>
+        <name>Pricing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact First Name --></label>
+        <name>Primary_Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Full Name --></label>
+        <name>Primary_Contact_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Cover Letter --></label>
+        <name>Print_Cover_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Descriptions --></label>
+        <name>Print_Descriptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Discounts --></label>
+        <name>Print_Discounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print End User Info --></label>
+        <name>Print_End_User_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Freight Disclaimer_MP --></label>
+        <name>Print_Freight_Disclaimer_MP__c</name>
+    </fields>
+    <fields>
+        <help><!-- if unchecked the Freight Disclaimer will not appear on the RP quote --></help>
+        <label><!-- Print Freight Disclaimer_RP --></label>
+        <name>Print_Freight_Disclaimer_RP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Introduction Text Block --></label>
+        <name>Print_Introduction_Text_Block__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Line Item Prices --></label>
+        <name>Print_Line_Item_Prices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print List Prices --></label>
+        <name>Print_List_Prices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Names --></label>
+        <name>Print_Names__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Notes --></label>
+        <name>Print_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Service Options --></label>
+        <name>Print_Service_Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Ship To Only --></label>
+        <name>Print_Ship_To_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Signature Block --></label>
+        <name>Print_Signature_Block__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Terms and Conditions --></label>
+        <name>Print_Terms_and_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Approval Count --></label>
+        <name>Product_Approval_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Approval Reqd Count --></label>
+        <name>Product_Approval_Reqd_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- This status display information about the products that have been selected for this quotation.  Some may be in need of approval from engineering or other sources. --></help>
+        <label><!-- Product Approval Status --></label>
+        <name>Product_Approval_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Approvals Remaining --></label>
+        <name>Product_Approvals_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Detail --></label>
+        <name>Product_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Description</masterLabel>
+            <translation><!-- Description --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name</masterLabel>
+            <translation><!-- Name --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Protected Account --></label>
+        <name>Protected_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready to Submit for Approval --></label>
+        <name>Ready_to_Submit_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Discount --></label>
+        <name>Reason_for_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Information Number --></label>
+        <name>Reference_Information_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- % used against the List Price to calculate the Monthly Rental Price.  Anything less than 4% is subject to approval. --></help>
+        <label><!-- Rental Rate % --></label>
+        <name>Rental_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Delivery Date --></label>
+        <name>Requested_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include a summary of key requirements related to quoting --></help>
+        <label><!-- Requirements --></label>
+        <name>Requirements__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Quote Number --></label>
+        <name>SAP_Quote_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Sync Last Datetime --></label>
+        <name>SAP_Sync_Last_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Sync Last Message --></label>
+        <name>SAP_Sync_Last_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Sync Last Result --></label>
+        <name>SAP_Sync_Last_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBU --></label>
+        <name>SBU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Data --></label>
+        <name>Sales_Area_Data__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Organization --></label>
+        <name>Sales_Organization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Select Shipping Address --></label>
+        <name>Select_Shipping_Address__c</name>
+        <relationshipLabel><!-- Quotes (Select Shipping Address) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Data --></label>
+        <name>Ship_To_Data__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Phone --></label>
+        <name>Ship_To_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Conditions --></label>
+        <name>Shipping_Conditions__c</name>
+        <relationshipLabel><!-- Quotes (Shipping Conditions) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Shipping Terms --></label>
+        <name>Shipping_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Options --></label>
+        <name>Site_Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Industry --></label>
+        <name>Sub_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Systems --></label>
+        <name>Systems__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Rate --></label>
+        <name>Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technology --></label>
+        <name>Technology__c</name>
+    </fields>
+    <fields>
+        <label><!-- Today --></label>
+        <name>Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Rental Cost --></label>
+        <name>Total_Monthly_Rental_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type\Cover --></label>
+        <name>Type_Cover__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid From --></label>
+        <name>Valid_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid To --></label>
+        <name>Valid_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Notes --></label>
+        <name>VehicleNotes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volt / Term. --></label>
+        <name>Volt_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>Weight__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Americas Quote Layout</layout>
+        <sections>
+            <label><!-- Approvers --></label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label><!-- Billing &amp; Shipping --></label>
+            <section>Billing &amp; Shipping</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Pricing --></label>
+            <section>Contract Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Information --></label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label><!-- Document Options --></label>
+            <section>Document Options</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Tax --></label>
+            <section>Tax</section>
+        </sections>
+        <sections>
+            <label><!-- Terms --></label>
+            <section>Terms</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Americas Quote Layout - Approved</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Approvers --></label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Information --></label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label><!-- Document Options --></label>
+            <section>Document Options</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Tax --></label>
+            <section>Tax</section>
+        </sections>
+        <sections>
+            <label><!-- Terms --></label>
+            <section>Terms</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EMEA Quote Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Approver --></label>
+            <section>Approver</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Information --></label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label><!-- Document Options --></label>
+            <section>Document Options</section>
+        </sections>
+        <sections>
+            <label><!-- EMEA Quote Section Information --></label>
+            <section>EMEA Quote Section Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- SAP demo section --></label>
+            <section>SAP demo section</section>
+        </sections>
+        <sections>
+            <label><!-- Tax --></label>
+            <section>Tax</section>
+        </sections>
+        <sections>
+            <label><!-- Terms --></label>
+            <section>Terms</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rental Quotation Approved Layout</layout>
+        <sections>
+            <label><!-- Approvers --></label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label><!-- Billing &amp; Shipping --></label>
+            <section>Billing &amp; Shipping</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Usage Location --></label>
+            <section>Usage Location</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rental Quotation Layout</layout>
+        <sections>
+            <label><!-- Approvers --></label>
+            <section>Approvers</section>
+        </sections>
+        <sections>
+            <label><!-- Billing &amp; Shipping --></label>
+            <section>Billing &amp; Shipping</section>
+        </sections>
+        <sections>
+            <label><!-- Business Classifications --></label>
+            <section>Business Classifications</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Usage Location --></label>
+            <section>Usage Location</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Numéro du devis</nameFieldLabel>
+    <quickActions>
+        <label><!-- Create Order --></label>
+        <name>Create_Order_Test</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Launch BSP --></label>
+        <name>Launch_BSP</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Launch OEMSpec --></label>
+        <name>Launch_OEMSpec</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SAP Create Quote --></label>
+        <name>SAP_Create_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit for Approval --></label>
+        <name>Submit_for_Approval</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Rental Quote - Approved --></label>
+        <name>Rental_Quote_Approved</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rental Quote - Draft --></label>
+        <name>Rental_Quote_Draft</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Quote - Approved --></label>
+        <name>Sales_Quote_Approved</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Quote - Draft --></label>
+        <name>Sales_Quote_Draft</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Must enter tax rate along with estimated tax. --></errorMessage>
+        <name>Tax_Rate_and_Est_Amount</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Manage_Line_Items --></label>
+        <name>Manage_Line_Items</name>
+    </webLinks>
+</CustomObjectTranslation>

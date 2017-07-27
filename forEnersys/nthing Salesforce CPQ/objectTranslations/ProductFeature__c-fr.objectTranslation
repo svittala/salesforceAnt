@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fonctionnalité de produit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fonctionnalités de produit</value>
+    </caseValues>
+    <fields>
+        <help><!-- Assign this feature to a category such that multiple features with related options are grouped together. --></help>
+        <label>Catégorie</label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation><!-- Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation><!-- Software --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field set that will be used for this feature during configuration. --></help>
+        <label>Ensemble de champs de configuration</label>
+        <name>ConfigurationFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>OptionConfiguration</masterLabel>
+            <translation><!-- OptionConfiguration --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The product bundle that includes this feature. If you created the feature from the product detail page, this should already be populated. --></help>
+        <label>Unité de gestion de stock configurée</label>
+        <name>ConfiguredSKU__c</name>
+        <relationshipLabel>Fonctionnalités</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Discount schedule to be applied to the product selected by all options in this feature. This overrides discount schedule selected on the product. --></help>
+        <label>Barème de remise</label>
+        <name>DiscountSchedule__c</name>
+        <relationshipLabel>Fonctionnalités produit</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field set that will be used when filtering dynamic options for this feature during configuration. --></help>
+        <label>Champs filtrage des options dynamiques</label>
+        <name>DynamicProductFilterFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorFilter</masterLabel>
+            <translation><!-- ConfiguratorFilter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field set that will be used when viewing dynamic options for this feature during configuration. --></help>
+        <label>Champ référence des options dynamiques</label>
+        <name>DynamicProductLookupFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorLookup</masterLabel>
+            <translation><!-- ConfiguratorLookup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of options for this feature that can be selected as part of the product bundle. --></help>
+        <label>Options maximum</label>
+        <name>MaxOptionCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Minimum number of options for this feature that must be part of the product bundle. --></help>
+        <label>Options minimum</label>
+        <name>MinOptionCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- A sequential number that determines how the features are sorted in the related list on the product. --></help>
+        <label>Numéro</label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines how user selects options attached to this product. &quot;Click&quot; method presents options with checkboxes next to them. &quot;Add&quot; renders a button which brings up predefined options. &quot;Dynamic&quot; renders a button which brings up all active products. --></help>
+        <label>Méthode de sélection des options</label>
+        <name>OptionSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click</masterLabel>
+            <translation><!-- Click --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynamic</masterLabel>
+            <translation><!-- Dynamic --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Product Feature Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la fonctionnalité</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Les options minimum ne peuvent pas être négatives.</errorMessage>
+        <name>MinOptionValidation</name>
+    </validationRules>
+    <webLinks>
+        <label>Traduire</label>
+        <name>Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

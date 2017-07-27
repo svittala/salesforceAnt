@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Additional Discount for this Asset, if expressed as an amount --></help>
+        <label>Remise sup. (montant)</label>
+        <name>AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this line item represents a package; meaning, it includes other line items in this quote. --></help>
+        <label>Package</label>
+        <name>Bundle__c</name>
+    </fields>
+    <fields>
+        <help><!-- For items with calculated quantities this field holds the original quantity entered by the user. --></help>
+        <label>Quantité d&apos;origine</label>
+        <name>BundledQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items have a zero price and do not allow price or quantity to be edited. --></help>
+        <label>Offre groupée</label>
+        <name>Bundled__c</name>
+    </fields>
+    <fields>
+        <label>Combiner la clé</label>
+        <name>CombineKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fixes additional discount for this component to the parent package discount. --></help>
+        <label>Composant avec remise par package</label>
+        <name>ComponentDiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <label>ID du produit de crédit</label>
+        <name>CreditProductId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subscription that currently covers this asset. Automatically populated if one and only one subscription covers this asset. Renewals will overwrite with new subscription. --></help>
+        <label>Abonnement actuel</label>
+        <name>CurrentSubscription__c</name>
+        <relationshipLabel>Ressources couvertes</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of the Price Dimension that originated this Asset --></help>
+        <label>Dimension de prix</label>
+        <name>Dimension__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount schedule type. Copied from Type field in associated discount schedule. --></help>
+        <label>Type de barème de remise</label>
+        <name>DiscountScheduleType__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation><!-- Range --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation><!-- Slab --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify discounts in terms of % or Amt to be discounted off the product&apos;s price using quantity purchased or term. Set quantity/term ranges in tiers of different discount %. Discount is applied to List Price &amp; resulting total is stored in the Regular Price --></help>
+        <label>Barème de remise</label>
+        <name>DiscountSchedule__c</name>
+        <relationshipLabel>Ressources</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Additional Discount for this Asset, if expressed as a percentage --></help>
+        <label>Remise sup. (%)</label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount to be taken on top of the Partner Discount. --></help>
+        <label>Remise distributeur</label>
+        <name>DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies feature and dynamic option for this line. --></help>
+        <label>ID d&apos;option dynamique</label>
+        <name>DynamicOptionId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines whether Service Cloud was enabled when this Asset was created. --></help>
+        <label>De Service Cloud</label>
+        <name>FromServiceCloud__c</name>
+    </fields>
+    <fields>
+        <label>Dernière ligne de devis</label>
+        <name>LatestQuoteLine__c</name>
+        <relationshipLabel>Ressources (dernière ligne de devis)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- List price for this Asset product. --></help>
+        <label>Prix catalogue</label>
+        <name>ListPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Markup for this Asset, if expressed as an amount --></help>
+        <label>Marge (montant)</label>
+        <name>MarkupAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Markup for this Asset, if expressed as a percentage --></help>
+        <label>Marge (%)</label>
+        <name>MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number indicating this line&apos;s position within its group or quote. --></help>
+        <label>Numéro</label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount extended on this product because it&apos;s part of a package. --></help>
+        <label>Remise de l&apos;option (montant)</label>
+        <name>OptionDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this line is for an optional SKU, this field captures any discount given to the package and extended to the option. --></help>
+        <label>Remise de l&apos;option (%)</label>
+        <name>OptionDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates nest level of this option (only applies to lines that are generated from options). --></help>
+        <label>Niveau de l&apos;option</label>
+        <name>OptionLevel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the Option Type, which is copied from related Product Option. Determines how quantity is calculated. --></help>
+        <label>Type d&apos;option</label>
+        <name>OptionType__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation><!-- Accessory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation><!-- Component --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation><!-- Related Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Produit commandé</label>
+        <name>OrderProduct__c</name>
+        <relationshipLabel>Ressources</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Original unit cost of the Asset at the time of purchase before Cost Schedules were applied. --></help>
+        <label>Coût unitaire d&apos;origine</label>
+        <name>OriginalUnitCost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Partner discounts are applied after all automatic and discretionary discounts. The partner discount is taken into account in the Partner Price. --></help>
+        <label>Remise partenaire</label>
+        <name>PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates how the price for this line item is calculated. &quot;List&quot; = subtracting discount from list price. &quot;Cost&quot; = adding markup to cost. --></help>
+        <label>Méthode de tarification</label>
+        <name>PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation><!-- Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation><!-- Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation><!-- Percent Of Total --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Product option that generated this line (if any). --></help>
+        <label>Option produit</label>
+        <name>ProductOption__c</name>
+        <relationshipLabel>Ressources</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ligne de devis</label>
+        <name>QuoteLine__c</name>
+        <relationshipLabel>Ressources</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Regular Price for this Asset. --></help>
+        <label>Prix normal</label>
+        <name>RegularPrice__c</name>
+    </fields>
+    <fields>
+        <label>Augmentation du renouvellement (%)</label>
+        <name>RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The parent Asset. If populated, this Asset is a child in a bundle. --></help>
+        <label>Requis par ressource</label>
+        <name>RequiredByAsset__c</name>
+        <relationshipLabel>Ressources (requises par ressource)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Id of the parent record that requires this record. --></help>
+        <label>Requis par ID</label>
+        <name>RequiredById__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent Product of this Asset. --></help>
+        <label>Produit parent</label>
+        <name>RequiredByProduct__c</name>
+        <relationshipLabel>Ressources enfants</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The parent Subscription. If populated, this Asset is a child in a bundle. --></help>
+        <label>Requis par abonnement</label>
+        <name>RequiredBySubscription__c</name>
+        <relationshipLabel>Ressources (requises par abonnement)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ressource révisée</label>
+        <name>RevisedAsset__c</name>
+        <relationshipLabel>Ressources révisées</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Ultimate bundle parent of this Asset --></help>
+        <label>Ressource racine (CPQ)</label>
+        <name>RootAsset__c</name>
+        <relationshipLabel>Ressources (RootAsset)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- For multi-segmented Products, Index representing this Quote Line&apos;s position in the segment table. --></help>
+        <label>Index des segments</label>
+        <name>SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <label>Clé du segment</label>
+        <name>SegmentKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- For multi-segmented Products, this is the Column header label (e.g. &quot;Year 1&quot;) associated with this line. --></help>
+        <label>Étiquette du segment</label>
+        <name>SegmentLabel__c</name>
+    </fields>
+    <fields>
+        <label>Date de fin d&apos;abonnement</label>
+        <name>SubscriptionEndDate__c</name>
+    </fields>
+    <fields>
+        <label>Ligne de devis d&apos;abonnement</label>
+        <name>SubscriptionQuoteLine__c</name>
+        <relationshipLabel>Ressources (ligne de devis)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Date de début d&apos;abonnement</label>
+        <name>SubscriptionStartDate__c</name>
+    </fields>
+    <fields>
+        <label>Produit abonné</label>
+        <name>Subscription__c</name>
+        <relationshipLabel>Ressources</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Schedule for discounts based on subscription term. Setting this to &quot;Group&quot; applies the discount rate for the group term, while setting it to &quot;Quote&quot; applies the discount rate for the entire quote term, regardless of the different terms in your groups. --></help>
+        <label>Barème de remise sur la durée</label>
+        <name>TermDiscountSchedule__c</name>
+        <relationshipLabel>Ressources (remise sur la durée)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Unit Cost for this Asset. --></help>
+        <label>Coût unitaire</label>
+        <name>UnitCost__c</name>
+    </fields>
+    <fields>
+        <label>Ressource virtuelle</label>
+        <name>VirtualAsset__c</name>
+        <relationshipLabel>Ressources (ressource virtuelle)</relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Groupe de lignes de devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Groupes de lignes de devis</value>
+    </caseValues>
+    <fields>
+        <label><!-- External Configuration --></label>
+        <name>External_Configuration__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Connector --></label>
+        <name>Truck_Connector__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck L x W x H --></label>
+        <name>Truck_L_x_W_x_H__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Manufacturer --></label>
+        <name>Truck_Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Min Weight --></label>
+        <name>Truck_Min_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Model / Class --></label>
+        <name>Truck_Model_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Notes --></label>
+        <name>Truck_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Type / Cover --></label>
+        <name>Truck_Type_Cover__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Volt / Term. --></label>
+        <name>Truck_Volt_Term__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du groupe</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,19 @@
+{!Issues_Enhancements__c.IT_Owner__c},
+<br/>
+<br/>
+You have been assigned as the IT Owner for the following Issue/Enhancement:
+<br/>
+Link: {!Issues_Enhancements__c.Link}
+<br/>
+Item Name: {!Issues_Enhancements__c.Item_Name__c}
+<br/>
+Item Description: {!Issues_Enhancements__c.Item_Description__c}
+<br/>
+<br/>
+This was assigned to you by: {!Issues_Enhancements__c.LastModifiedBy}
+<br/>
+<br/>
+Please stay involved with this ticket as it progresses and ultimately gets assigned to a release for deployment. 
+<br/>
+<br/>
+Thank you

@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+                access="global" 
+                controller="QuoteController">
+    
+    <aura:attribute name="spinner" type="boolean" default="false"/>
+    <aura:attribute name="quote" type="SBQQ__Quote__c"/>
+    
+    <aura:handler name="init"
+                  value="{!this}"
+                  action="{!c.createQuote}"/>
+    
+    <aura:if isTrue="{!v.spinner}">
+        <div class="slds-is-relative" style="padding-top:10.5rem">
+            <lightning:spinner variant="brand" size="medium"/>
+        </div>
+    </aura:if>
+    
+</aura:component>

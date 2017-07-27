@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <fields>
+        <help><!-- The estimated ending date or close date of when the project (i.e. revenue) will be secured --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total potential amount of an entire project consisting of one or more opportunities.  This amount should be the total estimated amount of all opportunities. --></help>
+        <label><!-- Potential Amount --></label>
+        <name>Potential_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The probability of securing the project and the potential revenue. --></help>
+        <label><!-- Potential Probability --></label>
+        <name>Potential_Probability__c</name>
+    </fields>
+    <fields>
+        <help><!-- The starting date of the project --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Motive Power</masterLabel>
+            <translation><!-- Motive Power --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reserve Power</masterLabel>
+            <translation><!-- Reserve Power --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- EnerSys Project --></label>
+        <name>EnerSys_Project</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

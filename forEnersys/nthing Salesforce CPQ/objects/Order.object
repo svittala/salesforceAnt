@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>BillingFrequency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines the billing frequency.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines the billing frequency.</inlineHelpText>
+        <label>Billing Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>BillingFrequency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contracted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if the order is contracted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if the order is contracted.</inlineHelpText>
+        <label>Contracted</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PaymentTerm__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The payment term for this order.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The payment term for this order.</inlineHelpText>
+        <label>Payment Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>PaymentTerm</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PriceCalcStatusMessage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The price calculation status message.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The price calculation status message</inlineHelpText>
+        <label>Price Calculation Status Message</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriceCalcStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The order price calculation  job status.  It is set by the system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the order price calculation job status.  It is set by the system.</inlineHelpText>
+        <label>Price Calculation Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>JobStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The quote where the order is created from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The quote where the order is created from.</inlineHelpText>
+        <label>Quote</label>
+        <referenceTo>Quote__c</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TaxAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The tax amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The tax amount</inlineHelpText>
+        <label>Tax</label>
+        <summarizedField>OrderItem.TaxAmount__c</summarizedField>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TotalAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total order amount with tax included</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total order amount with tax included</inlineHelpText>
+        <label>Total Amount (With Tax)</label>
+        <summarizedField>OrderItem.TotalAmount__c</summarizedField>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <webLinks>
+        <fullName>EditOrderProducts</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Edit Order Products</masterLabel>
+        <openType>noSidebar</openType>
+        <page>OrderLineSelector</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Timing Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Timing Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Element --></label>
+        <name>Element__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finish --></label>
+        <name>Finish__c</name>
+    </fields>
+    <fields>
+        <help><!-- Log entry --></help>
+        <label><!-- Log --></label>
+        <name>Log__c</name>
+    </fields>
+    <fields>
+        <help><!-- Starting CPU time --></help>
+        <label><!-- Start --></label>
+        <name>Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total CPU Time --></label>
+        <name>Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

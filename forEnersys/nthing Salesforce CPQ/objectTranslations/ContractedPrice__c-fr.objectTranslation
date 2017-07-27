@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prix convenu</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prix convenus</value>
+    </caseValues>
+    <fields>
+        <help><!-- Account for which this price was negotiated. --></help>
+        <label>Compte</label>
+        <name>Account__c</name>
+        <relationshipLabel>Prix contractés</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Sales contract that governs this price. --></help>
+        <label>Contrat</label>
+        <name>Contract__c</name>
+        <relationshipLabel>Prix contractés</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Description for this Contracted Price. This will be copied into &quot;Special Price Description&quot; of Quote line items using this price. --></help>
+        <label>Description</label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Volume discount schedule to use for this product with this customer. --></help>
+        <label>Barème de remise</label>
+        <name>DiscountSchedule__c</name>
+        <relationshipLabel>Prix contractés</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Discount off the Price Book price (percent) represented by this Contracted Price. Either this field or Price should be set but not both. --></help>
+        <label>Remise</label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date this contracted price becomes effective. --></help>
+        <label>Date effective</label>
+        <name>EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date this contracted price expires. --></help>
+        <label>Date d&apos;expiration</label>
+        <name>ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a field to use in a filter, such as Product Family, if you want to apply this price to a set of products. If you are using a custom field, add the API name to the Filter Field as a picklist value. --></help>
+        <label>Champ de filtre</label>
+        <name>FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Item Group</masterLabel>
+            <translation><!-- Item Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation><!-- Product Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation><!-- Product Family --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Value the filter field is tested against to determine if this contracted price should apply. --></help>
+        <label>Valeur de filtrage</label>
+        <name>FilterValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to disallow further discounting of this product. --></help>
+        <label>Sans remise possible</label>
+        <name>NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the operate to use when matching the contents of the Filter Field with the Filter Value. --></help>
+        <label>Opérateur</label>
+        <name>Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation><!-- contains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation><!-- ends with --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation><!-- greater or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation><!-- greater than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation><!-- less or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation><!-- less than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation><!-- not equals --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Quote Line that originated this Contracted Price. --></help>
+        <label>Ligne de devis d&apos;origine</label>
+        <name>OriginalQuoteLine__c</name>
+        <relationshipLabel>Prix contractés</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the price that has been negotiated with the customer. This value will override any other price such as the one from a price book or a volume-discounted price. --></help>
+        <label>Prix</label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a product from any price book that you want to apply to this discount. --></help>
+        <label>Produit</label>
+        <name>Product__c</name>
+        <relationshipLabel>Prix contractés</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Contracted Price Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Expiration --></label>
+            <section>Expiration</section>
+        </sections>
+        <sections>
+            <label><!-- Item Group --></label>
+            <section>Item Group</section>
+        </sections>
+        <sections>
+            <label><!-- Product --></label>
+            <section>Product</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Numéro du prix contracté</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Vous devez renseigner Remise, Prix ou Barème de remise.</errorMessage>
+        <name>Discount_or_price_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vous ne pouvez pas spécifier à la fois produit et filtre.</errorMessage>
+        <name>Either_product_or_filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Opérateur est requis lorsque Champ de filtre est spécifié.</errorMessage>
+        <name>Filter_requires_operators</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vous devez spécifier un champ de produit ou de filtre</errorMessage>
+        <name>Product_or_filter_required</name>
+    </validationRules>
+</CustomObjectTranslation>

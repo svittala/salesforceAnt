@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select a behavior when amending assets representing this product. By default, asset quantities cannot decrease unless an upgrade is added, and no refund is applied. --></help>
+        <label>Comportement d&apos;amendement de ressource</label>
+        <name>AssetAmendmentBehavior__c</name>
+        <picklistValues>
+            <masterLabel>Allow Refund</masterLabel>
+            <translation><!-- Allow Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default</masterLabel>
+            <translation><!-- Default --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates how this product is converted to asset. --></help>
+        <label>Conversion en ressource</label>
+        <name>AssetConversion__c</name>
+        <picklistValues>
+            <masterLabel>One per quote line</masterLabel>
+            <translation><!-- One per quote line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One per unit</masterLabel>
+            <translation><!-- One per unit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Non-blank value designates this product is sold in batches. Enter quantity in each batch. Quantity entered in quote will be divided by this value and rounded up to the nearest integer. --></help>
+        <label>Quantité du lot</label>
+        <name>BatchQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines how often this product will be invoiced. --></help>
+        <label>Fréquence de facturation</label>
+        <name>BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided. --></help>
+        <label>Type de facturation</label>
+        <name>BillingType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field used to calculate block pricing. --></help>
+        <label>Champ de tarification par bloc</label>
+        <name>BlockPricingField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation><!-- Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The type of the product charge. --></help>
+        <label>Type de frais</label>
+        <name>ChargeType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marks this product as a component, excluding it from selection in product lookup. --></help>
+        <label>Composant</label>
+        <name>Component__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount rate compounded by quantity. --></help>
+        <label>Remise composée (%)</label>
+        <name>CompoundDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this to control when Configure Products screen shows up for this product. Choose &quot;Add&quot; to limit to initial configuration. Choose &quot;Edit&quot; to subsequent configuration. --></help>
+        <label>Événement de configuration</label>
+        <name>ConfigurationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field set that will be used for this product during configuration. --></help>
+        <label>Ensemble de champs de configuration</label>
+        <name>ConfigurationFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>OptionConfiguration</masterLabel>
+            <translation><!-- OptionConfiguration --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Champs de configuration</label>
+        <name>ConfigurationFields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Title of the configuration form rendered from specified configuration fields. --></help>
+        <label>Titre du formulaire de configuration</label>
+        <name>ConfigurationFormTitle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Configuration type of this product: Choose Allowed if the user is allowed to configure the product/bundle, but not required to, Disabled when your bundle automatically selects options, or Required if the product/bundle must be configured. --></help>
+        <label>Type de configuration</label>
+        <name>ConfigurationType__c</name>
+        <picklistValues>
+            <masterLabel>Allowed</masterLabel>
+            <translation><!-- Allowed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disabled</masterLabel>
+            <translation><!-- Disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- JavaScript function used to validate configuration of this product. --></help>
+        <label>Validateur de configuration</label>
+        <name>ConfigurationValidator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pattern used to generate product code (SKU) for configured products. --></help>
+        <label>Modèle de code configuré</label>
+        <name>ConfiguredCodePattern__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pattern used to generate dynamic product description for configured products. --></help>
+        <label>Modèle de description configurée</label>
+        <name>ConfiguredDescriptionPattern__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls whether cost for this product may be modified on individual quotes. --></help>
+        <label>Coût modifiable</label>
+        <name>CostEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount schedule used as a Cost Schedule with this product. --></help>
+        <label>Barème de coût</label>
+        <name>CostSchedule__c</name>
+        <relationshipLabel>Produits (barème de coût)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Page de configuration personnalisée</label>
+        <name>CustomConfigurationPage__c</name>
+    </fields>
+    <fields>
+        <label>Configuration personnalisée requise</label>
+        <name>CustomConfigurationRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select how this product should be available in Customer Communities. --></help>
+        <label>Disponibilité communauté de clients</label>
+        <name>CustomerCommunityAvailability__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation><!-- Never --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Only when already owned</masterLabel>
+            <translation><!-- Only when already owned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tableau de tarification par défaut</label>
+        <name>DefaultPricingTable__c</name>
+        <picklistValues>
+            <masterLabel>Segmented</masterLabel>
+            <translation><!-- Segmented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the starting quantity of the product when added. --></help>
+        <label>Quantité par défaut</label>
+        <name>DefaultQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag that indicates this product&apos;s description is locked (not editable on the quote). --></help>
+        <label>Description verrouillée</label>
+        <name>DescriptionLocked__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify discount category for this product. --></help>
+        <label>Catégorie de remise</label>
+        <name>DiscountCategory__c</name>
+        <relationshipLabel>Produits</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Discount schedule for use with this product --></help>
+        <label>Barème de remise</label>
+        <name>DiscountSchedule__c</name>
+        <relationshipLabel>Produits avec une remise sur la quantité</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use to place constraints on dynamically calculated prices. --></help>
+        <label>Pourcentage du total de la contrainte</label>
+        <name>DynamicPricingConstraint__c</name>
+        <picklistValues>
+            <masterLabel>List price is maximum</masterLabel>
+            <translation><!-- List price is maximum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List price is minimum</masterLabel>
+            <translation><!-- List price is minimum --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to always exclude this product from percent of total calculations (normally non-subscription products are included in percent of total calculations). --></help>
+        <label>Exclure du pourcentage du total</label>
+        <name>ExcludeFromMaintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this product should not be transferred to the opportunity. --></help>
+        <label>Exclure de l&apos;opportunité</label>
+        <name>ExcludeFromOpportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, indicates that configuring this Product automatically launches the External Configuration URL, defined in Salesforce CPQ settings. --></help>
+        <label>Configurable en externe</label>
+        <name>ExternallyConfigurable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will generate a contracted price based on the adjusted quote line if flagged. --></help>
+        <label>Générer un prix contracté</label>
+        <name>GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation><!-- Discount Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation><!-- Do Not Generate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Contient des attributs de configuration</label>
+        <name>HasConfigurationAttributes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Excludes this product from appearing on the quote PDF. --></help>
+        <label>Masqué</label>
+        <name>Hidden__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to hide this product&apos;s price in the Product Search Results. --></help>
+        <label>Masquer le prix dans résultats recherche</label>
+        <name>HidePriceInSearchResults__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to always include this product in percent of total calculations (normally subscription products are excluded from percent of total calculations). --></help>
+        <label>Inclure dans le pourcentage du total</label>
+        <name>IncludeInMaintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to create a new quote group when this product is added (unless the current group is empty). --></help>
+        <label>Nouveau groupe de devis</label>
+        <name>NewQuoteGroup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marks this product as not discountable. --></help>
+        <label>Sans remise possible</label>
+        <name>NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to make this product non-discountable for partners. --></help>
+        <label>Sans remise partenaire possible</label>
+        <name>NonPartnerDiscountable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines how options are presented to users. --></help>
+        <label>Présentation de l&apos;option</label>
+        <name>OptionLayout__c</name>
+        <picklistValues>
+            <masterLabel>Sections</masterLabel>
+            <translation><!-- Sections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tabs</masterLabel>
+            <translation><!-- Tabs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wizard</masterLabel>
+            <translation><!-- Wizard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Determines how user selects options attached to this product. &quot;Click&quot; method presents options with checkboxes next to them. &quot;Add&quot; renders a button which brings up a dialog box with available options. --></help>
+        <label>Méthode de sélection des options</label>
+        <name>OptionSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click</masterLabel>
+            <translation><!-- Click --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select if this product is optional by default. Optional products don&apos;t contribute to quote total or get transferred to the opportunity. --></help>
+        <label>Facultatif</label>
+        <name>Optional__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this product allows for price to be freely editable when building a quote. --></help>
+        <label>Prix modifiable</label>
+        <name>PriceEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select if Pricing Method can be changed when this product is added to quote. --></help>
+        <label>Méthode de tarification modifiable</label>
+        <name>PricingMethodEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pricing method that should be applied to this product. --></help>
+        <label>Méthode de tarification</label>
+        <name>PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation><!-- Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation><!-- Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation><!-- Percent Of Total --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- ID of Document or Content record that holds the picture for this product. --></help>
+        <label>ID de l&apos;image du produit</label>
+        <name>ProductPictureID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow or prevent changing the quantity for this product. --></help>
+        <label>Quantité modifiable</label>
+        <name>QuantityEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the number of decimal places used in the Quantity field. --></help>
+        <label>Échelle de quantités</label>
+        <name>QuantityScale__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked this product can only be configured when first added to a quote. If selected, users will not have access to a Configure link on the Edit Lines page after product has been added. --></help>
+        <label>Désactiver la reconfiguration</label>
+        <name>ReconfigurationDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product that replaces this product on renewal. Use this to quote a different SKU when renewing. --></help>
+        <label>Produit de renouvellement</label>
+        <name>RenewalProduct__c</name>
+        <relationshipLabel>Produits d&apos;origine</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Determines a default sort order of products in the Product Lookup page, and therefore the order in which they are added to the quote. --></help>
+        <label>Ordre de tri</label>
+        <name>SortOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formatted specifications for this product for use in quote templates to produce spec sheets. --></help>
+        <label>Spécifications</label>
+        <name>Specifications__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines whether Percent of Total is calculated off List or Net product prices. --></help>
+        <label>Pourcentage du total de base</label>
+        <name>SubscriptionBase__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net</masterLabel>
+            <translation><!-- Net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular</masterLabel>
+            <translation><!-- Regular --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this to limit percent of total calculations to certain product categories. For example, software maintenance should only calculate percentage on products with a software maintenance percent of total category. --></help>
+        <label>Pourcentage du total de la catégorie</label>
+        <name>SubscriptionCategory__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation><!-- Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation><!-- Software --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates how this Product is converted to Subscriptions --></help>
+        <label>Conversion en abonnement</label>
+        <name>SubscriptionConversion__c</name>
+        <picklistValues>
+            <masterLabel>One per subscribed asset</masterLabel>
+            <translation><!-- One per subscribed asset --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Percent of non-subscription total to be used as the price of this subscription. --></help>
+        <label>Pourcentage du total (%)</label>
+        <name>SubscriptionPercent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of pricing to use for this subscription. &quot;None&quot; means this product is not a subscription. --></help>
+        <label>Tarification de l&apos;abonnement</label>
+        <name>SubscriptionPricing__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Price</masterLabel>
+            <translation><!-- Fixed Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation><!-- Percent Of Total --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this field to override a product that is included in a percent of total calculation. Point this lookup to a product with a list price you would like to use for the current product’s Percent of Total calculations. --></help>
+        <label>Pourcentage du total de la cible</label>
+        <name>SubscriptionTarget__c</name>
+        <relationshipLabel>Produits ciblant des abonnements</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Term length of this subscription. Only applicable if the product is a subscription. --></help>
+        <label>Durée d&apos;abonnement</label>
+        <name>SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Renewable Subscriptions will transfer to Renewal Quotes. One-time Subscriptions will not. --></help>
+        <label>Type d&apos;abonnement</label>
+        <name>SubscriptionType__c</name>
+        <picklistValues>
+            <masterLabel>One-time</masterLabel>
+            <translation><!-- One-time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewable</masterLabel>
+            <translation><!-- Renewable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the tax code for taxation rules. --></help>
+        <label>Code de taxe</label>
+        <name>TaxCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this product is taxable. --></help>
+        <label>Soumis à taxe</label>
+        <name>Taxable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify subscription term level that should be used in calculating term discount. Leave blank to indicate default. --></help>
+        <label>Niveau de remise sur la durée</label>
+        <name>TermDiscountLevel__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line</masterLabel>
+            <translation><!-- Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Schedule for discounts based on subscription term. --></help>
+        <label>Barème de remise sur la durée</label>
+        <name>TermDiscountSchedule__c</name>
+        <relationshipLabel>Produits avec une remise sur la durée</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use to specify credit when quoting upgrades to this product. --></help>
+        <label>Mettre à niveau le crédit</label>
+        <name>UpgradeCredit__c</name>
+        <relationshipLabel>Produits crédités</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The conversion rate between this product&apos;s quantity and that of its source product. --></help>
+        <label>Mettre à niveau le ratio</label>
+        <name>UpgradeRatio__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product being upgraded. Populating this field makes this product an upgrade. --></help>
+        <label>Source de mise à niveau</label>
+        <name>UpgradeSource__c</name>
+        <relationshipLabel>Mises à niveau cibles</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specify the upgraded product. Only applicable if this product is an upgrade as indicated by Upgrade Source field being populated or having related Upgrade Source records. --></help>
+        <label>Mettre à niveau la cible</label>
+        <name>UpgradeTarget__c</name>
+        <relationshipLabel>Mises à niveau sources</relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>CPQ Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Renewals --></label>
+            <section>Renewals</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Configuration --></label>
+            <section>Salesforce CPQ Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Subscriptions --></label>
+            <section>Subscriptions</section>
+        </sections>
+        <sections>
+            <label><!-- Upgrades --></label>
+            <section>Upgrades</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>Vous devez sélectionner la case Inclure dans la maintenance ou Exclure de la maintenance.</errorMessage>
+        <name>Include_or_Exclude_Maintenance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is Recurring, a Billing Type must be selected. --></errorMessage>
+        <name>RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vous pouvez sélectionner Un par ressource abonnée pour la Conversion en abonnement en pourcentage du total des abonnements</errorMessage>
+        <name>Subscription_Conversion_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Seuls les produits d&apos;abonnement peuvent spécifier un barème de remise sur la durée</errorMessage>
+        <name>Term_schedule_requires_subscription</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time, a Billing Frequency value cannot be selected. --></errorMessage>
+        <name>Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time or Usage, a Billing Type value cannot be selected. --></errorMessage>
+        <name>Validate_billing_type</name>
+    </validationRules>
+    <webLinks>
+        <label>Cloner avec associé</label>
+        <name>CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label>Traduire</label>
+        <name>Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

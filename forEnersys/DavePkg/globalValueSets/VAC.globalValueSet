@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>120</fullName>
+        <default>false</default>
+        <label>120</label>
+    </customValue>
+    <customValue>
+        <fullName>208</fullName>
+        <default>false</default>
+        <label>208</label>
+    </customValue>
+    <customValue>
+        <fullName>220</fullName>
+        <default>false</default>
+        <label>220</label>
+    </customValue>
+    <customValue>
+        <fullName>240</fullName>
+        <default>false</default>
+        <label>240</label>
+    </customValue>
+    <customValue>
+        <fullName>480</fullName>
+        <default>false</default>
+        <label>480</label>
+    </customValue>
+    <customValue>
+        <fullName>600</fullName>
+        <default>false</default>
+        <label>600</label>
+    </customValue>
+    <description>All possible values for Charger VAC</description>
+    <masterLabel>VAC</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

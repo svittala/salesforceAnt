@@ -1,0 +1,6 @@
+<design:component label="CPQ Contract Selector">
+	<design:attribute name="accountId" label="Default Account Id" default="{!recordId}"/>
+	<design:attribute name="title" label="Title" default="Select Contract"/>
+	<design:attribute name="nextUrl" label="Next Page URL" default="/apex/sbqq__sb"/>
+	<design:attribute name="returnUrl" label="Return Page URL" default="/" />
+</design:component>

@@ -1,0 +1,11 @@
+<aura:component controller="AuraExtConfigRecreateLinesController" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+
+   	<ltng:require styles="/resource/SLDS221/assets/styles/salesforce-lightning-design-system-ltng.css"/>
+
+	<aura:attribute name="recordId" type="Id"/>
+	<aura:attribute name="quoteLineCreationStatus" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+	<div class="slds-notify slds-notify--toast" role="alert">{!v.quoteLineCreationStatus}</div>
+    	
+</aura:component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BHE</fullName>
+        <default>false</default>
+        <label>BHE</label>
+    </customValue>
+    <customValue>
+        <fullName>EZSelect</fullName>
+        <default>false</default>
+        <label>EZSelect</label>
+    </customValue>
+    <customValue>
+        <fullName>XinX</fullName>
+        <default>false</default>
+        <label>XinX</label>
+    </customValue>
+    <customValue>
+        <fullName>Monitoring Systems</fullName>
+        <default>false</default>
+        <label>Monitoring Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Service</fullName>
+        <default>false</default>
+        <label>Service</label>
+    </customValue>
+    <customValue>
+        <fullName>BHS (Battery Handling System)</fullName>
+        <default>false</default>
+        <label>BHS (Battery Handling System)</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>EHS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EHS</label>
+    </customValue>
+    <description>Site Options</description>
+    <masterLabel>Site Options</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

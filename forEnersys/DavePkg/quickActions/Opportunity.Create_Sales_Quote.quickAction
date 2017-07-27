@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a Sales Quote and Launches directly to the new quote</description>
+    <height>250</height>
+    <label>Create Sales Quote</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <page>SalesQuoteVF</page>
+    <type>VisualforcePage</type>
+    <width>-100</width>
+</QuickAction>

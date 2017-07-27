@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Entrée du processus</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Entrées du processus</value>
+    </caseValues>
+    <fields>
+        <help><!-- Select the checkbox to activate this process input. --></help>
+        <label>Active</label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label>Choix binaire</label>
+        <name>BinaryChoice__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicate which Process Input conditions must be met. --></help>
+        <label>Conditions remplies</label>
+        <name>ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation><!-- Any --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Quote field that sources default value for this input. --></help>
+        <label>Champ par défaut</label>
+        <name>DefaultField__c</name>
+        <picklistValues>
+            <masterLabel>Bill To Country</masterLabel>
+            <translation><!-- Bill To Country --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship To Country</masterLabel>
+            <translation><!-- Ship To Country --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the order that the process input should be displayed. --></help>
+        <label>Ordre d&apos;affichage</label>
+        <name>DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the API name for the field that accepts the user entry. --></help>
+        <label>Champ d&apos;entrée</label>
+        <name>InputField__c</name>
+        <picklistValues>
+            <masterLabel>BinaryChoice__c</masterLabel>
+            <translation><!-- BinaryChoice__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IntegerInput__c</masterLabel>
+            <translation><!-- IntegerInput__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a numerical value. --></help>
+        <label>Entrée de nombre entier</label>
+        <name>IntegerInput__c</name>
+    </fields>
+    <fields>
+        <help><!-- The text that you want displayed to the user in the prompt. --></help>
+        <label>Étiquette</label>
+        <name>Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the operator to use when comparing the Input Field entry with the Product Field. --></help>
+        <label>Opérateur</label>
+        <name>Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation><!-- contains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation><!-- ends with --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation><!-- greater or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation><!-- greater than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation><!-- less or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation><!-- less than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation><!-- not equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation><!-- starts with --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Condition d&apos;entrée de processus</label>
+        <name>ProcessInputCondition__c</name>
+        <relationshipLabel>Entrées de processus</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field on Product object used in filtering products that match this input. --></help>
+        <label>Champ du produit</label>
+        <name>ProductField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation><!-- Product Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation><!-- Product Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Name</masterLabel>
+            <translation><!-- Product Name --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Quote process that owns the input. --></help>
+        <label>Processus de devis</label>
+        <name>QuoteProcess__c</name>
+        <relationshipLabel>Entrées de processus</relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Process Input Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Filter --></label>
+            <section>Product Filter</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l&apos;entrée</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

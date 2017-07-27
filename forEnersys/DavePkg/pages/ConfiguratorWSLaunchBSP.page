@@ -1,0 +1,60 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="ConfiguratorWSLaunchBSPController" showHeader="true" sidebar="true">
+    {!userMessage}
+
+    <script language="JavaScript">
+
+    function post() {
+        var isOkToRedirect="{!isOkToRedirect}";
+        var launchUrl="{!launchUrl}";
+        var crmUsername="{!crmUsername}";
+        var crmPassword="{!crmPassword}";
+        var properUserEmail="{!properUserEmail}";
+        var quoteNumber="{!quoteNumber}";
+        var returnUrl="{!returnUrl}";
+
+        if (isOkToRedirect=="true") {
+            var form = document.createElement("form");
+            form.setAttribute("method", "POST");
+            form.setAttribute("target", "_parent");
+            form.setAttribute("action", launchUrl);
+
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", "crmUsername");
+            hiddenField.setAttribute("value", crmUsername);
+            form.appendChild(hiddenField);
+
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", "crmPassword");
+            hiddenField.setAttribute("value", crmPassword);
+            form.appendChild(hiddenField);
+
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", "properUserEmail");
+            hiddenField.setAttribute("value", properUserEmail);
+            form.appendChild(hiddenField);
+
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", "quoteNumber");
+            hiddenField.setAttribute("value", quoteNumber);
+            form.appendChild(hiddenField);
+
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", "returnUrl");
+            hiddenField.setAttribute("value", returnUrl);
+            form.appendChild(hiddenField);
+
+            document.body.appendChild(form);
+            form.submit();
+        }
+    }
+
+    post();
+
+    </script>
+
+</apex:page>

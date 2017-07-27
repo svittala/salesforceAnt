@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Theme</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Themes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Icon Disabled Font Color --></label>
+        <name>AccentIconDisabledFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon Font Color --></label>
+        <name>AccentIconFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon Hover Font Color --></label>
+        <name>AccentIconHoverFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hidden Values --></label>
+        <name>CompiledCSS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detail Background Color --></label>
+        <name>DetailColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document ID --></label>
+        <name>DocumentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Border Color --></label>
+        <name>GeneralBorderColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Background Color --></label>
+        <name>GeneralColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Font Color --></label>
+        <name>GeneralFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Button Color --></label>
+        <name>GroupButtonBorderColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Button Color --></label>
+        <name>GroupButtonColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Button Disabled Font Color --></label>
+        <name>GroupButtonDisabledFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Button Font Color --></label>
+        <name>GroupButtonFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Button Hover Color --></label>
+        <name>GroupButtonHoverColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Button Hover Font Color --></label>
+        <name>GroupButtonHoverFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Header Border Color --></label>
+        <name>HeaderBorderColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Header Color --></label>
+        <name>HeaderColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Header Font Color --></label>
+        <name>HeaderFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Header Supporting Font Color --></label>
+        <name>HeaderSecondaryFontColor__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, will hide the icon square located on the left side of custom page headers. --></help>
+        <label><!-- Hide Icons on Page Headers? --></label>
+        <name>HideIcons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon Font Color --></label>
+        <name>IconFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Button Color --></label>
+        <name>PrimaryButtonColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Button Font Color --></label>
+        <name>PrimaryButtonFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Button Hover Color --></label>
+        <name>PrimaryButtonHoverColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Font Color --></label>
+        <name>SecondaryFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Header Color --></label>
+        <name>SecondaryHeaderColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tab Selected Color --></label>
+        <name>TabSelectedColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Table Header Font Color --></label>
+        <name>TableHeaderFontColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Table Row Hover Color --></label>
+        <name>TableRowHoverColor__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

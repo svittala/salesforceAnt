@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Hybrid</fullName>
+        <default>false</default>
+        <label>Hybrid</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Cell</fullName>
+        <default>false</default>
+        <label>Small Cell</label>
+    </customValue>
+    <customValue>
+        <fullName>Macro BTS</fullName>
+        <default>false</default>
+        <label>Macro BTS</label>
+    </customValue>
+    <customValue>
+        <fullName>Central Office</fullName>
+        <default>false</default>
+        <label>Central Office</label>
+    </customValue>
+    <customValue>
+        <fullName>FTTX</fullName>
+        <default>false</default>
+        <label>FTTX</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Center</fullName>
+        <default>false</default>
+        <label>Data Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial UPS</fullName>
+        <default>false</default>
+        <label>Industrial UPS</label>
+    </customValue>
+    <customValue>
+        <fullName>Std UPS</fullName>
+        <default>false</default>
+        <label>Std UPS</label>
+    </customValue>
+    <customValue>
+        <fullName>Switchgear</fullName>
+        <default>false</default>
+        <label>Switchgear</label>
+    </customValue>
+    <customValue>
+        <fullName>Nuclear</fullName>
+        <default>false</default>
+        <label>Nuclear</label>
+    </customValue>
+    <customValue>
+        <fullName>Distribution</fullName>
+        <default>false</default>
+        <label>Distribution</label>
+    </customValue>
+    <customValue>
+        <fullName>Transformation</fullName>
+        <default>false</default>
+        <label>Transformation</label>
+    </customValue>
+    <customValue>
+        <fullName>Generation</fullName>
+        <default>false</default>
+        <label>Generation</label>
+    </customValue>
+    <customValue>
+        <fullName>Fleet/Vehicles</fullName>
+        <default>false</default>
+        <label>Fleet/Vehicles</label>
+    </customValue>
+    <customValue>
+        <fullName>Powersport</fullName>
+        <default>false</default>
+        <label>Powersport</label>
+    </customValue>
+    <customValue>
+        <fullName>Marine</fullName>
+        <default>false</default>
+        <label>Marine</label>
+    </customValue>
+    <customValue>
+        <fullName>Fire and Security</fullName>
+        <default>false</default>
+        <label>Fire and Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Generator</fullName>
+        <default>false</default>
+        <label>Generator</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Renewable Energy</fullName>
+        <default>false</default>
+        <label>Renewable Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Rail Signal</fullName>
+        <default>false</default>
+        <label>Rail Signal</label>
+    </customValue>
+    <customValue>
+        <fullName>Security</fullName>
+        <default>false</default>
+        <label>Security</label>
+    </customValue>
+    <customValue>
+        <fullName>UPS</fullName>
+        <default>false</default>
+        <label>UPS</label>
+    </customValue>
+    <customValue>
+        <fullName>Electronics</fullName>
+        <default>false</default>
+        <label>Electronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecom</fullName>
+        <default>false</default>
+        <label>Telecom</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical</fullName>
+        <default>false</default>
+        <label>Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>Instrumentation</fullName>
+        <default>false</default>
+        <label>Instrumentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergency Lighting</fullName>
+        <default>false</default>
+        <label>Emergency Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Battery Specialists</fullName>
+        <default>false</default>
+        <label>Battery Specialists</label>
+    </customValue>
+    <customValue>
+        <fullName>Mass Merchants</fullName>
+        <default>false</default>
+        <label>Mass Merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>Grid Scale</fullName>
+        <default>false</default>
+        <label>Grid Scale</label>
+    </customValue>
+    <customValue>
+        <fullName>Behind the Meter</fullName>
+        <default>false</default>
+        <label>Behind the Meter</label>
+    </customValue>
+    <customValue>
+        <fullName>Micro Grids</fullName>
+        <default>false</default>
+        <label>Micro Grids</label>
+    </customValue>
+    <description>Breakdown of Receive Power Industries</description>
+    <masterLabel>Sub-Industry</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

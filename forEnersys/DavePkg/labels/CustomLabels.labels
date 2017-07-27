@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>EMEA_Line_Item_Currency</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Currency</shortDescription>
+        <value>Currency</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_EnerSys_LeadAdjuster</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item EnerSys LeadAdjuster</shortDescription>
+        <value>EnerSys LeadAdjuster</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_External_rebate</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item External rebate</shortDescription>
+        <value>External rebate</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Final_amount</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Final amount</shortDescription>
+        <value>Final amount</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Items_Total</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Items Total</shortDescription>
+        <value>Items Total</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Material_Descirption</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Material Descirption</shortDescription>
+        <value>Material/Description</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Order_Value</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Order Value</shortDescription>
+        <value>Order value</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Position_net</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Position net</shortDescription>
+        <value>position net</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Price</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Price</shortDescription>
+        <value>Price</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Price_Unit</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Price Unit</shortDescription>
+        <value>Price unit</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Quantity</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Quantity</shortDescription>
+        <value>Qty</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_VAT</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item VAT</shortDescription>
+        <value>VAT</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Value</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Value</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Line_Item_Volume_Discount</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Line Item Volume Discount</shortDescription>
+        <value>Add. volume discount</value>
+    </labels>
+    <labels>
+        <fullName>EMEA_Quote_Line_Item</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMEA Quote Line Item</shortDescription>
+        <value>Item</value>
+    </labels>
+    <labels>
+        <fullName>Fiori_Cannot_add_products</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fiori - Cannot add products</shortDescription>
+        <value>Cannot add products</value>
+    </labels>
+    <labels>
+        <fullName>Fiori_Cannot_add_products_description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fiori - Cannot add products description</shortDescription>
+        <value>The Quote was not saved on SAP side, please wait for the synchronization to finish and try again later</value>
+    </labels>
+    <labels>
+        <fullName>Fiori_Canvas_No_Default_URL_Specified</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fiori Canvas No Default URL Specified</shortDescription>
+        <value>Error: No Default record URL specified in Fiori Canvas Settings.</value>
+    </labels>
+    <labels>
+        <fullName>Fiori_Canvas_No_Record_Id_Specified</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fiori Canvas No Record Id Specified</shortDescription>
+        <value>Error: No record Id specified.</value>
+    </labels>
+    <labels>
+        <fullName>Integration_User_ID</fullName>
+        <categories>User</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Integration User ID</shortDescription>
+        <value>00541000002Y1Zc</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Assignment_Body</fullName>
+        <categories>Email Template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Assignment: Body</shortDescription>
+        <value>You have been assigned a lead. Please follow up up on the lead promptly to help drive new business.</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Assignment_Subject</fullName>
+        <categories>Email Template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Assignment: Subject</shortDescription>
+        <value>New Lead Assignment</value>
+    </labels>
+    <labels>
+        <fullName>LightningDomain</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LightningDomain</shortDescription>
+        <value>https://enersys--int.lightning.force.com/</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Record_Type_Repeat</fullName>
+        <categories>Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Record Type Repeat</shortDescription>
+        <value>012410000012b9XAAQ</value>
+    </labels>
+    <labels>
+        <fullName>Order_Record_Type_Americas_Order</fullName>
+        <categories>Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Record Type Americas Order</shortDescription>
+        <value>012410000012bM1AAI</value>
+    </labels>
+    <labels>
+        <fullName>Order_Record_Type_Americas_Validated</fullName>
+        <categories>Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Record Type Americas Validated</shortDescription>
+        <value>01241000000jxgj</value>
+    </labels>
+    <labels>
+        <fullName>Price_Book_MP_701</fullName>
+        <categories>Record IDs</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Price Book - MP 701</shortDescription>
+        <value>01s41000008nnKBAAY</value>
+    </labels>
+    <labels>
+        <fullName>Price_Book_RP_701</fullName>
+        <categories>Record IDs</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Price Book - RP 701</shortDescription>
+        <value>01s41000008nnKLAAY</value>
+    </labels>
+    <labels>
+        <fullName>Price_Book_RP_702</fullName>
+        <categories>Record IDs</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Price Book - RP 702</shortDescription>
+        <value>01s41000008nnKQAAY</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Record_Type_Approved</fullName>
+        <categories>Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Record Type Approved</shortDescription>
+        <value>012410000012bD5AAI</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Record_Type_Draft</fullName>
+        <categories>Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Record Type Draft</shortDescription>
+        <value>012410000012bD4AAI</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Record_Type_Rental</fullName>
+        <categories>Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Record Type Rental</shortDescription>
+        <value>012410000012bD6AAI</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Record_Type_Rental_Approved</fullName>
+        <categories>Quotation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Record Type Rental Approved</shortDescription>
+        <value>012410000012bD7AAI</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Template_MP</fullName>
+        <categories>Record IDs</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Template - MP</shortDescription>
+        <value>a0j41000001t3c7AAA</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Template_RP</fullName>
+        <categories>Record IDs</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Template - RP</shortDescription>
+        <value>a0j41000001t3c6AAA</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Template_Rental</fullName>
+        <categories>Record IDs</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Template - Rental</shortDescription>
+        <value>a0j41000001t3c5AAA</value>
+    </labels>
+</CustomLabels>

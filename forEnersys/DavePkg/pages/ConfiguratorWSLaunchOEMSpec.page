@@ -1,0 +1,15 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="ConfiguratorWSLaunchOEMSpecController" showHeader="true" sidebar="true">
+    {!userMessage}
+
+    <script language="JavaScript">
+    function redirect() {
+        var launchUrl="{!launchUrl}";
+        var isOkToRedirect="{!isOkToRedirect}";
+        if (isOkToRedirect=="true") {
+            parent.frames.location.replace(launchUrl);
+        }
+    }
+    redirect();
+    </script>
+
+</apex:page>

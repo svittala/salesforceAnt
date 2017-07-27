@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LOB</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LOBs</value>
+    </caseValues>
+    <fields>
+        <label><!-- App Description --></label>
+        <name>App_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dist. Channel Description --></label>
+        <name>Dist_Channel_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel # --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB Description --></label>
+        <name>LOB_Description_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB Name - Number --></label>
+        <name>LOB_Name_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB # --></label>
+        <name>LOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBU (Delete) --></label>
+        <name>SBU_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBU --></label>
+        <name>SBU_Picklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBU# --></label>
+        <name>SBU__c</name>
+    </fields>
+    <layouts>
+        <layout>LOB Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- EnerSys LOB --></label>
+        <name>X701_Delaware</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

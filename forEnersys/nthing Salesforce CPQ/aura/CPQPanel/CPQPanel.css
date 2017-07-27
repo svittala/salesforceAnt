@@ -1,0 +1,26 @@
+.THIS {
+}
+
+.THIS div.title-horizontal {
+	padding: 10px;
+	color: t(colorTextDefault);
+	text-transform: uppercase;
+	white-space: nowrap;
+	margin-right: 10px;
+	border-right: 2px solid t(colorBorder);
+}
+
+.THIS div.title-vertical{
+	padding: 10px 0;
+	color: t(colorTextDefault);
+	text-transform: uppercase;
+	white-space: nowrap;
+	margin: 10px;
+	border-bottom: 2px solid t(colorBorder);
+}
+
+.THIS a.vertical{
+	padding-left: 10px;
+	line-height: 180%;
+	display: block;
+}

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>LookupField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API Name of the custom field used in the query.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API Name of the custom field used in the query.</inlineHelpText>
+        <label>Lookup Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SBQQ__Category__c</fullName>
+                    <default>false</default>
+                    <label>SBQQ__Category__c</label>
+                </value>
+                <value>
+                    <fullName>LOB_Number__c</fullName>
+                    <default>false</default>
+                    <label>LOB_Number__c</label>
+                </value>
+                <value>
+                    <fullName>Item_Group_Minimum__c</fullName>
+                    <default>false</default>
+                    <label>Item_Group_Minimum__c</label>
+                </value>
+                <value>
+                    <fullName>Item_Group_Maximum__c</fullName>
+                    <default>false</default>
+                    <label>Item_Group_Maximum__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MatchType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If Match Type = Field Value, select a Tested Object and Tested Field. If Match Type = Static Value, enter the value into Tested Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If Match Type = Field Value, select a Tested Object and Tested Field. If Match Type = Static Value, enter the value into Tested Value.</inlineHelpText>
+        <label>Match Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Field Value</fullName>
+                    <default>false</default>
+                    <label>Field Value</label>
+                </value>
+                <value>
+                    <fullName>Static Value</fullName>
+                    <default>false</default>
+                    <label>Static Value</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Operator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The operator that is applied when comparing the Field with the Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The operator that is applied when comparing the Field with the Value.</inlineHelpText>
+        <label>Operator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>equals</fullName>
+                    <default>false</default>
+                    <label>equals</label>
+                </value>
+                <value>
+                    <fullName>not equals</fullName>
+                    <default>false</default>
+                    <label>not equals</label>
+                </value>
+                <value>
+                    <fullName>less than</fullName>
+                    <default>false</default>
+                    <label>less than</label>
+                </value>
+                <value>
+                    <fullName>less or equals</fullName>
+                    <default>false</default>
+                    <label>less or equals</label>
+                </value>
+                <value>
+                    <fullName>greater than</fullName>
+                    <default>false</default>
+                    <label>greater than</label>
+                </value>
+                <value>
+                    <fullName>greater or equals</fullName>
+                    <default>false</default>
+                    <label>greater or equals</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ParentRuleIsActive__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>PriceRule__r.Active__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ParentRuleIsActive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PriceRule__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Price Rule</label>
+        <referenceTo>PriceRule__c</referenceTo>
+        <relationshipLabel>Lookup Queries</relationshipLabel>
+        <relationshipName>LookupQueries</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>RuleLookupObject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT(PriceRule__r.LookupObject__c)</formula>
+        <label>Parent Rule Lookup Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RuleTargetsCalculator__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ISPICKVAL(PriceRule__r.TargetObject__c, &apos;Calculator&apos;) || ISPICKVAL(PriceRule__r.TargetObject__c, &apos;Quote Line&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RuleTargetsCalculator</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TestedField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on Quote or Quote Line object that is evaluated by this query. Required if Match Type = Field Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field on Quote or Quote Line object that is evaluated by this query. Required if Match Type = Field Value.</inlineHelpText>
+        <label>Tested Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Code</fullName>
+                    <default>false</default>
+                    <label>Product Code</label>
+                </value>
+                <value>
+                    <fullName>Item_Group__c</fullName>
+                    <default>false</default>
+                    <label>Item_Group__c</label>
+                </value>
+                <value>
+                    <fullName>LOB_Number__c</fullName>
+                    <default>false</default>
+                    <label>LOB_Number__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TestedObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Object against which the query is evaluated. Required if Match Type = Field Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Object against which the query is evaluated. Required if Match Type = Field Value.</inlineHelpText>
+        <label>Tested Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>false</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>Quote Line</fullName>
+                    <default>false</default>
+                    <label>Quote Line</label>
+                </value>
+                <value>
+                    <fullName>Product Option</fullName>
+                    <default>false</default>
+                    <label>Product Option</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TestedValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value you want to match in the field you selected using the operator chosen. Required if Match Type = Static Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value you want to match in the field you selected using the operator chosen. Required if Match Type = Static Value.</inlineHelpText>
+        <label>Tested Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Lookup Query</label>
+    <nameField>
+        <displayFormat>{0}</displayFormat>
+        <label>Lookup Query #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Lookup Queries</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Match_Type_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL(MatchType__c, &apos;Static Value&apos;) &amp;&amp; ISBLANK( TestedValue__c)) || (ISPICKVAL(MatchType__c, &apos;Field Value&apos;) &amp;&amp; (ISPICKVAL(TestedField__c, &apos;&apos;) || ISPICKVAL(TestedObject__c, &apos;&apos;)))</errorConditionFormula>
+        <errorMessage>Tested Value is required if Match Type = Static Value. Tested Object and Tested Field are required if Match Type = Field Value.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

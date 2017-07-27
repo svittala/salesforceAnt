@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>assign_Parent_ID</name>
+        <label>assign Parent ID</label>
+        <locationX>640</locationX>
+        <locationY>387</locationY>
+        <assignmentItems>
+            <assignToReference>inAccountRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ParentRecordID</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>inAccountRecord.Parent_DUNS_number__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ParentDunsNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>set_parent_account_id_null</name>
+        <label>set parent account id null</label>
+        <locationX>273</locationX>
+        <locationY>241</locationY>
+        <assignmentItems>
+            <assignToReference>inAccountRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>set_parent_duns_number_to_null</name>
+        <label>set parent duns number to null</label>
+        <locationX>23</locationX>
+        <locationY>238</locationY>
+        <assignmentItems>
+            <assignToReference>inAccountRecord.Parent_DUNS_number__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>set_the_Parent_Duns_Number</name>
+        <label>set the Parent Duns Number</label>
+        <locationX>635</locationX>
+        <locationY>42</locationY>
+        <assignmentItems>
+            <assignToReference>inAccountRecord.Parent_DUNS_number__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ParentDunsNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Look_up_parent</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>check_if_I_am_global_duns_record</name>
+        <label>check if I am global duns record</label>
+        <locationX>445</locationX>
+        <locationY>34</locationY>
+        <defaultConnector>
+            <targetReference>set_parent_account_id_null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>I_am_not_the_global_duns_record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>inAccountRecord.DunsNumber</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>ParentDunsNumber</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ParentDunsNumber</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>set_the_Parent_Duns_Number</targetReference>
+            </connector>
+            <label>I am not the global duns record</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>check_if_parent_id_is_null</name>
+        <label>check if parent id is null</label>
+        <locationX>633</locationX>
+        <locationY>251</locationY>
+        <defaultConnector>
+            <targetReference>set_parent_account_id_null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>if_not_null_assign_to_passed_sobject</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ParentRecordID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>assign_Parent_ID</targetReference>
+            </connector>
+            <label>if not null assign to passed sobject</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_DandB_relation_set</name>
+        <label>Is DandB relation set</label>
+        <locationX>21</locationX>
+        <locationY>28</locationY>
+        <defaultConnector>
+            <targetReference>set_parent_duns_number_to_null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>check_if_duns_record_connection_is_set</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>inAccountRecord.DandbCompanyId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>get_the_parent_duns_id_from_dandb_record</targetReference>
+            </connector>
+            <label>check if duns record connection is set</label>
+        </rules>
+    </decisions>
+    <description>Sets the Parent ID of the account - changes to null if parent is already set - Also sets the parent duns number value</description>
+    <interviewLabel>SetParentAccountID {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SetParentAccountID</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>get_the_parent_duns_id_from_dandb_record</name>
+        <label>get the parent duns id from dandb record</label>
+        <locationX>295</locationX>
+        <locationY>41</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>check_if_I_am_global_duns_record</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>inAccountRecord.DandbCompanyId</elementReference>
+            </value>
+        </filters>
+        <object>DandBCompany</object>
+        <outputAssignments>
+            <assignToReference>ParentDunsNumber</assignToReference>
+            <field>ParentOrHqDunsNumber</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Look_up_parent</name>
+        <label>Look up parent</label>
+        <locationX>637</locationX>
+        <locationY>137</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>check_if_parent_id_is_null</targetReference>
+        </connector>
+        <filters>
+            <field>DunsNumber</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ParentDunsNumber</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>ParentRecordID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_record</name>
+        <label>Update record</label>
+        <locationX>273</locationX>
+        <locationY>388</locationY>
+        <inputReference>inAccountRecord</inputReference>
+    </recordUpdates>
+    <startElementReference>Is_DandB_relation_set</startElementReference>
+    <variables>
+        <description>Input Accont Record</description>
+        <name>inAccountRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <description>find out ParentDuns Number to set to the current record</description>
+        <name>ParentDunsNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the Parent Duns Record</description>
+        <name>ParentRecordID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

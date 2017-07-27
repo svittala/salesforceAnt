@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cost Price --></label>
+        <name>CostPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Request Date --></label>
+        <name>Customer_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item # --></label>
+        <name>Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB --></label>
+        <name>LOB__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead Time --></label>
+        <name>Lead_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Item Error --></label>
+        <name>Line_Item_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Line_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Text (Delete) --></label>
+        <name>Line_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Company # --></label>
+        <name>Order_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Product Validation --></label>
+        <name>Order_Product_Validation__c</name>
+    </fields>
+    <fields>
+        <help>請求サイクルを定義します。</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided. --></help>
+        <label><!-- Billing Type --></label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The block price that is applied to this order product at order creation time. --></help>
+        <label><!-- Block Price --></label>
+        <name>SBQQ__BlockPrice__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The type of the product charge. --></help>
+        <label><!-- Charge Type --></label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Term length of the subscription, which only applies if the product is a subscription. It is copied from the Subscription Term of the related product when the line item is first generated. --></help>
+        <label><!-- Default Subscription Term --></label>
+        <name>SBQQ__DefaultSubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>この注文商品に適用される割引率表</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- List unit price for the product quoted by this line item. List Price originates from the price book. --></help>
+        <label><!-- List Price --></label>
+        <name>SBQQ__ListPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- The actual quantity of the product placed in the order. --></help>
+        <label><!-- Ordered Quantity --></label>
+        <name>SBQQ__OrderedQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- References the price dimension applied to this order product. --></help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__PriceDimension__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Price schedule applied to this order product. --></help>
+        <label><!-- Price Schedule --></label>
+        <name>SBQQ__PriceSchedule__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この注文商品の作成元である見積品目。</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The quoted quantity. --></help>
+        <label><!-- Quoted Quantity --></label>
+        <name>SBQQ__QuotedQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required By --></label>
+        <name>SBQQ__RequiredBy__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>複数セグメント商品で、インデックスはセグメント表内でのこの見積品目の位置を表します。</help>
+        <label><!-- Segment Index --></label>
+        <name>SBQQ__SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <help>サブスクリプション価格の計算方法を示します。これが空白の場合、品目はサブスクリプション商品ではありません。</help>
+        <label><!-- Subscription Pricing --></label>
+        <name>SBQQ__SubscriptionPricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tax amount --></help>
+        <label><!-- Tax --></label>
+        <name>SBQQ__TaxAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the tax code for taxation rules. --></help>
+        <label><!-- Tax code --></label>
+        <name>SBQQ__TaxCode__c</name>
+    </fields>
+    <fields>
+        <help>この注文商品に適用される期間割引率表</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Order Products (Term Discount Schedule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Total amount with tax included --></help>
+        <label><!-- Total Amount (With Tax) --></label>
+        <name>SBQQ__TotalAmount__c</name>
+    </fields>
+    <fields>
+        <help>個別品目の全期間正価。</help>
+        <label><!-- Full-Term Net Unit Price --></label>
+        <name>SBQQ__UnproratedNetPrice__c</name>
+    </fields>
+    <fields>
+        <help>この見積品目によってアップグレードされるサブスクリプション。見積が契約されると、このサブスクリプションの [解除日] 項目が入力されます。</help>
+        <label><!-- Upgraded Subscription --></label>
+        <name>SBQQ__UpgradedSubscription__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Code --></label>
+        <name>Warehouse_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse --></label>
+        <name>Warehouse__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Order Product Layout</layout>
+        <sections>
+            <label><!-- Info Required for Validation --></label>
+            <section>Info Required for Validation</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is Recurring, a Billing Type must be selected. --></errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is &apos;One-Time&apos;, a Billing Frequency value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time or Usage, a Billing Type value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the unit price. For any price deviations, please edit the quote. --></errorMessage>
+        <name>Unit_Price_Locked</name>
+    </validationRules>
+</CustomObjectTranslation>

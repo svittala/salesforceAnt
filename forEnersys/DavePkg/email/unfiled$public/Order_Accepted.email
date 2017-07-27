@@ -1,0 +1,3 @@
+Order {!Order.OrderNumber} has been accepted by Baan 
+
+{!Order.Description}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Install Processor Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Install Processor Logs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Name of the method run within the Install Script --></help>
+        <label><!-- Method Name --></label>
+        <name>MethodName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Timestamp for running the method --></help>
+        <label><!-- Time --></label>
+        <name>Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Package version at the time of running the method --></help>
+        <label><!-- Version --></label>
+        <name>Version__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

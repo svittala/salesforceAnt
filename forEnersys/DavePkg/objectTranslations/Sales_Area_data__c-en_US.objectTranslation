@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Area Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Area Data</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Sales Area Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account at Customer Code --></label>
+        <name>Account_at_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Code --></label>
+        <name>Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Group - Lookup --></label>
+        <name>Customer_Group_lookup__c</name>
+        <relationshipLabel><!-- Sales Area Data (Customer Group - new) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Division Code --></label>
+        <name>Division_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoterm Code - Lookup --></label>
+        <name>Incoterm_Code_lookup__c</name>
+        <relationshipLabel><!-- Sales Area Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SAP Customer Id --></label>
+        <name>SAP_Customer_iD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Code (Text) --></label>
+        <name>Sales_Area_Code_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Description --></label>
+        <name>Sales_Area_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Distribution Chanel Code --></label>
+        <name>Sales_Area_Distribution_Chanel_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Division Code --></label>
+        <name>Sales_Area_Division_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Code --></label>
+        <name>Sales_Area_Sales_Organisation_Code__c</name>
+        <relationshipLabel><!-- Sales Area Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Office - Lookup --></label>
+        <name>Sales_Office_lookup__c</name>
+        <relationshipLabel><!-- Sales Area Data (Sales Office - new) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Shipcond Code --></label>
+        <name>Shipcond_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Conditions --></label>
+        <name>Shipping_Conditions__c</name>
+        <relationshipLabel><!-- Sales Area Data (Shipping Conditions) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Terms of Payment - Lookup --></label>
+        <name>Terms_of_Payment_lookup__c</name>
+        <relationshipLabel><!-- Sales Area Data (new Terms of Payment) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Sales Area Data Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

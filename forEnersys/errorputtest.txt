@@ -1,0 +1,74 @@
+Buildfile: C:\Users\svittala\Documents\GitHub\salesforceAnt\forEnersys\build.xml
+
+deployDave:
+[sf:deploy] Request for a deploy submitted successfully.
+[sf:deploy] Request ID for the current deploy task: 0Afg000000l0BYCCA2
+[sf:deploy] Waiting for server to finish processing the request...
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: InProgress (313/2740)  -- Processing Type: CustomObject
+[sf:deploy] Request Status: InProgress
+[sf:deploy] Request Status: InProgress (1865/2740)  -- Processing Type: ReportType
+[sf:deploy] Request Status: InProgress (1932/2740)  -- Processing Type: EmailTemplate
+[sf:deploy] Request Status: InProgress (2050/2740)  -- Processing Type: Flow
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Component Failures:
+[sf:deploy] 1.  flows/Approve_Quote-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Request Status: InProgress (2133/2740)  -- Processing Type: Workflow
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Component Failures:
+[sf:deploy] 2.  flows/Change_Record_Type_to_Draft-2.flow -- Error: The version of the flow you're updating is active and can't be overwritten.
+[sf:deploy] 3.  flows/Quick_Quote-4.flow -- Error: The version of the flow you're updating is active and can't be overwritten.
+[sf:deploy] 4.  flows/Quick_Quote-3.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 5.  flows/Quick_Quote-2.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 6.  flows/Quick_Quote-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 7.  flows/Order_Update_Field-4.flow -- Error: The version of the flow you're updating is active and can't be overwritten.
+[sf:deploy] 8.  flows/Order_Update_Field-3.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 9.  flows/Order_Update_Field-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 10.  flows/CreateSalesQuotation-2.flow -- Error: The version of the flow you're updating is active and can't be overwritten.
+[sf:deploy] 11.  flows/Approve_Quote-3.flow -- Error: The version of the flow you're updating is active and can't be overwritten.
+[sf:deploy] 12.  flows/Change_Record_Type_to_Draft-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 13.  flows/Quote_Set_Bill_To-1.flow -- Error: The version of the flow you're updating is active and can't be overwritten.
+[sf:deploy] 14.  flows/CreateOrder-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 15.  flows/CreateOrder-2.flow -- Error: The version of the flow you're updating is active and can't be overwritten.
+[sf:deploy] 16.  flows/CreateRentalQuotation-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 17.  flows/CreateSalesQuotation-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 18.  flows/Quote_Update_fields-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 19.  flowDefinitions/Set_ship_to_parent.flowDefinition -- Error: You can't create a flow definition directly through the API. A flow definition is created automatically when you create a new flow version.
+[sf:deploy] 20.  flows/setParentAccoutIdtoChildren-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 21.  flows/Quote_Update_fields-2.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 22.  flows/UpdateParentAccount-2.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 23.  flows/Quote_Update_fields-4.flow -- Error: The version of the flow you're updating is active and can't be overwritten.
+[sf:deploy] 24.  flows/Quote_Update_fields-3.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] 25.  flows/setParentAccountID-1.flow -- Error: The version of the flow you're updating was active and can't be overwritten.
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Request Status: InProgress (2225/2740)  -- Processing Type: CustomObjectTranslation
+[sf:deploy] Request Status: InProgress (2507/2740)  -- Processing Type: ApexClass
+[sf:deploy] Request Status: InProgress (2576/2740)  -- Processing Type: Profile
+[sf:deploy] Request Status: InProgress
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Component Failures:
+[sf:deploy] 26.  profiles/Admin.profile -- Error: Unknown user permission: ManageSandboxes
+[sf:deploy] 27.  profiles/EnerSys System Administrator.profile -- Error: Unknown user permission: ManageSandboxes
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Request Status: InProgress (2739/2740)  -- Processing Type: LeadConvertSettings
+[sf:deploy] Request Status: InProgress (2739/2740)  -- Processing Type: LeadConvertSettings
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Component Failures:
+[sf:deploy] 28.  pages/CPQEMEALineItems.page -- Error: Component c:euroformatter does not exist
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Request Status: InProgress (2739/2740)  -- Processing Type: LeadConvertSettings
+[sf:deploy] Request Status: InProgress
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Component Failures:
+[sf:deploy] 29.  flowDefinitions/Approve_Quote.flowDefinition -- Error: Invalid version number: 4
+[sf:deploy] 30.  flowDefinitions/Change_Record_Type_to_Draft.flowDefinition -- Error: Invalid version number: 3
+[sf:deploy] 31.  flowDefinitions/CreateOrder.flowDefinition -- Error: Invalid version number: 3
+[sf:deploy] 32.  flowDefinitions/Default_values.flowDefinition -- Error: Invalid version number: 3
+[sf:deploy] 33.  flowDefinitions/Order_Update_Field.flowDefinition -- Error: Invalid version number: 21
+[sf:deploy] 34.  flowDefinitions/Quick_Quote.flowDefinition -- Error: Invalid version number: 13
+[sf:deploy] 35.  flowDefinitions/Quote_Set_Bill_To.flowDefinition -- Error: Invalid version number: 3
+[sf:deploy] 36.  flowDefinitions/Quote_Update_fields.flowDefinition -- Error: Invalid version number: 11
+[sf:deploy] 37.  flowDefinitions/setParentAccoutIdtoChildren.flowDefinition -- Error: Invalid version number: 7
+[sf:deploy] -----------------------------------------------------------------------------------
+[sf:deploy] Request Status: Failed

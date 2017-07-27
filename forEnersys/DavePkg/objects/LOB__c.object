@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>LOB_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Table to manage Line&apos;s of Business (LOBs)</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>App_Description__c</fullName>
+        <description>Ind Truck New, Ind Truck Replc, Mining Car, Rail Signal, Rail Car Lighting New</description>
+        <externalId>false</externalId>
+        <label>App Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <externalId>false</externalId>
+        <formula>MID(LOB__c, 3, 2)</formula>
+        <label>Application</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dist_Channel_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Dist. Channel Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Distribution_Channel__c</fullName>
+        <externalId>false</externalId>
+        <formula>RIGHT(LOB__c, 1)</formula>
+        <label>Distribution Channel #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOB_Description_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBU_Description__c &amp;&quot;-&quot;&amp; App_Description__c &amp;&quot;-&quot;&amp; Dist_Channel_Description__c</formula>
+        <label>LOB Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOB_Name_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name &amp;&quot; - &quot; &amp; LOB__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LOB Name - Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOB__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Five digit # assigned to each LOB - Combination of SBU#, Application, and Dist. Channel.</description>
+        <externalId>true</externalId>
+        <label>LOB #</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SBU_Description__c</fullName>
+        <description>MPExide, MP General, etc</description>
+        <externalId>false</externalId>
+        <label>SBU (Delete)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBU_Picklist__c</fullName>
+        <externalId>false</externalId>
+        <label>SBU</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SBU</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBU__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(LOB__c, 2)</formula>
+        <label>SBU#</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>LOB</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>LOB__c</columns>
+        <columns>SBU_Picklist__c</columns>
+        <columns>SBU__c</columns>
+        <columns>Application__c</columns>
+        <columns>Distribution_Channel__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SBU_Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All LOB&apos;s</label>
+    </listViews>
+    <listViews>
+        <fullName>MP_LOB_s</fullName>
+        <columns>NAME</columns>
+        <columns>LOB__c</columns>
+        <columns>SBU_Picklist__c</columns>
+        <columns>SBU__c</columns>
+        <columns>Application__c</columns>
+        <columns>Distribution_Channel__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SBU_Picklist__c</field>
+            <operation>equals</operation>
+            <value>MP - Americas</value>
+        </filters>
+        <label>MP - Americas LOB&apos;s</label>
+    </listViews>
+    <listViews>
+        <fullName>RP_LOB_s</fullName>
+        <columns>NAME</columns>
+        <columns>LOB__c</columns>
+        <columns>SBU_Description__c</columns>
+        <columns>SBU__c</columns>
+        <columns>Application__c</columns>
+        <columns>Distribution_Channel__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SBU_Picklist__c</field>
+            <operation>equals</operation>
+            <value>RP - Americas</value>
+        </filters>
+        <label>RP - Americas LOB&apos;s</label>
+    </listViews>
+    <nameField>
+        <label>LOB Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>LOBs</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>X701_Delaware</fullName>
+        <active>true</active>
+        <description>One of the three primary Companies within EnerSys</description>
+        <label>EnerSys LOB</label>
+        <picklistValues>
+            <picklist>SBU_Picklist__c</picklist>
+            <values>
+                <fullName>EAS - Americas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EAS - EMEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MP - Americas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MP - EMEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RP - Americas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RP - EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>LOB__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBU_Description__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>LOB__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBU_Description__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>LOB__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBU_Description__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

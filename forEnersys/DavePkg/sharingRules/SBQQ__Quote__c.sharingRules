@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Joe_Kenny_Specialty</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Joe Kenny Specialty</label>
+        <sharedTo>
+            <group>Joe_Kenny</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>RP_Americas_Specialty</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

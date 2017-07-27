@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Trigger Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Trigger Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Dup Threshold Percent --></label>
+        <name>Dup_Threshold_Percent__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

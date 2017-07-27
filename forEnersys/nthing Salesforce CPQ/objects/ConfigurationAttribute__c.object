@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>ConfigurationAttributeHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Product configuration attribute.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AppliedImmediately__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that indicates changes to this configuration attribute should apply immediately.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to immediately apply changes to this option. Use sparingly to avoid slow user experience.</inlineHelpText>
+        <label>Apply Immediately</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ApplyToProductOptions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Apply configuration attribute selection to product options.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to apply configuration attribute selection to product options.</inlineHelpText>
+        <label>Apply To Product Options</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AutoSelect__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set the value of this attribute when adding a product from a Dynamic Feature using the value of the added product&apos;s matching field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Set the value of this attribute when adding a product using the value in the product&apos;s matching field.</inlineHelpText>
+        <label>Auto-Select</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ColumnOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Columns are comprised of a picklist (of 1, 2, or 3) for each Configuration Attribute. A maximum of 3 columns is allowed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Columns are comprised of a picklist (of 1, 2, or 3) for each Configuration Attribute. A maximum of 3 columns is allowed.</inlineHelpText>
+        <label>Column Order</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>true</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DisplayOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the order in which the Configuration Attributes will be displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If there is no display order associated with a Configuration Attribute, order is determined by Related Content name.</inlineHelpText>
+        <label>Row Order</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feature__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Feature in which this attribute should be rendered.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the feature in which this attribute should be entered.</inlineHelpText>
+        <label>Feature</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Product__c</field>
+                <operation>equals</operation>
+                <valueField>ProductFeature__c.ConfiguredSKU__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ProductFeature__c</referenceTo>
+        <relationshipLabel>Configuration Attributes</relationshipLabel>
+        <relationshipName>ConfigurationAttributes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HiddenValues__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Values from the backing picklist field that should be hidden on this bundle.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter values from the corresponding picklist field on Product Option object that you want to be hidden on this bundle.</inlineHelpText>
+        <label>Hidden Values</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Hidden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If flagged as hidden, the Configuration Attribute will not appear on the Product Configurator Page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If flagged as hidden, the Configuration Attribute will not appear on the Product Configurator Page.</inlineHelpText>
+        <label>Hidden</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Position__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Position of the attribute.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify position of this attribute. Top renders above the options. Bottom renders below.</inlineHelpText>
+        <label>Position</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Top</fullName>
+                    <default>true</default>
+                    <label>Top</label>
+                </value>
+                <value>
+                    <fullName>Bottom</fullName>
+                    <default>false</default>
+                    <label>Bottom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product being configured.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify product on which you are creating the attribute.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Configuration Attributes</relationshipLabel>
+        <relationshipName>ConfigurationAttributes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the attributes requires a value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify whether this attribute requires a value.</inlineHelpText>
+        <label>Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ShownValues__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Values from the backing picklist field that should be shown on this bundle.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter values from the corresponding picklist field on Product Option object that you want to be shown on this bundle.</inlineHelpText>
+        <label>Shown Values</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TargetField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on the Product Option that sources remaining metadata and holds the value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify field on Product Option that will hold this attribute&apos;s value.</inlineHelpText>
+        <label>Target Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unit Price</fullName>
+                    <default>false</default>
+                    <label>Unit Price</label>
+                </value>
+                <value>
+                    <fullName>Discount (Amt)</fullName>
+                    <default>false</default>
+                    <label>Discount (Amt)</label>
+                </value>
+                <value>
+                    <fullName>Discount (%)</fullName>
+                    <default>false</default>
+                    <label>Discount (%)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Configuration Attribute</label>
+    <nameField>
+        <label>Attribute Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Configuration Attributes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Column_Order_is_required</fullName>
+        <active>true</active>
+        <description>Column Order is required</description>
+        <errorConditionFormula>if (Text( ColumnOrder__c ) == &apos;&apos;, true, false)</errorConditionFormula>
+        <errorMessage>Column Order is required.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

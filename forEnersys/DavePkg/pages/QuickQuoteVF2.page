@@ -1,0 +1,6 @@
+<apex:page standardController="Account" extensions="QuickQuoteVFController">
+    <flow:interview name="Quick_Quote" interview="{!myflow}" finishlocation="{!finishLocation}">
+        <apex:param name="AccountID" value="{!Account.Id}"/>
+        <apex:param name="UserID" value="{!$User.Id}"/>
+    </flow:interview>
+</apex:page>

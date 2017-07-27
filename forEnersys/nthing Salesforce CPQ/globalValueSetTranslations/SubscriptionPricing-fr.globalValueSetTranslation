@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Fixed Price</masterLabel>
+        <translation><!-- Fixed Price --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Percent Of Total</masterLabel>
+        <translation><!-- Percent Of Total --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

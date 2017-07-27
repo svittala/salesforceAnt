@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Option de produit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Options de produit</value>
+    </caseValues>
+    <fields>
+        <help><!-- &apos;Apply Immediately on Select&apos; applies changes immediately on selection of product, whereas &apos;Apply Immediately on Quantity Change&apos; does that on change of quantity. &apos;Always&apos; applies changes both the times, on selection of product and on change of quantity. --></help>
+        <label>Contexte d&apos;application immédiate</label>
+        <name>AppliedImmediatelyContext__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Quantity Change</masterLabel>
+            <translation><!-- On Quantity Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Selection</masterLabel>
+            <translation><!-- On Selection --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to immediately apply changes to this option. Use sparingly to avoid slow user experience. --></help>
+        <label>Appliquer immédiatement</label>
+        <name>AppliedImmediately__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to indicate that the related product is bundled with the main product. Bundled options have fixed quantity and zero price as price is included in the main product. Leave this unchecked if the price should be added to the option. --></help>
+        <label>Offre groupée</label>
+        <name>Bundled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Position of this component in the generated product code for the configuration. --></help>
+        <label>Position du code du composant</label>
+        <name>ComponentCodePosition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Code for the component represented by this option. --></help>
+        <label> Code du composant</label>
+        <name>ComponentCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Position of this component in the generated product description for the configuration. --></help>
+        <label>Position de la description du composant</label>
+        <name>ComponentDescriptionPosition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for the component represented by this option. This is used in conjunction with the Configured Description Pattern field on the Product object. --></help>
+        <label>Description du composant</label>
+        <name>ComponentDescription__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product SKU of the bundle that is being configured with this option. If you create the option from the product detail page, this should already be populated. --></help>
+        <label>Unité de gestion de stock configurée</label>
+        <name>ConfiguredSKU__c</name>
+        <relationshipLabel>Options</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the pricing table this product should appear in by default when price dimensions are defined. --></help>
+        <label>Tableau de tarification par défaut</label>
+        <name>DefaultPricingTable__c</name>
+        <picklistValues>
+            <masterLabel>Segmented</masterLabel>
+            <translation><!-- Segmented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Discount (Amt), based on the field, when the product referenced for this option is offered standalone. But, you&apos;ll need to extend a discount if purchased a part of this product bundled. --></help>
+        <label>Remise (montant)</label>
+        <name>DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup the discount schedule to be applied to the product selected by this option. This discount schedule overrides the discount schedule selected on the product or feature. --></help>
+        <label>Barème de remise</label>
+        <name>DiscountSchedule__c</name>
+        <relationshipLabel>Options produit</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a Discount (%), based on the field, when the product referenced for this option is offered standalone. But, you&apos;ll need to extend a discount if purchased a part of this product bundled. --></help>
+        <label>Remise (%)</label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to automatically apply additional discount from parent package to this component. Only percentage-based discount can be applied. --></help>
+        <label>Remise appliquée par package</label>
+        <name>DiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Existing quantity of this product. Computed by looking at the assets attached to the account. --></help>
+        <label>Quantité existante</label>
+        <name>ExistingQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter or lookup the feature that includes this option. This will be dependent on the Configured SKU. --></help>
+        <label>Fonctionnalité</label>
+        <name>Feature__c</name>
+        <relationshipLabel>Options produit</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Maximum quantity allowed for this option. --></help>
+        <label>Quantité maximale</label>
+        <name>MaxQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Minimum quantity allowed for this option. --></help>
+        <label>Quantité minimale</label>
+        <name>MinQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set the display order of this option within the feature it&apos;s assigned to. --></help>
+        <label>Numéro</label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter or lookup the product SKU that should be added when this product is selected. --></help>
+        <label>Unité de gestion de stock facultative</label>
+        <name>OptionalSKU__c</name>
+        <relationshipLabel>Facultative pour</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select to mark the price as editable, allowing users to make changes to option prices. --></help>
+        <label>Prix modifiable</label>
+        <name>PriceEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Code for the optional product SKU. --></help>
+        <label>Code produit</label>
+        <name>ProductCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pulls in the value of Configuration Type on Product object in order to avoid loading related product record. --></help>
+        <label>Type de configuration produit</label>
+        <name>ProductConfigurationType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for the optional SKU. --></help>
+        <label>Description du produit</label>
+        <name>ProductDescription__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Family for the optional product SKU. --></help>
+        <label>Famille de produits</label>
+        <name>ProductFamily__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name for the optional SKU. --></help>
+        <label>Nom du produit</label>
+        <name>ProductName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the number of decimal places used in the Quantity field. --></help>
+        <label>Échelle de quantités de produits</label>
+        <name>ProductQuantityScale__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of pricing to use for this subscription. &quot;None&quot; means this product is not a subscription. --></help>
+        <label>Tarification de l&apos;abonnement au produit</label>
+        <name>ProductSubscriptionPricing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to allow quantity to be edited even though it&apos;s specified on the option. --></help>
+        <label>Quantité modifiable</label>
+        <name>QuantityEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quantity of the related product that should be added to the quote. --></help>
+        <label>Quantité</label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Configure visibility of quote line generated by this option. --></help>
+        <label>Visibilité de la ligne de devis</label>
+        <name>QuoteLineVisibility__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Only</masterLabel>
+            <translation><!-- Document Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editor Only</masterLabel>
+            <translation><!-- Editor Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation><!-- Never --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Product option that replaces this product option on renewal. Use this to quote a different SKU when renewing. --></help>
+        <label>Option de produit de renouvellement</label>
+        <name>RenewalProductOption__c</name>
+        <relationshipLabel>Options produit</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox if this product is required on the bundle. --></help>
+        <label>Obligatoire</label>
+        <name>Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox if this product option should be automatically selected by default. --></help>
+        <label>Sélectionné</label>
+        <name>Selected__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose how this percent of total product option is calculated. Package is specific to the parent product. Components is specific to sibling components. Both is specific to the parent and sibling components. --></help>
+        <label>Pourcentage du total de l&apos;étendue</label>
+        <name>SubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation><!-- Components --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package</masterLabel>
+            <translation><!-- Package --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to indicate this option is managed by the system which makes it unavailable for user selection. --></help>
+        <label>Système</label>
+        <name>System__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use &quot;Component&quot; if this option, including quantity, is dependent on parent. Use&quot; Accessory&quot; if this option is dependent on parent but quantity is independent. Use &quot;Related Product&quot; for related but fully independent products. --></help>
+        <label>Type</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation><!-- Accessory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation><!-- Component --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation><!-- Related Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Unit price for this option. This will override the value from price book. --></help>
+        <label>Prix unitaire</label>
+        <name>UnitPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to automatically apply uplift from parent package to this component. Only applies to components that are multi-segmented products. --></help>
+        <label>Augmenté par package</label>
+        <name>UpliftedByPackage__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Product Option Layout</layout>
+        <sections>
+            <label><!-- Advanced Settings --></label>
+            <section>Advanced Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Optional SKU Information --></label>
+            <section>Optional SKU Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l&apos;option</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage>Le champ « Appliquer immédiatement » doit être sélectionné avant de saisir un « Contexte d&apos;application immédiatement », sinon définissez le champ « Contexte d&apos;application immédiatement » sur « Aucun ».</errorMessage>
+        <name>Apply_Immediately_Context_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label>Traduire</label>
+        <name>Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

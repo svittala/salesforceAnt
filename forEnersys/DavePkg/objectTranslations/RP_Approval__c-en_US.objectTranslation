@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RP Approval Matrix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RP Approval Matrix</value>
+    </caseValues>
+    <fields>
+        <label><!-- In Range or Other --></label>
+        <name>In_Range_or_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Group Maximum --></label>
+        <name>Item_Group_Maximum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Group Minimum --></label>
+        <name>Item_Group_Minimum__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB Descripton --></label>
+        <name>LOB_Descripton__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB Number --></label>
+        <name>LOB_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOB --></label>
+        <name>LOB__c</name>
+        <relationshipLabel><!-- RP Approval Matrix --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Level 1 Approval --></label>
+        <name>Level_1_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level 2 Approval --></label>
+        <name>Level_2_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level 3 Approval --></label>
+        <name>Level_3_Approval__c</name>
+    </fields>
+    <layouts>
+        <layout>RP Approval Matrix Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

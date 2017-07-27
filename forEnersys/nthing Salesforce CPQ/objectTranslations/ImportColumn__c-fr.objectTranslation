@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Colonne d&apos;importation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Colonnes d&apos;importation</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter a numeric index value that represents the location of the column. Column index must start from 1. --></help>
+        <label>Index de la colonne</label>
+        <name>ColumnIndex__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API Name. --></help>
+        <label>Nom du champ</label>
+        <name>FieldName__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation><!-- Discount (%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation><!-- Discount (Amt) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Price</masterLabel>
+            <translation><!-- List Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Discount</masterLabel>
+            <translation><!-- Partner Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation><!-- Product Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation><!-- Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the format in which your records will be imported. --></help>
+        <label>Format d&apos;importation</label>
+        <name>ImportFormat__c</name>
+        <relationshipLabel>Colonnes d&apos;importation</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select if this column should be a unique key column. --></help>
+        <label>Clé</label>
+        <name>Key__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Import Column Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la colonne</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>L&apos;index des colonnes doit commencer à 1.</errorMessage>
+        <name>Column_index_must_start_from_1</name>
+    </validationRules>
+</CustomObjectTranslation>

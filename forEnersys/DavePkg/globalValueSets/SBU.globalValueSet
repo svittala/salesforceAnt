@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MP - Americas</fullName>
+        <default>false</default>
+        <label>MP - Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>MP - EMEA</fullName>
+        <default>false</default>
+        <label>MP - EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>RP - Americas</fullName>
+        <default>false</default>
+        <label>RP - Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>RP - EMEA</fullName>
+        <default>false</default>
+        <label>RP - EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>EAS - Americas</fullName>
+        <default>false</default>
+        <label>EAS - Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>EAS - EMEA</fullName>
+        <default>false</default>
+        <label>EAS - EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>RP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>RP</label>
+    </customValue>
+    <customValue>
+        <fullName>EAS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EAS</label>
+    </customValue>
+    <customValue>
+        <fullName>MP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MP</label>
+    </customValue>
+    <description>Business Unit for EnerSys</description>
+    <masterLabel>SBU</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

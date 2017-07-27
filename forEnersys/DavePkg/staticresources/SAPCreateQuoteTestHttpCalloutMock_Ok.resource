@@ -1,0 +1,1 @@
+{"returns":[{"SAP_TYPE":"S","SAP_SYSTEM":null,"SAP_NUMBER":"311","ROW":null,"PARAMETER":null,"MESSAGE_V4":null,"MESSAGE_V3":null,"MESSAGE_V2":"12345","MESSAGE_V1":null,"MESSAGE":"Created SAP Quote 12345","LOG_NO":null,"LOG_MSG_NO":null,"ID":"V1","FIELD":null}]}

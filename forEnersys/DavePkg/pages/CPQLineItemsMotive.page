@@ -1,0 +1,517 @@
+<apex:page showHeader="false" sidebar="false" cache="false" contentType="text/xml" controller="CPQLineItemsMotiveController">
+    <block>
+
+    <apex:repeat var="displayGroup" value="{!displayGroups}">
+
+    <table table-layout="fixed" width="100%" margin-top="10pt" margin-bottom="0pt">
+		<table-body>
+
+            <table-row>
+                <table-cell>
+
+ 				    <table table-layout="fixed" width="100%" border-color="#F5F5F5" border-width="1px" border-style="solid">
+			            <table-column column-width="10%"/>
+			            <table-column column-width="15%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="15%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="20%"/>
+				        <table-body>
+				            <table-row font-size="0.667em" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#CC3333" keep-with-next.within-page="always">
+				                <table-cell border="1px solid #F5F5F5" number-columns-spanned="8" padding="2pt">
+				                        <block>{!HTMLENCODE(displayGroup.heading)}</block>
+				                </table-cell>
+				            </table-row>
+
+            				<apex:repeat var="showTruckInfo" value="{!displayGroup.showTruckInfo}">
+
+				            <table-row font-size="0.667em" font-weight="bold" text-align="center" color="#FFFFFF" background-color="#CC3333" keep-with-next.within-page="always">
+				                <table-cell border="1px solid #F5F5F5" padding="2pt"><block>Manufacturer</block></table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt"><block>Model / Class</block></table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt"><block>Type / Cover</block></table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt"><block>L x W x H</block></table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt"><block>Connector</block></table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt"><block>Volt / Term.</block></table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt"><block>Min Weight</block></table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt"><block>&nbsp;</block></table-cell>
+				            </table-row>
+
+				            <table-row font-size="0.667em" text-align="center" color="#000000" background-color="#F5F5F5">
+				                <table-cell border="1px solid #F5F5F5" padding="2pt">
+				                        <block>{!HTMLENCODE(displayGroup.truckInfo.Truck_Manufacturer__c)}</block>
+				                </table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt">
+				                        <block>{!HTMLENCODE(displayGroup.truckInfo.Truck_Model_Class__c)}</block>
+				                </table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt">
+				                        <block>{!HTMLENCODE(displayGroup.truckInfo.Truck_Type_Cover__c)}</block>
+				                </table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt">
+				                        <block>{!HTMLENCODE(displayGroup.cleanTruckDimensions)}</block>
+				                </table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt">
+				                        <block>{!HTMLENCODE(displayGroup.truckInfo.Truck_Connector__c)}</block>
+				                </table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt">
+				                        <block>{!HTMLENCODE(displayGroup.cleanVoltTerm)}</block>
+				                </table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt">
+				                        <block>{!HTMLENCODE(displayGroup.truckInfo.Truck_Min_Weight__c)}</block>
+				                </table-cell>
+				                <table-cell border="1px solid #F5F5F5" padding="2pt">
+				                        <block>{!HTMLENCODE(displayGroup.truckInfo.Truck_Notes__c)}</block>
+				                </table-cell>
+				            </table-row>
+				            </apex:repeat>
+
+				        </table-body>
+				    </table>
+
+                </table-cell>
+            </table-row>
+
+    		<apex:repeat var="group" value="{!displayGroup.groups}">
+
+            <table-row>
+                <table-cell>
+
+<!-- batteries -->
+
+		            <apex:repeat var="showBatteryHeading" value="{!group.showBatteryHeading}">
+				    <table table-layout="fixed" width="100%" margin-top="0pt" margin-bottom="0pt">
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="15%"/>
+			            <table-column column-width="15%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="15%"/>
+			            <table-column column-width="5%"/>
+			            <table-column column-width="5%"/>
+			            <table-column column-width="5%"/>
+				        <table-header>
+				        	
+				            <table-row font-size="0.667em" font-weight="bold" text-align="center" color="#000000" background-color="#DCDCDC" keep-with-next.within-page="always">
+				                <table-cell padding="2pt"><block>Family</block></table-cell>
+				                <table-cell padding="2pt"><block>Battery</block></table-cell>
+				                <table-cell padding="2pt"><block>Type</block></table-cell>
+				                <table-cell padding="2pt"><block>A.H. / KWH</block></table-cell>
+				                <table-cell padding="2pt"><block>L x W x H</block></table-cell>
+				                <table-cell padding="2pt"><block>Weight</block></table-cell>
+				                <table-cell padding="2pt"><block>&nbsp;</block></table-cell>
+				                <table-cell padding="2pt"><block>Quantity</block></table-cell>
+				                <table-cell padding="2pt"><block>Price (ea)</block></table-cell>
+				                <table-cell padding="2pt"><block>Total Price</block></table-cell>
+				            </table-row>
+
+				        </table-header>
+
+				        <table-body>
+
+				            <apex:repeat var="battery" value="{!group.batteries}">
+
+				            <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(battery.lineData.Battery_Family__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(battery.lineData.SBQQ__ProductName__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(battery.lineData.Battery_Type__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(battery.lineData.Battery_AH_KWH__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(battery.lineData.Battery_Dimensions__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(battery.lineData.Battery_Weight__c)}</block>
+				                </table-cell>
+				                <table-cell color="#808080" padding="2pt">
+				                        <block>{!HTMLENCODE(battery.lineData.Battery_Notes__c)}</block>
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                    <block><apex:outputText value="{0, number, ###,###,###,###}"><apex:param value="{!battery.lineData.SBQQ__Quantity__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!battery.lineData.SBQQ__NetPrice__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!battery.lineData.SBQQ__NetTotal__c}"/></apex:outputText></block>                        
+				                </table-cell>
+				            </table-row>
+
+				            <table-row height="{!battery.lineNotesRowHeight}" font-size="0.667em" text-align="center" background-color="#ffffff">
+				                <table-cell number-columns-spanned="10" padding="2pt" padding-left="20pt" text-align="left">
+				                	<block>{!HTMLENCODE(battery.lineData.Line_Notes__c)}</block>
+				                </table-cell>
+				            </table-row>
+
+				            </apex:repeat> 
+
+				        </table-body>
+				    </table>
+				    </apex:repeat>
+
+<!-- /batteries -->
+
+<!-- batteriesNoSpecs -->
+
+		            <apex:repeat var="showBatteryNoSpecsHeading" value="{!group.showBatteryNoSpecsHeading}">
+				    <table table-layout="fixed" width="100%" margin-top="0pt" margin-bottom="0pt">
+			            <table-column column-width="10%"/>
+			            <table-column column-width="30%"/>
+			            <table-column column-width="30%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+
+				        <table-header>
+				        	
+				            <table-row font-size="0.667em" font-weight="bold" text-align="center" color="#000000" background-color="#DCDCDC" keep-with-next.within-page="always">
+				                <table-cell padding="2pt"><block>Catalog #</block></table-cell>
+				                <table-cell padding="2pt" text-align="center"><block>Description</block></table-cell>
+				                <table-cell padding="2pt"><block>&nbsp;</block></table-cell>
+				                <table-cell padding="2pt"><block>Quantity</block></table-cell>
+				                <table-cell padding="2pt"><block>Price (ea)</block></table-cell>
+				                <table-cell padding="2pt"><block>Total Price</block></table-cell>
+				            </table-row>
+
+				        </table-header>
+
+				        <table-body>
+				            <apex:repeat var="batteriesNoSpecs" value="{!group.batteriesNoSpecs}">
+
+				            <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(batteriesNoSpecs.lineData.SBQQ__ProductName__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt" text-align="center">
+				                        <block>{!HTMLENCODE(batteriesNoSpecs.lineData.SBQQ__Product__r.Description)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>&nbsp;</block>
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                    <block><apex:outputText value="{0, number, ###,###,###,###}"><apex:param value="{!batteriesNoSpecs.lineData.SBQQ__Quantity__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!batteriesNoSpecs.lineData.SBQQ__NetPrice__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!batteriesNoSpecs.lineData.SBQQ__NetTotal__c}"/></apex:outputText></block>                        
+				                </table-cell>
+				            </table-row>
+
+				            <table-row height="{!batteriesNoSpecs.lineNotesRowHeight}" font-size="0.667em" text-align="center" background-color="#ffffff">
+				                <table-cell number-columns-spanned="6" padding="2pt" padding-left="20pt" text-align="left">
+				                	<block>{!HTMLENCODE(batteriesNoSpecs.lineData.Line_Notes__c)}</block>
+				                </table-cell>
+				            </table-row>
+
+				            </apex:repeat> 
+
+				        </table-body>
+				    </table>
+				    </apex:repeat>
+
+<!-- /batteriesNoSpecs -->
+
+<!-- chargers -->
+
+		            <apex:repeat var="showChargerHeading" value="{!group.showChargerHeading}">
+				    <table table-layout="fixed" width="100%" margin-top="0pt" margin-bottom="0pt">
+			            <table-column column-width="15%"/>
+			            <table-column column-width="5%"/>
+			            <table-column column-width="5%"/>
+			            <table-column column-width="8%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="15%"/>
+			            <table-column column-width="27%"/>
+			            <table-column column-width="5%"/>
+			            <table-column column-width="5%"/>
+			            <table-column column-width="5%"/>
+				        <table-header>
+				        	
+				            <table-row font-size="0.667em" font-weight="bold" text-align="center" color="#000000" background-color="#C0C0C0" keep-with-next.within-page="always">
+				                <table-cell padding="2pt"><block>Family / Charger</block></table-cell>
+				                <table-cell padding="2pt"><block>Volt / Phase</block></table-cell>
+				                <table-cell padding="2pt"><block>VAC</block></table-cell>
+				                <table-cell padding="2pt"><block>Max A.H.</block></table-cell>
+				                <table-cell padding="2pt"><block># Mod / Cab</block></table-cell>
+				                <table-cell padding="2pt"><block>Max (A) in AC / Out DC</block></table-cell>
+				                <table-cell padding="2pt"><block>&nbsp;</block></table-cell>
+				                <table-cell padding="2pt"><block>Quantity</block></table-cell>
+				                <table-cell padding="2pt"><block>Price  (ea)</block></table-cell>
+				                <table-cell padding="2pt"><block>Total Price</block></table-cell>
+				            </table-row>
+
+						</table-header>
+
+					    <table-body>
+
+				            <apex:repeat var="charger" value="{!group.chargers}">
+
+				            <table-row font-size="0.667em" text-align="center" margin-bottom="5pt" background-color="#ffffff" keep-with-next.within-page="always">
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(charger.lineData.Charger_Family_Charger_Part__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(charger.lineData.Charger_Volt_Phase__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(charger.lineData.Charger_VAC__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(charger.lineData.Charger_Max_AH__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(charger.lineData.Charger_Mod_Cab__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(charger.lineData.Charger_Max_A_In_AC_Out_DC__c)}</block>
+				                </table-cell>
+				                <table-cell color="#808080" padding="2pt">
+				                        <block>{!HTMLENCODE(charger.lineData.Charger_Notes__c)}</block>
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                    <block><apex:outputText value="{0, number, ###,###,###,###}"><apex:param value="{!charger.lineData.SBQQ__Quantity__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!charger.lineData.SBQQ__NetPrice__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!charger.lineData.SBQQ__NetTotal__c}"/></apex:outputText></block>                        
+				                </table-cell>
+				            </table-row>
+
+				            <table-row height="{!charger.lineNotesRowHeight}" font-size="0.667em" text-align="center" background-color="#ffffff">
+				                <table-cell number-columns-spanned="10" padding="2pt" padding-left="20pt" text-align="left">
+				                	<block>{!HTMLENCODE(charger.lineData.Line_Notes__c)}</block>
+				                </table-cell>
+				            </table-row>
+
+				            </apex:repeat> 
+
+				        </table-body>
+				    </table>
+				    </apex:repeat>
+
+<!-- /chargers -->
+
+<!-- chargersNoSpecs -->
+
+		            <apex:repeat var="showChargerNoSpecsHeading" value="{!group.showChargerNoSpecsHeading}">
+				    <table table-layout="fixed" width="100%" margin-top="0pt" margin-bottom="0pt">
+			            <table-column column-width="10%"/>
+			            <table-column column-width="30%"/>
+			            <table-column column-width="30%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+
+				        <table-header>
+				        	
+				            <table-row font-size="0.667em" font-weight="bold" text-align="center" color="#000000" background-color="#C0C0C0" keep-with-next.within-page="always">
+				                <table-cell padding="2pt"><block>Catalog #</block></table-cell>
+				                <table-cell padding="2pt" text-align="center"><block>Description</block></table-cell>
+				                <table-cell padding="2pt"><block>&nbsp;</block></table-cell>
+				                <table-cell padding="2pt"><block>Quantity</block></table-cell>
+				                <table-cell padding="2pt"><block>Price (ea)</block></table-cell>
+				                <table-cell padding="2pt"><block>Total Price</block></table-cell>
+				            </table-row>
+
+				        </table-header>
+
+				        <table-body>
+				            <apex:repeat var="chargerNoSpecs" value="{!group.chargersNoSpecs}">
+
+				            <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(chargerNoSpecs.lineData.SBQQ__ProductName__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt" text-align="center">
+				                        <block>{!HTMLENCODE(chargerNoSpecs.lineData.SBQQ__Product__r.Description)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>&nbsp;</block>
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                    <block><apex:outputText value="{0, number, ###,###,###,###}"><apex:param value="{!chargerNoSpecs.lineData.SBQQ__Quantity__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!chargerNoSpecs.lineData.SBQQ__NetPrice__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!chargerNoSpecs.lineData.SBQQ__NetTotal__c}"/></apex:outputText></block>                        
+				                </table-cell>
+				            </table-row>
+
+				            <table-row height="{!chargerNoSpecs.lineNotesRowHeight}" font-size="0.667em" text-align="center" background-color="#ffffff">
+				                <table-cell number-columns-spanned="6" padding="2pt" padding-left="20pt" text-align="left">
+				                	<block>{!HTMLENCODE(chargerNoSpecs.lineData.Line_Notes__c)}</block>
+				                </table-cell>
+				            </table-row>
+
+				            </apex:repeat> 
+
+				        </table-body>
+				    </table>
+				    </apex:repeat>
+
+<!-- /chargersNoSpecs -->
+
+<!-- others -->
+		            <apex:repeat var="showOtherHeading" value="{!group.showOtherHeading}">
+				    <table table-layout="fixed" width="100%" margin-top="0pt" margin-bottom="0pt">
+			            <table-column column-width="10%"/>
+			            <table-column column-width="30%"/>
+			            <table-column column-width="30%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+			            <table-column column-width="10%"/>
+
+				        <table-header>
+				        	
+				            <table-row font-size="0.667em" font-weight="bold" text-align="center" color="#000000" background-color="#DCDCDC" keep-with-next.within-page="always">
+				                <table-cell padding="2pt"><block>Catalog #</block></table-cell>
+				                <table-cell text-align="center"><block>Description</block></table-cell>
+				                <table-cell padding="2pt"><block>&nbsp;</block></table-cell>
+				                <table-cell padding="2pt"><block>Quantity</block></table-cell>
+				                <table-cell padding="2pt"><block>Price (ea)</block></table-cell>
+				                <table-cell padding="2pt"><block>Total Price</block></table-cell>
+				            </table-row>
+
+				        </table-header>
+
+				        <table-body>
+				            <apex:repeat var="other" value="{!group.others}">
+
+				            <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+				                <table-cell padding="2pt">
+				                        <block>{!HTMLENCODE(other.lineData.SBQQ__ProductName__c)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt" text-align="center">
+				                        <block>{!HTMLENCODE(other.lineData.SBQQ__Product__r.Description)}</block>
+				                </table-cell>
+				                <table-cell padding="2pt">
+				                        <block>&nbsp;</block>
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                    <block><apex:outputText value="{0, number, ###,###,###,###}"><apex:param value="{!other.lineData.SBQQ__Quantity__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!other.lineData.SBQQ__NetPrice__c}"/></apex:outputText></block>                        
+				                </table-cell>
+
+				                <table-cell padding="2pt" text-align="center">
+				                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!other.lineData.SBQQ__NetTotal__c}"/></apex:outputText></block>                        
+				                </table-cell>
+				            </table-row>
+
+				            <table-row height="{!other.lineNotesRowHeight}" font-size="0.667em" text-align="center" background-color="#ffffff">
+				                <table-cell number-columns-spanned="6" padding="2pt" padding-left="20pt" text-align="left">
+				                	<block>{!HTMLENCODE(other.lineData.Line_Notes__c)}</block>
+				                </table-cell>
+				            </table-row>
+
+				            </apex:repeat> 
+
+				        </table-body>
+				    </table>
+				    </apex:repeat>
+<!-- /others -->
+
+                </table-cell>
+            </table-row>
+
+    		</apex:repeat>
+
+		</table-body>
+	</table>
+
+    </apex:repeat>
+
+<!-- ungrouped -->
+    <apex:repeat var="showUngroupedLines" value="{!ungrouped.showUngroupedLines}">
+    <table table-layout="fixed" width="100%" margin-top="0pt" margin-bottom="0pt">
+        <table-column column-width="10%"/>
+        <table-column column-width="30%"/>
+        <table-column column-width="30%"/>
+        <table-column column-width="10%"/>
+        <table-column column-width="10%"/>
+        <table-column column-width="10%"/>
+
+        <table-header>
+        	
+            <table-row font-size="0.667em" font-weight="bold" text-align="center" color="#000000" background-color="#DCDCDC" keep-with-next.within-page="always">
+                <table-cell padding="2pt"><block>Catalog #</block></table-cell>
+                <table-cell text-align="center"><block>Description</block></table-cell>
+                <table-cell padding="2pt"><block>&nbsp;</block></table-cell>
+                <table-cell padding="2pt"><block>Quantity</block></table-cell>
+                <table-cell padding="2pt"><block>Price (ea)</block></table-cell>
+                <table-cell padding="2pt"><block>Total Price</block></table-cell>
+            </table-row>
+
+        </table-header>
+
+        <table-body>
+            <apex:repeat var="ungroupedLine" value="{!ungrouped.lineItems}">
+
+            <table-row font-size="0.667em" text-align="center" background-color="#ffffff" keep-with-next.within-page="always">
+                <table-cell padding="2pt">
+                        <block>{!HTMLENCODE(ungroupedLine.lineData.SBQQ__ProductName__c)}</block>
+                </table-cell>
+                <table-cell padding="2pt" text-align="center">
+                        <block>{!HTMLENCODE(ungroupedLine.lineData.SBQQ__Product__r.Description)}</block>
+                </table-cell>
+                <table-cell padding="2pt">
+                        <block>&nbsp;</block>
+                </table-cell>
+
+                <table-cell padding="2pt" text-align="center">
+                    <block><apex:outputText value="{0, number, ###,###,###,###}"><apex:param value="{!ungroupedLine.lineData.SBQQ__Quantity__c}"/></apex:outputText></block>                        
+                </table-cell>
+
+                <table-cell padding="2pt" text-align="center">
+                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!ungroupedLine.lineData.SBQQ__NetPrice__c}"/></apex:outputText></block>                        
+                </table-cell>
+
+                <table-cell padding="2pt" text-align="center">
+                 <block font-weight="bold"><apex:outputText value="{0, number, $###,###,###,###}"><apex:param value="{!ungroupedLine.lineData.SBQQ__NetTotal__c}"/></apex:outputText></block>                        
+                </table-cell>
+            </table-row>
+
+            <table-row height="{!ungroupedLine.lineNotesRowHeight}" font-size="0.667em" text-align="center" background-color="#ffffff">
+                <table-cell number-columns-spanned="6" padding="2pt" padding-left="20pt" text-align="left">
+                	<block>{!HTMLENCODE(ungroupedLine.lineData.Line_Notes__c)}</block>
+                </table-cell>
+            </table-row>
+
+            </apex:repeat> 
+
+        </table-body>
+    </table>
+    </apex:repeat>
+<!-- /ungrouped -->
+
+    </block>
+</apex:page>

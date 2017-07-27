@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>RP - GL Stationary District</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>RP - GL Stationary District</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>RP_Great_Lakes_Stationary</parentRole>
+</Role>

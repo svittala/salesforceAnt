@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Referenced Field --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Referenced Field --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Name of referenced field. --></help>
+        <label>Nom du champ</label>
+        <name>FieldName__c</name>
+    </fields>
+    <fields>
+        <label>Nom de l&apos;objet</label>
+        <name>ObjectName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of times this field is referenced. --></help>
+        <label>Nombre d&apos;utilisations</label>
+        <name>UsageCount__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

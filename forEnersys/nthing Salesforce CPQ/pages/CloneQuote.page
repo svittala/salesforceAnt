@@ -1,0 +1,6 @@
+<!-- This page is deprecated -->
+<apex:page standardController="SBQQ__Quote__c" extensions="SBQQ.QuoteExtController" showHeader="{!(!$Setup.GeneralSettings__c.GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" action="{!onOverrideClone}">
+    <apex:sectionHeader title="Clone Quote" subtitle="{!SBQQ__Quote__c.Name}"/>
+
+    <apex:pageMessages />   
+</apex:page>

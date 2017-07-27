@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- EnerSys legal entity that the employee works for --></help>
+        <label><!-- Company Code --></label>
+        <name>Company_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Region --></label>
+        <name>DB_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter the GM that you report too. --></help>
+        <label><!-- GM Approver --></label>
+        <name>GM__c</name>
+        <relationshipLabel><!-- Users (GM Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please enter the Marketing User that will approve quotes. --></help>
+        <label><!-- Marketing Approver --></label>
+        <name>Marketing_Approver__c</name>
+        <relationshipLabel><!-- Users (Marketing Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SAP Sales Rep # --></label>
+        <name>SAP_Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <help>Personnaliser l&apos;onglet par défaut de la page de référence produit.</help>
+        <label><!-- Default Product Lookup Tab --></label>
+        <name>SBQQ__DefaultProductLookupTab__c</name>
+        <picklistValues>
+            <masterLabel>Guided Selling</masterLabel>
+            <translation>Vente guidée</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Filters</masterLabel>
+            <translation>Filtres de recherche</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour autoriser cet utilisateur à changer le format de sortie des documents de devis.</help>
+        <label><!-- Allow Output Format Change --></label>
+        <name>SBQQ__OutputFormatChangeAllowed__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez « Suivi » pour afficher les produits que vous suivez dans Chatter avant d&apos;autres lors de l&apos;ajout à un devis.</help>
+        <label><!-- Product Sort Preference --></label>
+        <name>SBQQ__ProductSortPreference__c</name>
+        <picklistValues>
+            <masterLabel>Followed</masterLabel>
+            <translation>Suivi</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour effacer les filtres et les résultats de recherche chaque fois que vous ajoutez des produits à vos devis, sinon vos sélections antérieures sont conservées.</help>
+        <label><!-- Reset Product Lookup --></label>
+        <name>SBQQ__ResetProductLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Theme --></label>
+        <name>SBQQ__Theme__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBU --></label>
+        <name>SBU__c</name>
+    </fields>
+    <fields>
+        <label><!-- BaaN Sales Rep# --></label>
+        <name>Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start --></label>
+        <name>Start__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Select_Theme --></label>
+        <name>SBQQ__Select_Theme</name>
+    </webLinks>
+</CustomObjectTranslation>

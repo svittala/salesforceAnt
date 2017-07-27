@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ligne de devis Web</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lignes de devis Web</value>
+    </caseValues>
+    <fields>
+        <help><!-- Additional customer discount extended on this line item in the form of an absolute amount. --></help>
+        <label>Remise sup. (montant)</label>
+        <name>AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total additional discounts extended to this line item. Additional discount is defined as discount extended on top of volume discount or negotiated prices. --></help>
+        <label>Remise supplémentaire</label>
+        <name>AdditionalDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Additional quantity for this product that contributes to volume discount calculations. --></help>
+        <label>Quantité supplémentaire</label>
+        <name>AdditionalQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- If products are sold in batches, this stores the quantity in each batch, defaulted from the product. --></help>
+        <label>Quantité du lot</label>
+        <name>BatchQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Block Price record used to price this line item. --></help>
+        <label>Prix par bloc</label>
+        <name>BlockPrice__c</name>
+        <relationshipLabel>Lignes de devis Web</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates this line item represents a package - -  meaning it includes other line items in this quote. --></help>
+        <label>Package</label>
+        <name>Bundle__c</name>
+    </fields>
+    <fields>
+        <help><!-- For items with calculated quantities this field holds the original quantity entered by the user. --></help>
+        <label>Quantité d&apos;origine</label>
+        <name>BundledQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items have a zero price and do not allow price or quantity to be edited. --></help>
+        <label>Offre groupée</label>
+        <name>Bundled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total cost of components in this package. --></help>
+        <label>Coût du composant</label>
+        <name>ComponentCost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fixes additional discount for this component to the parent package discount. --></help>
+        <label>Composant avec remise par package</label>
+        <name>ComponentDiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total list amount of components in this configuration. This field is only populated if this line item references a configurable product. --></help>
+        <label>Liste totale des composants</label>
+        <name>ComponentListTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subscription scope set at the component level. This field overrides the subscription scope copied from the product. --></help>
+        <label>Étendue d&apos;abonnement au niveau composant</label>
+        <name>ComponentSubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation><!-- Components --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package</masterLabel>
+            <translation><!-- Package --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sum total amount of components in this configuration. This field is only populated if this line item references a configurable product. --></help>
+        <label>Total net des composants</label>
+        <name>ComponentTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fixes uplift for this component to the parent package uplift. Uplift only applies to multi-segmented products. --></help>
+        <label>Composant augmenté par package</label>
+        <name>ComponentUpliftedByPackage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the visibility of the component line item. --></help>
+        <label>Visibilité du composant</label>
+        <name>ComponentVisibility__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount rate compounded by quantity (historic). --></help>
+        <label>Remise composée (%)</label>
+        <name>CompoundDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox if the quote line requires configuration. Can be used by custom code to request this product be re-configured. --></help>
+        <label>Configuration requise</label>
+        <name>ConfigurationRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contracted price if the product has negotiated pricing for the opportunity&apos;s account. --></help>
+        <label>Prix contracté</label>
+        <name>ContractedPrice__c</name>
+        <relationshipLabel>Lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specifies whether cost can be edited on this line item. --></help>
+        <label>Coût modifiable</label>
+        <name>CostEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cost record used to cost this line item. --></help>
+        <label>Coût</label>
+        <name>Cost__c</name>
+        <relationshipLabel>Lignes de devis Web</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Customer unit price for the product quoted by this line item. This is the Net Unit Price excluding any partner discounts. --></help>
+        <label>Prix unitaire client</label>
+        <name>CustomerPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer total price for this quote line item. This is the Net Total excluding any partner discounts. --></help>
+        <label>Total du client</label>
+        <name>CustomerTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Term length of the subscription, which only applies if the product is a subscription. It is copied from the Subscription Term of the related product when the line item is first generated. --></help>
+        <label>Durée d&apos;abonnement par défaut</label>
+        <name>DefaultSubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for this line item. --></help>
+        <label>Description</label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- For MDQ products, each segment will be priced independently. --></help>
+        <label>Dimension de prix</label>
+        <name>Dimension__c</name>
+        <relationshipLabel>Lignes de devis Web</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Discount schedule type. Copied from Type field in associated discount schedule. --></help>
+        <label>Type de barème de remise</label>
+        <name>DiscountScheduleType__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation><!-- Range --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation><!-- Slab --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Discount schedule to be used in computing volume unit price. This field is copied from the corresponding product. --></help>
+        <label>Barème de remise</label>
+        <name>DiscountSchedule__c</name>
+        <relationshipLabel>Lignes de devis Web</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Discount tier used by this line item. This field is only populated if a volume discounted was applied and discount schedule is of type &quot;Range&quot;. --></help>
+        <label>Niveau de remise</label>
+        <name>DiscountTier__c</name>
+        <relationshipLabel>Lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Additional customer discount extended to this line item expressed in form of a percentage. --></help>
+        <label>Remise sup. (%)</label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Distributor discount applied to this line. --></help>
+        <label>Remise distributeur</label>
+        <name>DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Effective end date for this subscription. --></help>
+        <label>Date de fin effective</label>
+        <name>EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Effective quantity used in computing totals. Same as quantity unless the product is block priced or covered by &quot;Slab&quot; discount schedule. --></help>
+        <label>Quantité effective</label>
+        <name>EffectiveQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Effective start date for this subscription. --></help>
+        <label>Date de début effective</label>
+        <name>EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the service represented by this line item will end (only applies if product is a subscription). --></help>
+        <label>Date de fin</label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox if the customer already owns this product. This is typically used for products with options during add-on quoting. The product is on the quote solely to drive the Configurator. --></help>
+        <label>Existant</label>
+        <name>Existing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gross profit amount on this line item. --></help>
+        <label>Profit brut</label>
+        <name>GrossProfit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to hide this line item from generated PDF. --></help>
+        <label>Masqué</label>
+        <name>Hidden__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checbox to apply internal application logic, which controls when rules, such as validation rules, trigger. Do NOT add to page layout or otherwise update. --></help>
+        <label>Incomplète</label>
+        <name>Incomplete__c</name>
+    </fields>
+    <fields>
+        <help><!-- List unit price for the product quoted by this line item. --></help>
+        <label>Prix unitaire catalogue</label>
+        <name>ListPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- List total price for this quote line item. --></help>
+        <label>Total catalogue</label>
+        <name>ListTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Markup on this line item in the form of an absolute amount. --></help>
+        <label>Marge (montant)</label>
+        <name>MarkupAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Markup on this line item in the form of a percentage. --></help>
+        <label>Marge (%)</label>
+        <name>MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Markup amount on this item. This value is automatically calculated by applying markup rate or absolute amount, whichever is specified. --></help>
+        <label>Marge</label>
+        <name>Markup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum unit price for this product. Used to enforce price ceiling for products with dynamically calculated prices. --></help>
+        <label>Prix unitaire maximum</label>
+        <name>MaximumPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Minimum unit price for this product. Used to enforce price floor for products with dynamically calculated prices. --></help>
+        <label>Prix unitaire minimal</label>
+        <name>MinimumPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- List unit price for the product quoted by this line item. --></help>
+        <label>Prix unitaire net</label>
+        <name>NetPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Net total price for this quote line item. --></help>
+        <label>Total net</label>
+        <name>NetTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to indicate if discounts are allowed on this line item. --></help>
+        <label>Sans remise possible</label>
+        <name>NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to make this line item non-discountable for partners. --></help>
+        <label>Sans remise partenaire possible</label>
+        <name>NonPartnerDiscountable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number indicating this line&apos;s position within its group or quote. --></help>
+        <label>Numéro</label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount extended on this product because it&apos;s part of a package. --></help>
+        <label>Remise de l&apos;option (montant)</label>
+        <name>OptionDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this line is for an optional SKU, this field captures any discount given to the package and extended to the option. --></help>
+        <label>Remise de l&apos;option (%)</label>
+        <name>OptionDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates nest level of this option (only applies to lines that are generated from options). --></help>
+        <label>Niveau de l&apos;option</label>
+        <name>OptionLevel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Option type copied from related Product Option. Determines how quantity is calculated. --></help>
+        <label>Type d&apos;option</label>
+        <name>OptionType__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation><!-- Accessory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation><!-- Component --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to make this line optional. Optional line items don&apos;t contribute to quote totals and are not transferred to the Opportunity. --></help>
+        <label>Facultatif</label>
+        <name>Optional__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total cost for this package including the cost of its components. --></help>
+        <label>Coût du package</label>
+        <name>PackageCost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total list price of this package including its components. --></help>
+        <label>Total catalogue du package</label>
+        <name>PackageListTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically generated list of product codes for each component in this package. --></help>
+        <label>Code produit du package</label>
+        <name>PackageProductCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total price of this package including its components. --></help>
+        <label>Total du package</label>
+        <name>PackageTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Partner discounts are applied after all automatic and discretionary discounts. The partner discount is taken into account in the Partner Price. --></help>
+        <label>Remise partenaire</label>
+        <name>PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Partner unit price. Price after partner discount but before distributor discount. --></help>
+        <label>Prix unitaire partenaire</label>
+        <name>PartnerPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Partner total --></help>
+        <label>Total du partenaire</label>
+        <name>PartnerTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to indicate that this line item&apos;s price is editable. --></help>
+        <label>Prix modifiable</label>
+        <name>PriceEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to specify that the pricing method can be edited on this line item. --></help>
+        <label>Méthode de tarification modifiable</label>
+        <name>PricingMethodEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates how the price for this line item is calculated: List, by subtracting discount from list price or Cost, by adding markup to cost. --></help>
+        <label>Méthode de tarification</label>
+        <name>PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation><!-- Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation><!-- Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Combined quantity of this product from prior purchases. --></help>
+        <label>Quantité précédente</label>
+        <name>PriorQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Code for the product referenced by this line. --></help>
+        <label>Code produit</label>
+        <name>ProductCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Family for the product referenced by this line item. --></help>
+        <label>Famille de produits</label>
+        <name>ProductFamily__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name for the product referenced by this line item. --></help>
+        <label>Nom du produit</label>
+        <name>ProductName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product option that generated this line (if any). --></help>
+        <label>Option produit</label>
+        <name>ProductOption__c</name>
+        <relationshipLabel>Lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product quoted by this line item. --></help>
+        <label>Produit</label>
+        <name>Product__c</name>
+        <relationshipLabel>Lignes de devis Web</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Calculated ratio used to compute Prorated Price. --></help>
+        <label>Multiplicateur au prorata</label>
+        <name>ProrateMultiplier__c</name>
+    </fields>
+    <fields>
+        <help><!-- Prorated list unit price. --></help>
+        <label>Prix catalogue au prorata</label>
+        <name>ProratedListPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Prorated price for the product quoted by this line item. This price will only differ from Special Price if the product is a subscription and the line item is being prorated. --></help>
+        <label>Prix unitaire au prorata</label>
+        <name>ProratedPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quantity of the line item being quoted. --></help>
+        <label>Quantité</label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent quote record. --></help>
+        <label>Devis</label>
+        <name>Quote__c</name>
+        <relationshipLabel>Lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Unit price before additional discounts are applied. --></help>
+        <label>Prix unitaire normal</label>
+        <name>RegularPrice__c</name>
+    </fields>
+    <fields>
+        <label>Total normal</label>
+        <name>RegularTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this line item represents a product being renewed. This field should not be modified. --></help>
+        <label>Renouvellement</label>
+        <name>Renewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Asset being renewed if this line item represents a product renewal. --></help>
+        <label>Ressource renouvelée</label>
+        <name>RenewedAsset__c</name>
+        <relationshipLabel>Lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Subscription being renewed by this quote line. --></help>
+        <label>Abonnement renouvelé</label>
+        <name>RenewedSubscription__c</name>
+        <relationshipLabel>Lignes de devis Web</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates which other product on this quote requires it. --></help>
+        <label>Requis par</label>
+        <name>RequiredBy__c</name>
+        <relationshipLabel>Lignes de devis</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- For multi-segmented Products, Index representing this Quote Line&apos;s position in the segment table. --></help>
+        <label>Index de segments</label>
+        <name>SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <help><!-- This represents the segment that contains a unique value. --></help>
+        <label>Clés du segment</label>
+        <name>SegmentKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Column header label associated with this line. --></help>
+        <label>Étiquette du segment</label>
+        <name>SegmentLabel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Source quote line item of cloned quote line item, if any. --></help>
+        <label>Source</label>
+        <name>Source__c</name>
+        <relationshipLabel>Lignes de devis Web (source)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of the Discount Tier or Contacted Price applied to get the special price for this line item. --></help>
+        <label>Description du prix spécial</label>
+        <name>SpecialPriceDescription__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of special pricing extended. --></help>
+        <label>Type de prix spécial</label>
+        <name>SpecialPriceType__c</name>
+        <picklistValues>
+            <masterLabel>Contracted Price</masterLabel>
+            <translation><!-- Contracted Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volume Discount</masterLabel>
+            <translation><!-- Volume Discount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Special unit price for this line item, such as volume discount or contracted price. --></help>
+        <label>Prix spécial</label>
+        <name>SpecialPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date the subscription for which this product begins. --></help>
+        <label>Date de début</label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of assets covered by this subscription line item. Do not update unless instructed. --></help>
+        <label>ID des ressources abonnées</label>
+        <name>SubscribedAssetIds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if subscription pricing uses List, Customer, or Net price. --></help>
+        <label>Base de l&apos;abonnement</label>
+        <name>SubscriptionBase__c</name>
+    </fields>
+    <fields>
+        <help><!-- Category defined on the product to limit percent-of-total calculations to certain products. --></help>
+        <label>Catégorie d&apos;abonnement</label>
+        <name>SubscriptionCategory__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation><!-- Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation><!-- Software --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Percent of non-subscription product total to be used when calculating this line item price. --></help>
+        <label>Pourcentage d&apos;abonnement</label>
+        <name>SubscriptionPercent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines how the subscription price is calculated. If this is blank, the line items is not a subscription product. --></help>
+        <label>Tarification de l&apos;abonnement</label>
+        <name>SubscriptionPricing__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Price</masterLabel>
+            <translation><!-- Fixed Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation><!-- Percent Of Total --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Determines how dynamic subscription prices are calculated: Quote uses all the non-subscription products in the quote while Group uses only non-subscription products in the same group. --></help>
+        <label>Étendue de l&apos;abonnement</label>
+        <name>SubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Price of the subscription target product on which maintenance should calculate. --></help>
+        <label>Prix cible de l&apos;abonnement</label>
+        <name>SubscriptionTargetPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Term for the subscription product in this line. If the product is not a subscription this value has no effect. --></help>
+        <label>Durée d&apos;abonnement</label>
+        <name>SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to indicate that the line item is taxable. --></help>
+        <label>Soumis à taxe</label>
+        <name>Taxable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Schedule for discounts based on subscription term. --></help>
+        <label>Barème de remise sur la durée</label>
+        <name>TermDiscountSchedule__c</name>
+        <relationshipLabel>Lignes de devis Web (avec remise sur la durée)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Tier within the term discount schedule used to discount this line item. --></help>
+        <label>Niveau de remise sur la durée</label>
+        <name>TermDiscountTier__c</name>
+        <relationshipLabel>Lignes de devis Web (avec remise sur la durée)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Discount calculated by applying subscription term against term discount schedule. --></help>
+        <label>Remise sur la durée</label>
+        <name>TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total discount for this line item including volume discount, contracted discount, and additional discount. --></help>
+        <label>Remise totale (montant)</label>
+        <name>TotalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cost for one unit of product quoted on this line item. --></help>
+        <label>Coût unitaire</label>
+        <name>UnitCost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Asset upgraded by this quote line. When the quote is contracted this asset&apos;s Usage End Date will be populated to indicate that it&apos;s retired. --></help>
+        <label>Ressource mise à niveau</label>
+        <name>UpgradedAsset__c</name>
+        <relationshipLabel>Lignes de devis Web (mettre à niveau)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Subscription upgraded by this quote line. When the quote is contracted this subscription&apos;s Terminated Date field will be populated. --></help>
+        <label>Abonnement mis à niveau</label>
+        <name>UpgradedSubscription__c</name>
+        <relationshipLabel>Lignes de devis Web (mettre à niveau)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is measured as a currency amount. --></help>
+        <label>Augmentation (montant)</label>
+        <name>UpliftAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter this as a percent. --></help>
+        <label>Augmentation</label>
+        <name>Uplift__c</name>
+    </fields>
+    <fields>
+        <help><!-- Volume discount amount applied to this line item. --></help>
+        <label>Remise sur volume</label>
+        <name>VolumeDiscount__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Web Quote Line Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Information --></label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Information --></label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Subscription Information --></label>
+            <section>Subscription Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>N° de ligne de devis</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

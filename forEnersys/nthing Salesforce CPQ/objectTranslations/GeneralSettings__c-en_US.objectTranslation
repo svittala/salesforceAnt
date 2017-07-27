@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>General Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>General Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Choose to place the Delete and Edit actions to the Left or the Right of the line items in the Line Editor. --></help>
+        <label><!-- Actions Column Placement --></label>
+        <name>ActionsColumnPlacement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to disable Add Subscriptions button on renewal quotes. --></help>
+        <label><!-- Disable Add Subscriptions --></label>
+        <name>AddSubscriptionsDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to allow non-consecutive custom segments for custom price dimensions. If this checkbox is unchecked the start date of each segment must be the day after the previous segment&apos;s end date --></help>
+        <label><!-- Allow Non-Consecutive Custom Segments --></label>
+        <name>AllowNonConsecutiveCustomSegments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow generate document in different languages. --></help>
+        <label><!-- Allow Output In Different Languages --></label>
+        <name>AllowOutputInDifferentLanguages__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to allow the user to enter a target value in Net Amount and automatically calculate the line discount. --></help>
+        <label><!-- Allow Target Net Amount on Quote Line --></label>
+        <name>AllowTargetAmountQuoteLine__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to require primary quote to be approved before order can be created. --></help>
+        <label><!-- Require Approved Quote --></label>
+        <name>ApprovedQuoteRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to enable asset upgrades by adding Upgrade Assets button to Edit Lines page. --></help>
+        <label><!-- Enable Asset Upgrades --></label>
+        <name>AssetUpgradesEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose target object if you want to save generated quote documents as attachments in addition to saving in Documents tab. --></help>
+        <label><!-- Attachment Target Object --></label>
+        <name>AttachmentTargetObject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify an Apex class implementing BillingPlugin interface. --></help>
+        <label><!-- Billing Plugin --></label>
+        <name>BillingPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the base URL of the BrickRest app. Do not change unless instructed by Salesforce CPQ Support. --></help>
+        <label><!-- BrickRest URL --></label>
+        <name>BrickRestUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to include components when using drag and drop to move a bundle. --></help>
+        <label><!-- Keep Bundle Together --></label>
+        <name>BundleKeptTogether__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to disable the real-time calculations on the Edit Lines page, performing all calculations on Save. --></help>
+        <label><!-- Calculate Immediately --></label>
+        <name>CalculateImmediately__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option to keep the Search Filter Panel closed by default. --></help>
+        <label><!-- Close Search Filter By Default --></label>
+        <name>CloseSearchFilterByDefault__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to create contracts in the foreground rather than a background process.  Running in the foreground increases the risk of a CPU timeout during processing. --></help>
+        <label><!-- Contract In Foreground --></label>
+        <name>ContractInForeground__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a currency symbol to be used on generated PDF documents and Edit Lines screen. Only applies to organizations with no multi-currency. --></help>
+        <label><!-- Currency Symbol --></label>
+        <name>CurrencySymbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Configuration Validator --></label>
+        <name>CustomConfigurationValidator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The default order start date.  If none is specified, the registered Order Management Plugin implementation will be used to retrieve the order start date. --></help>
+        <label><!-- Default Order Start Date --></label>
+        <name>DefaultOrderStartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify how long quotes should remain valid by default. --></help>
+        <label><!-- Default Quote Validity (Days) --></label>
+        <name>DefaultQuoteValidity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to disable the auto refresh of standard object pages upon the completion of its background quote calculation triggered during a save. Auto refresh is always disabled in the Lightning UI or SalesForce1. --></help>
+        <label><!-- Disable Background Calculation Refresh --></label>
+        <name>DisableBackgroundQuoteCalcRefresh__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to allow documents to be posted to feed rather than saved as regular attachments. --></help>
+        <label><!-- Post Document To Feed --></label>
+        <name>DocumentAttachmentPosted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the folder where generated documents will be placed. --></help>
+        <label><!-- Document Folder Id --></label>
+        <name>DocumentFolderId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to hide document name when generating quote documents. --></help>
+        <label><!-- Hide Document Name --></label>
+        <name>DocumentNameHidden__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the Endpoint of document Web Service. Do not change unless instructed by Salesforce Support. --></help>
+        <label><!-- Document Service Endpoint --></label>
+        <name>DocumentServiceEndpoint__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify an Apex class implementing DocumentStore interface. --></help>
+        <label><!-- Document Store Plugin --></label>
+        <name>DocumentStorePlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify an Apex class implementing ElectronicSignaturePlugin interface. --></help>
+        <label><!-- Electronic Signature Plugin --></label>
+        <name>ElectronicSignaturePlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- URL of external configurator, opened when configuring a Product marked as Externally Configurable --></help>
+        <label><!-- External Configurator URL --></label>
+        <name>ExternalConfiguratorURL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to display quote document preview in full page. --></help>
+        <label><!-- Full Page Preview --></label>
+        <name>FullPagePreview__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines whether the custom permission HideGlobalHeader should be enforced for non-administrative pages. --></help>
+        <label><!-- Use Global Header Permission --></label>
+        <name>GlobalHeaderPermUsed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose a field from the SolutionGroups object to use for group description. --></help>
+        <label><!-- Group Description Field --></label>
+        <name>GroupDescriptionField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose a field from the SolutionGroups object to use for group name. --></help>
+        <label><!-- Group Name Field --></label>
+        <name>GroupNameField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to require group name be entered on Edit Lines page. --></help>
+        <label><!-- Require Group Name --></label>
+        <name>GroupNameRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the object to use as the SolutionGroups list. --></help>
+        <label><!-- Group Object Name --></label>
+        <name>GroupObjectName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Field to sum and display as the Quote Line Editor&apos;s Group Subtotal --></help>
+        <label><!-- Group Subtotals Field --></label>
+        <name>GroupSubtotalsField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Exclude hidden lines when calculating group totals in a quote document. --></help>
+        <label><!-- Exclude Hidden Lines In Group Totals --></label>
+        <name>HiddenLinesExcludedInTotals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to use inactive product prices. --></help>
+        <label><!-- Use Inactive Prices --></label>
+        <name>InactivePricesUsed__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, net-new Products added to a Renewal or Amendment will be included when calculating the price of any Percent of Total Subscriptions being renewed or amended. --></help>
+        <label><!-- Include Net-new Products in Maintenance --></label>
+        <name>IncludeNewProductsInMaintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to prevent default behavior of adding standalone Opportunity Product line items on an Opportunity as Quote line items to the initial Quote created from that Opportunity. --></help>
+        <label><!-- Disable Initial Quote Sync --></label>
+        <name>InitialQuoteSyncDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Custom Script object that contains the Javascript Quote Calculator Plugin --></help>
+        <label><!-- Quote Calculator Plugin --></label>
+        <name>JSQuoteCalculatorPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the OAuth refresh token used to mass generate and send quote documents. --></help>
+        <label><!-- Mass Document Refresh Token --></label>
+        <name>MassDocumentRefreshToken__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the username of the user who executes mass generation and send of quote documents. --></help>
+        <label><!-- Mass Document User Name --></label>
+        <name>MassDocumentUserName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to enable deletion of multiple lines in Line Editor. --></help>
+        <label><!-- Enable Multi Line Delete --></label>
+        <name>MultiLineDeleteEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the view in the Configurator when modifying multiple bundles. Wizard displays each configured product separately, and allows the multiple layouts (Tabs, Categories, etc.). Classic displays all configured products on one page with a Section layout. --></help>
+        <label><!-- Multiple Bundles View --></label>
+        <name>MultipleBundlesView__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to allow multiple orders to be generated from the same quote. --></help>
+        <label><!-- Allow Multiple Orders --></label>
+        <name>MultipleOrdersAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to allow product options used on prior quotes to be deleted. --></help>
+        <label><!-- Allow Option Deletion --></label>
+        <name>OptionDeletionAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Apex class which implements SBQQ__OrderManagementPlugin interface. --></help>
+        <label><!-- Order Management Plugin --></label>
+        <name>OrderPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify implementation of PageSecurityPlugin interface to override field security in custom pages. --></help>
+        <label><!-- Legacy Page Security Plugin --></label>
+        <name>PageSecurityPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to maintain bundle hierarchy on renewal quotes and amendments. --></help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>PreserveBundleUponRenewals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to keep opportunity products created by primary quote after it&apos;s no longer primary. --></help>
+        <label><!-- Primary Quote Keeps Opportunity Products --></label>
+        <name>PrimaryQuoteKeepsOpportunityProducts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of a custom Visualforce page that will be invoked on every configurable product to initialize the options. --></help>
+        <label><!-- Product Configuration Initializer --></label>
+        <name>ProductConfigurationInitializer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose a field from the Product object to use for product description. --></help>
+        <label><!-- Product Description Field --></label>
+        <name>ProductDescriptionField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to indent the components of product bundles, including nested bundles. --></help>
+        <label><!-- Visualize Product Hierarchy --></label>
+        <name>ProductHierarchyVisualized__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose a field from the Product Object that will be used to group product search results. --></help>
+        <label><!-- Product Results Group Field Name --></label>
+        <name>ProductResultsGroupFieldName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify an Apex class that supplies customization of search functionality in Product Lookup. This class must implement SBQQ.ProductSearchPlugin interface. --></help>
+        <label><!-- Product Search Plugin --></label>
+        <name>ProductSearchPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the decimal places to use for standard quantity fields when viewing quotes. --></help>
+        <label><!-- Quantity Scale --></label>
+        <name>QuantityScale__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to more quickly calculate quotes, where price rules are not used, Rollup Summary fields are not displayed in the line editor, and line-level formula fields that depend on parent relationships are not displayed. --></help>
+        <label><!-- Enable Quick Calculate --></label>
+        <name>QuickCalculateEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to disable defaulting of address when quote is created. --></help>
+        <label><!-- Disable Quote Address Defaulting --></label>
+        <name>QuoteAddressDefaultingDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify a custom Apex class for further customizing quote calculations. This class must implement QuoteCalculatorPlugin interface. --></help>
+        <label><!-- Legacy Quote Calculator Plugin --></label>
+        <name>QuoteCalculatorPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to disable defaulting of quote contact from primary contact role on the opportunity. --></help>
+        <label><!-- Disable Quote Contact Defaulting --></label>
+        <name>QuoteContactDefaultingDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Re-evaluate Bundle Logic on Renewals. --></help>
+        <label><!-- Re-evaluate Bundle Logic on Renewals --></label>
+        <name>ReevaluateBundleLogicOnRenewals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose Asset Based to make renewals based off of an Account&apos;s Assets, or choose Contract Based to make renewals based off of Contracts created from a Quote. --></help>
+        <label><!-- Renewal Model --></label>
+        <name>RenewalModel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to treat all non-subscription lines on renewal quotes as renewed products. This option essentially disables add-ons on renewal quotes since all non-subscription lines will have its price zeroed out. --></help>
+        <label><!-- Allow Renewal Quotes Without Assets --></label>
+        <name>RenewalQuotesWithoutAssetsAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to hide line items for renewed assets in Edit Lines page. --></help>
+        <label><!-- Hide Renewed Assets When Editing --></label>
+        <name>RenewedAssetsHiddenWhenEditing__c</name>
+    </fields>
+    <fields>
+        <help><!-- When using the legacy calculator, run calculations in a separate thread. --></help>
+        <label><!-- Run Calculator In Background --></label>
+        <name>RunCalculatorInBackground__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to enable SolutionGroups. --></help>
+        <label><!-- Solution Groups Enabled --></label>
+        <name>SolutionGroupsEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables sorting of products in product search in memory, speeding up the page for customers with large pricebooks. --></help>
+        <label><!-- Sort Products In Memory --></label>
+        <name>SortProductsInMemory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the OAuth refresh token for the Salesforce CPQ connected app. Used by Salesforce CPQ shared services to allow access into this SFDC Org. --></help>
+        <label><!-- Salesforce CPQ App Refresh Token --></label>
+        <name>SteelBrickConnAppRefreshToken__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose whether subscription pricing will be prorated by the day or the month. --></help>
+        <label><!-- Subscription Prorate Precision --></label>
+        <name>SubscriptionProratePrecision__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose whether length of the susbscription should be entered in days or months. --></help>
+        <label><!-- Subscription Term Unit --></label>
+        <name>SubscriptionTermUnit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Field to sum and display as the Line Editor&apos;s Quote Line Subtotal. Best practice is to select a Unit field such as Net Unit Price, Customer Unit Price, Regular Unit Price, etc. --></help>
+        <label><!-- Line Subtotals Total Field --></label>
+        <name>SubtotalsField__c</name>
+    </fields>
+    <fields>
+        <help><!-- The general Theme applied to all users. User assigned themes will overwrite the values established here. --></help>
+        <label><!-- Theme --></label>
+        <name>Theme__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Field to sum and display as the Line Editor Total --></help>
+        <label><!-- Totals Field --></label>
+        <name>TotalsField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to temporarily disable all triggers for a data migration or other processes that you do not want to execute all Salesforce CPQ triggers. Remember to re-enable triggers after this process so that the application can perform as expected. --></help>
+        <label><!-- Triggers Disabled --></label>
+        <name>TriggersDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Scale for unit prices. Fractional prices will be rounded off to this many decimal places. --></help>
+        <label><!-- Unit Price Scale --></label>
+        <name>UnitPriceScale__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to use the Legacy Quote Calculator. --></help>
+        <label><!-- Use Legacy Calculator --></label>
+        <name>UseLegacyCalculator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to use the Legacy User Interface. --></help>
+        <label><!-- Use Legacy UI --></label>
+        <name>UseLegacyUI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option to use the new Client-side Calculator in the Quote Line Editor. --></help>
+        <label><!-- UsesClientCalculator --></label>
+        <name>UsesClientCalculator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to allow Quote Line Editor buttons to wrap rather than collapse within smaller windows. --></help>
+        <label><!-- Wrap Buttons --></label>
+        <name>WrapButtons__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

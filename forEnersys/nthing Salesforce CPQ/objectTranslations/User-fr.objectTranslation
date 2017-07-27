@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Customize default tab in Product Lookup page. --></help>
+        <label>Onglet de référence produit par défaut</label>
+        <name>DefaultProductLookupTab__c</name>
+        <picklistValues>
+            <masterLabel>Guided Selling</masterLabel>
+            <translation><!-- Guided Selling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Filters</masterLabel>
+            <translation><!-- Search Filters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to allow this user to change output format of quote documents. --></help>
+        <label>Autoriser changement de format de sortie</label>
+        <name>OutputFormatChangeAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Followed&quot; to display products you follow in Chatter before others when adding to quote. --></help>
+        <label>Préférence de tri des produits</label>
+        <name>ProductSortPreference__c</name>
+        <picklistValues>
+            <masterLabel>Followed</masterLabel>
+            <translation><!-- Followed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to clear search filters and results every time you add products to your quotes. Otherwise, your previous selections are kept. --></help>
+        <label>Réinitialiser la référence produit</label>
+        <name>ResetProductLookup__c</name>
+    </fields>
+    <fields>
+        <label>Thème</label>
+        <name>Theme__c</name>
+    </fields>
+    <webLinks>
+        <label>Sélectionner un thème</label>
+        <name>Select_Theme</name>
+    </webLinks>
+</CustomObjectTranslation>

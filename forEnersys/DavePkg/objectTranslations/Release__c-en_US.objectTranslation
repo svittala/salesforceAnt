@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Release</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Releases</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- SUM of Man Hours on related I&amp;Es --></help>
+        <label><!-- Total Man Hours --></label>
+        <name>Total_Man_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sprint</masterLabel>
+            <translation><!-- Sprint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Count of I&amp;Es associated with this release --></help>
+        <label><!-- # of Items --></label>
+        <name>of_Items__c</name>
+    </fields>
+    <layouts>
+        <layout>Release Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If selecting &quot;Monthly&quot; as the release type, please select a month. --></errorMessage>
+        <name>Require_Month_if_Type_Equals_Monthly</name>
+    </validationRules>
+</CustomObjectTranslation>

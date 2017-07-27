@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Thème</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Thèmes</value>
+    </caseValues>
+    <fields>
+        <label>Couleur de police désactivée de l&apos;icône</label>
+        <name>AccentIconDisabledFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police de l&apos;icône</label>
+        <name>AccentIconFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police de survol de l&apos;icône</label>
+        <name>AccentIconHoverFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Valeurs masquées</label>
+        <name>CompiledCSS__c</name>
+    </fields>
+    <fields>
+        <label>Couleur d&apos;arrière-plan de détail</label>
+        <name>DetailColor__c</name>
+    </fields>
+    <fields>
+        <label>ID du document</label>
+        <name>DocumentId__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de bordure générale</label>
+        <name>GeneralBorderColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur d&apos;arrière-plan générale</label>
+        <name>GeneralColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police générale</label>
+        <name>GeneralFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de bouton du groupe</label>
+        <name>GroupButtonBorderColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de bouton du groupe</label>
+        <name>GroupButtonColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur police désactivée bouton groupe</label>
+        <name>GroupButtonDisabledFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police de bouton du groupe</label>
+        <name>GroupButtonFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de survol de bouton du groupe</label>
+        <name>GroupButtonHoverColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police de survol bout. groupe</label>
+        <name>GroupButtonHoverFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de bordure de l&apos;en-tête</label>
+        <name>HeaderBorderColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur d&apos;en-tête</label>
+        <name>HeaderColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police de l&apos;en-tête</label>
+        <name>HeaderFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police de l&apos;en-tête</label>
+        <name>HeaderSecondaryFontColor__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, will hide the icon square located on the left side of custom page headers. --></help>
+        <label>Masquer les en-têtes de colonne ?</label>
+        <name>HideIcons__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police de l&apos;icône</label>
+        <name>IconFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de bouton principale</label>
+        <name>PrimaryButtonColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police de bouton principale</label>
+        <name>PrimaryButtonFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de survol de bouton principale</label>
+        <name>PrimaryButtonHoverColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police secondaire</label>
+        <name>SecondaryFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur d&apos;en-tête secondaire</label>
+        <name>SecondaryHeaderColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur sélectionnée de l&apos;onglet</label>
+        <name>TabSelectedColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de police d&apos;en-tête du tableau</label>
+        <name>TableHeaderFontColor__c</name>
+    </fields>
+    <fields>
+        <label>Couleur de survol de ligne du tableau</label>
+        <name>TableRowHoverColor__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du thème</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<apex:page standardController="Order">
+    <flow:interview name="Order_Validation" finishLocation="/{!Order.Id}">
+        <apex:param name="varOrderID" value="{!Order.Id}"/>
+         <apex:param name="varSend"  value="False"/>
+    </flow:interview>
+</apex:page>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote Document</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quote Documents</value>
+    </caseValues>
+    <fields>
+        <help><!-- ID of attachment record generated for this document. --></help>
+        <label><!-- Attachment Id --></label>
+        <name>AttachmentId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer amount on the quote at the time this document was generated. --></help>
+        <label><!-- Customer Amount --></label>
+        <name>CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- ID of the Document record which contains its generated PDF. --></help>
+        <label><!-- Document Id --></label>
+        <name>DocumentId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field for the document to be signed electronically. --></help>
+        <label><!-- Electronic Signature --></label>
+        <name>ElectronicSignature__c</name>
+    </fields>
+    <fields>
+        <help><!-- Key used to ensure unique combination of quote ID and version number. --></help>
+        <label><!-- Key --></label>
+        <name>Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- List amount of the quote at the time this document was generated. --></help>
+        <label><!-- List Amount --></label>
+        <name>ListAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Net amount on the quote at the time this document was generated. --></help>
+        <label><!-- Net Amount --></label>
+        <name>NetAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the Opportunity that parents the Quote for this document. --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Choose the output format for this document. --></help>
+        <label><!-- Output Format --></label>
+        <name>OutputFormat__c</name>
+        <picklistValues>
+            <masterLabel>MS Word</masterLabel>
+            <translation><!-- MS Word --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation><!-- PDF --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- References the primary contact for the quote to be used on the Email button, which defaults the To field. --></help>
+        <label><!-- Primary Contact Id --></label>
+        <name>PrimaryContactId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quote Template that generated this document. --></help>
+        <label><!-- Quote Template --></label>
+        <name>QuoteTemplate__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Quote to which this Quote Document belongs. --></help>
+        <label><!-- Quote --></label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Status of electronic signature. --></help>
+        <label><!-- Signature Status --></label>
+        <name>SignatureStatus__c</name>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revoked</masterLabel>
+            <translation><!-- Revoked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Name of the template used to generate this document. --></help>
+        <label><!-- Template --></label>
+        <name>Template__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sequentially incremented version number. --></help>
+        <label><!-- Version --></label>
+        <name>Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows user to view the Quote Document Record Id. --></help>
+        <label><!-- View Record Id --></label>
+        <name>ViewRecordId__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Document Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Email --></label>
+        <name>Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View --></label>
+        <name>View</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Discount Category</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Discount Categories</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter the maximum allowable discount for this product category. --></help>
+        <label><!-- Max Discount (%) --></label>
+        <name>MaxDiscountRate__c</name>
+    </fields>
+    <layouts>
+        <layout>Discount Category Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

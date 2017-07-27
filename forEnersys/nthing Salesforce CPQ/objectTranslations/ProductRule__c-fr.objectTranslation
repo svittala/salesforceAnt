@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Règle de produit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Règles de produit</value>
+    </caseValues>
+    <fields>
+        <help><!-- Indicates whether this rule is active or inactive. --></help>
+        <label>Active</label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can only be entered if the Conditions Met is Custom. Enter a combination of the Error Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125). --></help>
+        <label>Condition avancée</label>
+        <name>AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR. --></help>
+        <label>Conditions remplies</label>
+        <name>ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation><!-- Any --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a message to displayed when rule is activated.  An error message will be displayed when a Validations is fired.  A warning message will be displayed when an Alert is fired. Does not apply to Filter rules. --></help>
+        <label>Message</label>
+        <name>ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify when this rule should be evaluated. --></help>
+        <label>Événement d&apos;évaluation</label>
+        <name>EvaluationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Load</masterLabel>
+            <translation><!-- Load --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save</masterLabel>
+            <translation><!-- Save --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the order of evaluation for this price rule. Higher ordered rules are evaluated last which means they &quot;win&quot; in case of conflict. --></help>
+        <label>Ordre d&apos;évaluation</label>
+        <name>EvaluationOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applies the rule to the entire quote or specific product. --></help>
+        <label>Étendue</label>
+        <name>Scope__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Type of rule. Validation displays error messages. Selection causes products to be added or suggested. Alert displays a warning, but requires no rectification. Filter refines option lookup results for Dynamic Bundles. --></help>
+        <label>Type</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Alert</masterLabel>
+            <translation><!-- Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filter</masterLabel>
+            <translation><!-- Filter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selection</masterLabel>
+            <translation><!-- Selection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validation</masterLabel>
+            <translation><!-- Validation --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Product Rule Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la règle produit</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Le champ « Étendue » doit pointer vers « Produits » pour le type de règle produit Filtre.</errorMessage>
+        <name>FilterTypeScope</name>
+    </validationRules>
+    <webLinks>
+        <label>Cloner avec associé</label>
+        <name>CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

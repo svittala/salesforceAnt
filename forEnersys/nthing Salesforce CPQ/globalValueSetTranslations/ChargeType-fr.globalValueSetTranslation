@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>One-Time</masterLabel>
+        <translation><!-- One-Time --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Recurring</masterLabel>
+        <translation><!-- Recurring --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Usage</masterLabel>
+        <translation><!-- Usage --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

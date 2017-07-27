@@ -1,0 +1,5 @@
+<apex:page standardController="Opportunity" extensions="RentalQuoteVFController">
+    <flow:interview name="CreateRentalQuotation" interview="{!myflow}" finishlocation="{!finishLocation}">
+        <apex:param name="OpportunityID" value="{!Opportunity.Id}"/>
+    </flow:interview>
+</apex:page>

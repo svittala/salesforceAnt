@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configurator API Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurator API Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Base Launch URL BSP --></label>
+        <name>Base_Launch_URL_BSP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Launch URL OEMSpec --></label>
+        <name>Base_Launch_URL_OEMSpec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Launch URL PSR --></label>
+        <name>Base_Launch_URL_PSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Config Receipts Max Count --></label>
+        <name>Config_Receipts_Max_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Config Receipts Window Hours --></label>
+        <name>Config_Receipts_Window_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number Accessories --></label>
+        <name>Dummy_Part_Number_Accessories__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number Battery --></label>
+        <name>Dummy_Part_Number_Battery__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number Cabinet --></label>
+        <name>Dummy_Part_Number_Cabinet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number Charger --></label>
+        <name>Dummy_Part_Number_Charger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number Default --></label>
+        <name>Dummy_Part_Number_Default__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number DisconnectSwitch --></label>
+        <name>Dummy_Part_Number_DisconnectSwitch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number Kit --></label>
+        <name>Dummy_Part_Number_Kit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number Optional --></label>
+        <name>Dummy_Part_Number_Optional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number Rack --></label>
+        <name>Dummy_Part_Number_Rack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Part Number SpillContainment --></label>
+        <name>Dummy_Part_Number_SpillContainment__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

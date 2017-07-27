@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lookup Query</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lookup Queries</value>
+    </caseValues>
+    <fields>
+        <help><!-- API Name of the custom field used in the query. --></help>
+        <label><!-- Lookup Field --></label>
+        <name>LookupField__c</name>
+        <picklistValues>
+            <masterLabel>Item_Group_Maximum__c</masterLabel>
+            <translation><!-- Item_Group_Maximum__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item_Group_Minimum__c</masterLabel>
+            <translation><!-- Item_Group_Minimum__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOB_Number__c</masterLabel>
+            <translation><!-- LOB_Number__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBQQ__Category__c</masterLabel>
+            <translation><!-- SBQQ__Category__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If Match Type = Field Value, select a Tested Object and Tested Field. If Match Type = Static Value, enter the value into Tested Value. --></help>
+        <label><!-- Match Type --></label>
+        <name>MatchType__c</name>
+        <picklistValues>
+            <masterLabel>Field Value</masterLabel>
+            <translation><!-- Field Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Value</masterLabel>
+            <translation><!-- Static Value --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The operator that is applied when comparing the Field with the Value. --></help>
+        <label><!-- Operator --></label>
+        <name>Operator__c</name>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation><!-- greater or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation><!-- greater than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation><!-- less or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation><!-- less than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation><!-- not equals --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Rule --></label>
+        <name>PriceRule__c</name>
+        <relationshipLabel><!-- Lookup Queries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Rule Lookup Object --></label>
+        <name>RuleLookupObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field on Quote or Quote Line object that is evaluated by this query. Required if Match Type = Field Value. --></help>
+        <label><!-- Tested Field --></label>
+        <name>TestedField__c</name>
+        <picklistValues>
+            <masterLabel>Item_Group__c</masterLabel>
+            <translation><!-- Item_Group__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOB_Number__c</masterLabel>
+            <translation><!-- LOB_Number__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation><!-- Product Code --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Object against which the query is evaluated. Required if Match Type = Field Value. --></help>
+        <label><!-- Tested Object --></label>
+        <name>TestedObject__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation><!-- Product Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation><!-- Quote Line --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The value you want to match in the field you selected using the operator chosen. Required if Match Type = Static Value. --></help>
+        <label><!-- Tested Value --></label>
+        <name>TestedValue__c</name>
+    </fields>
+    <layouts>
+        <layout>Lookup Query Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Lookup Information --></label>
+            <section>Lookup Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Tested Value is required if Match Type = Static Value. Tested Object and Tested Field are required if Match Type = Field Value. --></errorMessage>
+        <name>Match_Type_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

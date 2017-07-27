@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Item Group</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Item Groups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Group Code --></label>
+        <name>Item_Group_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Group Description --></label>
+        <name>Item_Group_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Book --></label>
+        <name>Price_Book__c</name>
+        <picklistValues>
+            <masterLabel>EAS</masterLabel>
+            <translation><!-- EAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RP</masterLabel>
+            <translation><!-- RP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Category Override --></label>
+        <name>Product_Category_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Highlight --></label>
+        <name>Sales_Highlight__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discounts above this percentage, will go through this level of approval --></help>
+        <label><!-- Tier 1 --></label>
+        <name>Tier_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discounts above this percentage, will go through this level of approval --></help>
+        <label><!-- Tier 2 --></label>
+        <name>Tier_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discounts above this percentage, will go through this level of approval. --></help>
+        <label><!-- Tier 3 --></label>
+        <name>Tier_3__c</name>
+    </fields>
+    <layouts>
+        <layout>Item Group Layout</layout>
+        <sections>
+            <label><!-- Approval Thresholds --></label>
+            <section>Approval Thresholds</section>
+        </sections>
+        <sections>
+            <label><!-- Category --></label>
+            <section>Category</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Highlights --></label>
+            <section>Sales Highlights</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Americas Item Group --></label>
+        <name>Americas_Item_Group</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
