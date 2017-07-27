@@ -1,3 +1,0 @@
-<apex:page controller="SBQQ.AmendContractController" showHeader="{!(!$Setup.GeneralSettings__c.GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" action="{!onFindAndAmend}">
-	<apex:pageMessages />
-</apex:page>
