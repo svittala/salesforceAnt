@@ -1,4 +1,0 @@
-<apex:page standardController="SBQQ__Quote__c" extensions="SAPCreateQuoteController" showHeader="true" sidebar="true" action="{!calloutToSap}">
-    {!userMessage}
-
-</apex:page>

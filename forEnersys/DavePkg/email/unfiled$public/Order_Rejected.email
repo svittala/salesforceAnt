@@ -1,5 +1,0 @@
-Order {!Order.OrderNumber} has been rejected by Baan 
-
-{!Order.Description}
-
-Error:  {!Order.Header_Error__c}
