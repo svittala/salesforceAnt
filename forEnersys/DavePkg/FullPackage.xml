@@ -9,15 +9,18 @@
     <members>BaaNAccountIDSyncTest</members>
     <members>ConfiguratorWS</members>
     <members>ConfiguratorWSBso</members>
+    <members>ConfiguratorWSCombinedTest</members>
     <members>ConfiguratorWSDao</members>
     <members>ConfiguratorWSException</members>
     <members>ConfiguratorWSLaunchBSPController</members>
     <members>ConfiguratorWSLaunchDao</members>
     <members>ConfiguratorWSLaunchOEMSpecController</members>
+    <members>ConfiguratorWSLaunchPSRController</members>
     <members>ConfiguratorWSLaunchTest</members>
-    <members>ConfiguratorWSTest</members>
     <members>ConfiguratorWSTestDataFactory</members>
     <members>ConfiguratorWSUtils</members>
+    <members>CPQEMEALineItemsController</members>
+    <members>CPQEMEALineItemsControllerTest</members>
     <members>CPQLineItemsMotiveController</members>
     <members>CPQLineItemsMotiveControllerTest</members>
     <members>CPQLineItemsTestDataFactory</members>
@@ -25,8 +28,21 @@
     <members>CreateOrderVFControllerTest</members>
     <members>CustomSettingManager</members>
     <members>CustomSettingManagerTest</members>
+    <members>EuroFormatterController</members>
+    <members>EuroFormatterControllerTest</members>
     <members>ExtConfigQuoteLineProcessor</members>
-    <members>ExtConfigQuoteLineProcessorTest</members>
+    <members>FioriCanvasLifecycleHandler</members>
+    <members>FioriCanvasLifecycleHandlerTest</members>
+    <members>FioriPlaceholderVFController</members>
+    <members>FioriPlaceholderVFControllerTest</members>
+    <members>GettingStartedController</members>
+    <members>GettingStartedController_Test</members>
+    <members>GSurveysController</members>
+    <members>GSurveysController_Test</members>
+    <members>LexInputFieldCompCtrl</members>
+    <members>LexInputFieldCompCtrl_Test</members>
+    <members>Message</members>
+    <members>Message_Test</members>
     <members>OpportunityDupFlagger</members>
     <members>OpportunityTriggerHandler</members>
     <members>OpportunityTriggerHandlerTest</members>
@@ -35,38 +51,88 @@
     <members>PriceBookUtilTest</members>
     <members>ProdDataFactory</members>
     <members>ProdDataFactoryTest</members>
+    <members>QATestDataFactoryEMEA</members>
+    <members>QATestDataFactoryEMEATest</members>
     <members>QuickQuoteVFController</members>
     <members>QuickQuoteVFControllerTest</members>
     <members>QuoteConfigReceiptsController</members>
     <members>QuoteConfigReceiptsControllerTest</members>
     <members>QuoteController</members>
     <members>QuoteControllerTest</members>
+    <members>QuoteDocumentDynamicSectionManager</members>
+    <members>QuoteSapSyncException</members>
+    <members>QuoteSapSyncManager</members>
+    <members>QuoteTriggerHandler</members>
     <members>RentalQuoteVFController</members>
     <members>RentalQuoteVFControllerTest</members>
+    <members>ReportFinderUtil</members>
     <members>SalesQuoteVFController</members>
     <members>SalesQuoteVFControllerTest</members>
+    <members>SAPCreateQuoteBso</members>
+    <members>SAPCreateQuoteController</members>
+    <members>SAPCreateQuoteDao</members>
+    <members>SAPCreateQuoteFromOpptyController</members>
+    <members>SAPCreateQuoteTest</members>
+    <members>SAPCreateQuoteTestDataFactory</members>
+    <members>SAPCreateQuoteTestHttpCalloutMock</members>
+    <members>SAPPricingConditions</members>
+    <members>SAPPricingConditionsTest</members>
+    <members>SAPQuoteXmlParser</members>
+    <members>SAPQuoteXmlParserTest</members>
+    <members>SFQuestion</members>
+    <members>SurveyAndQuestionController</members>
+    <members>SurveyAndQuestionController_Test</members>
+    <members>SurveyManagerController</members>
+    <members>SurveyManagerController_Test</members>
+    <members>SurveySitesUtil</members>
+    <members>SurveyTestingUtil</members>
+    <members>Utilities</members>
+    <members>Utilities_Test</members>
     <members>Utils</members>
+    <members>viewShareSurveyComponentController</members>
+    <members>viewShareSurveyComponentController_Test</members>
+    <members>ViewSurveyController</members>
+    <members>ViewSurveyController_Test</members>
+    <members>viewSurveyResultsComponentController</members>
     <members>WSRequestManager</members>
     <members>WSRequestTriggerHandler</members>
-    <members>WSRequestTriggerHandlerTest</members>
     <name>ApexClass</name>
+  </types>
+  <types>
+    <members>euroFormatter</members>
+    <members>LexInputField</members>
+    <members>uiMessage</members>
+    <members>viewShareSurveyComponent</members>
+    <members>viewSurveyResultsComponent</members>
+    <name>ApexComponent</name>
   </types>
   <types>
     <members>ConfiguratorWSLaunchBSP</members>
     <members>ConfiguratorWSLaunchOEMSpec</members>
+    <members>ConfiguratorWSLaunchPSR</members>
+    <members>CPQEMEALineItems</members>
     <members>CPQLineItemsMotive</members>
     <members>CreateOrderVF</members>
+    <members>FioriPlaceholder</members>
+    <members>Getting_Started_With_Survey_Force</members>
+    <members>GSurveys</members>
     <members>OrderSendValidation</members>
     <members>OrderValidation</members>
     <members>QuickQuoteVF2</members>
     <members>RentalQuoteVF</members>
     <members>SalesQuoteVF</members>
+    <members>SAPCreateQuote</members>
+    <members>SAPCreateQuoteFromOppty</members>
+    <members>SurveyManagerPage</members>
+    <members>SurveyPage</members>
+    <members>TakeSurvey</members>
     <name>ApexPage</name>
   </types>
   <types>
     <members>AccountTrigger</members>
     <members>Opportunity</members>
     <members>ProductTrigger</members>
+    <members>Quote</members>
     <members>WSRequest</members>
     <name>ApexTrigger</name>
   </types>
@@ -78,7 +144,12 @@
   <types>
     <members>SBQQ__Quote__c.Americas_Quote_Approval_v4</members>
     <members>SBQQ__Quote__c.Americas_Rental_Quote_Approval_v2</members>
+    <members>SBQQ__Quote__c.EMEA_Quote_Revenue_Level_Approvals</members>
     <name>ApprovalProcess</name>
+  </types>
+  <types>
+    <members>Lead.EMEA Leads Assignment</members>
+    <name>AssignmentRule</name>
   </types>
   <types>
     <members>Case</members>
@@ -99,7 +170,7 @@
     <name>AutoResponseRules</name>
   </types>
   <types>
-    <members>Lead.EnerSy Lead Process</members>
+    <members>Lead.EnerSys Lead Process</members>
     <members>Opportunity.Project Sales Process</members>
     <members>Opportunity.Repeat Sales Process</members>
     <members>Opportunity.Standard Sales Process</members>
@@ -126,6 +197,7 @@
   <types>
     <members>Account.Account_Compact_Layout</members>
     <members>Account.Prospect_Compact_Layout</members>
+    <members>Campaign.Campaign_Compact_Layout</members>
     <members>Contact.EnerSys_Contact_Compact</members>
     <members>Issues_Enhancements__c.I_E_Compact_Layout</members>
     <members>Lead.Leads_Custom_Compact_Layout</members>
@@ -133,19 +205,18 @@
     <members>OrderItem.Order_Product_Compact_Layout</members>
     <members>Order.Order_Compact_Layout</members>
     <members>Release__c.Release_Compact_Layout</members>
+    <members>Sales_Area__c.Sales_Area_Compact_Layout</members>
+    <members>Sales_Area_data__c.Sales_Area_Data_Layout</members>
     <members>SBQQ__ContractedPrice__c.Contracted_Price_Compact_Layout</members>
     <members>SBQQ__Quote__c.Quote_Compact_Layout</members>
+    <members>Task.Task_Compact_Layout</members>
     <members>User.User_Layout</members>
     <name>CompactLayout</name>
   </types>
   <types>
     <members>CustomerAPI</members>
+    <members>Fiori</members>
     <name>ConnectedApp</name>
-  </types>
-  <types>
-    <members>EnerSys_logo1</members>
-    <members>Slide10_l34voh_2</members>
-    <name>ContentAsset</name>
   </types>
   <types>
     <members>Awesome_Admins</members>
@@ -163,47 +234,79 @@
     <members>standard__Sales</members>
     <members>standard__Service</members>
     <members>standard__ServiceConsole</members>
+    <members>Survey_Force</members>
     <name>CustomApplication</name>
   </types>
   <types>
     <members>Account.Acct_Auto__c</members>
+    <members>Account.AD_Business_Area__c</members>
+    <members>Account.AD_Distribution_Channel__c</members>
     <members>Account.Address_Code__c</members>
-    <members>Account.Business_Area__c</members>
+    <members>Account.AD_Industry__c</members>
     <members>Account.Company_Number__c</members>
     <members>Account.Company_Number_Pick__c</members>
     <members>Account.Competitor__c</members>
     <members>Account.Contact_Data__c</members>
+    <members>Account.Customer_Language__c</members>
     <members>Account.Customer_Number__c</members>
     <members>Account.Delivery_Terms__c</members>
     <members>Account.Distribution_Channel__c</members>
     <members>Account.Email__c</members>
+    <members>Account.EMEA_CLASS__c</members>
+    <members>Account.EMEA_JSON__c</members>
+    <members>Account.EMEA_JSON_Date_Time__c</members>
+    <members>Account.EMEA_SAP_Quote_Ready__c</members>
+    <members>Account.EMEA_SAP_Quote_Required_Data_Checklist__c</members>
+    <members>Account.EMEA_SAP_Ready__c</members>
+    <members>Account.EMEA_SAP_Required_Data_Checklist__c</members>
     <members>Account.ExtId__c</members>
     <members>Account.Industry__c</members>
     <members>Account.Last_Inbound_Message__c</members>
     <members>Account.Last_Inbound_Tag__c</members>
     <members>Account.Last_Inbound_Time__c</members>
     <members>Account.LOB_EMEA__c</members>
+    <members>Account.MP_Business_Area__c</members>
+    <members>Account.MP_Distribution_Channel__c</members>
+    <members>Account.MP_Industry__c</members>
     <members>Account.Name2__c</members>
+    <members>Account.Name3__c</members>
+    <members>Account.Name4__c</members>
     <members>Account.Parent_DUNS_number__c</members>
     <members>Account.Payment_Terms__c</members>
     <members>Account.Prospect__c</members>
     <members>Account.Protective_Account__c</members>
+    <members>Account.Region_Code__c</members>
     <members>Account.Related_Customer__c</members>
+    <members>Account.RP_Distribution_Channel__c</members>
+    <members>Account.RP_Industry__c</members>
     <members>Account.Sales_Agent_Email__c</members>
+    <members>Account.SAP_Customer_Id__c</members>
+    <members>Account.SAP_Ship_To__c</members>
     <members>Account.Shipping_Terms__c</members>
     <members>Account.Ship_To_Cust_No__c</members>
     <members>Account.Ship_To_ExtID__c</members>
     <members>Account.Status__c</members>
+    <members>Account.STR_SUPPL1__c</members>
+    <members>Account.STR_SUPPL2__c</members>
+    <members>Account.STR_SUPPL3__c</members>
     <members>Account.Summit_Acct__c</members>
     <members>Account.Summit_Acct_ID__c</members>
     <members>Account.Terms_of_Delivery_Code__c</members>
     <members>Account.Terms_of_Delivery_Desc__c</members>
     <members>Account.Terms_of_Payment_Code__c</members>
     <members>Account.Terms_of_Payment_Desc__c</members>
+    <members>Account.Transportation_Zone__c</members>
     <members>Activity.DB_Activity_Type__c</members>
+    <members>Activity.Priority__c</members>
+    <members>Campaign.Attendance_Type__c</members>
+    <members>Campaign.Budget__c</members>
+    <members>Campaign.Country__c</members>
     <members>Campaign.DB_Campaign_Tactic__c</members>
+    <members>Campaign.SBU__c</members>
+    <members>Campaign.Year__c</members>
     <members>Configurator_API_Settings__c.Base_Launch_URL_BSP__c</members>
     <members>Configurator_API_Settings__c.Base_Launch_URL_OEMSpec__c</members>
+    <members>Configurator_API_Settings__c.Base_Launch_URL_PSR__c</members>
     <members>Configurator_API_Settings__c.Config_Receipts_Max_Count__c</members>
     <members>Configurator_API_Settings__c.Config_Receipts_Window_Hours__c</members>
     <members>Configurator_API_Settings__c.Dummy_Part_Number_Accessories__c</members>
@@ -216,12 +319,16 @@
     <members>Configurator_API_Settings__c.Dummy_Part_Number_Optional__c</members>
     <members>Configurator_API_Settings__c.Dummy_Part_Number_Rack__c</members>
     <members>Configurator_API_Settings__c.Dummy_Part_Number_SpillContainment__c</members>
+    <members>Contact.Big_Event__c</members>
     <members>Contact.Contact_Type__c</members>
     <members>Contact.Former_Employee__c</members>
+    <members>Contact.Gender__c</members>
     <members>Contact.Holiday_Mailing_List__c</members>
     <members>Contact.Initial_Contact_Event__c</members>
     <members>Contact.Initial_Contact_Event_Date__c</members>
+    <members>Contact.Other_Contact_Type__c</members>
     <members>Contact.Personal_Information__c</members>
+    <members>Contact.SAP_Personnel_ID__c</members>
     <members>Dependent_Picklist_Values__mdt.Controlling_Field_API_Name__c</members>
     <members>Dependent_Picklist_Values__mdt.Controlling_Field_Value__c</members>
     <members>Dependent_Picklist_Values__mdt.Dependent_Field_API_Name__c</members>
@@ -235,8 +342,14 @@
     <members>External_Configuration__c.Quote_Line_Creation_Errors__c</members>
     <members>External_Configuration__c.Quote_Line_Creation_Warnings__c</members>
     <members>External_Configuration__c.WS_Request__c</members>
-    <members>Issues_Enhancements__c.Blocked__c</members>
-    <members>Issues_Enhancements__c.Blocked_Reason__c</members>
+    <members>Fiori_Canvas_Settings__mdt.Record_URL__c</members>
+    <members>Integration_Settings__c.Boolean_Value__c</members>
+    <members>Integration_Settings__c.Date_Value__c</members>
+    <members>Integration_Settings__c.Description__c</members>
+    <members>Integration_Settings__c.Environment__c</members>
+    <members>Integration_Settings__c.Integer_Value__c</members>
+    <members>Integration_Settings__c.Text_Value__c</members>
+    <members>Integration_Settings__c.Type__c</members>
     <members>Issues_Enhancements__c.Business_Approval_in_Production__c</members>
     <members>Issues_Enhancements__c.Business_Owner__c</members>
     <members>Issues_Enhancements__c.Business_Requirements_Attached__c</members>
@@ -259,7 +372,6 @@
     <members>Issues_Enhancements__c.Objects_Areas_Affected__c</members>
     <members>Issues_Enhancements__c.Party_Responsible__c</members>
     <members>Issues_Enhancements__c.Post_Deployment_Steps_Included__c</members>
-    <members>Issues_Enhancements__c.Project__c</members>
     <members>Issues_Enhancements__c.Release__c</members>
     <members>Issues_Enhancements__c.Sizing__c</members>
     <members>Issues_Enhancements__c.Status__c</members>
@@ -275,10 +387,15 @@
     <members>Item_Group__c.Tier_1__c</members>
     <members>Item_Group__c.Tier_2__c</members>
     <members>Item_Group__c.Tier_3__c</members>
+    <members>Lead.Big_Event__c</members>
     <members>Lead.DB_Created_Date_without_Time__c</members>
     <members>Lead.DB_Lead_Age__c</members>
+    <members>Lead.EAS_Industry__c</members>
     <members>Lead.Event__c</members>
     <members>Lead.Event_Date__c</members>
+    <members>Lead.Gender__c</members>
+    <members>Lead.Other_Role__c</members>
+    <members>Lead.Role__c</members>
     <members>Lead.SBU__c</members>
     <members>LOB__c.App_Description__c</members>
     <members>LOB__c.Application__c</members>
@@ -286,6 +403,7 @@
     <members>LOB__c.Distribution_Channel__c</members>
     <members>LOB__c.LOB__c</members>
     <members>LOB__c.LOB_Description_formula__c</members>
+    <members>LOB__c.LOB_Name_Number__c</members>
     <members>LOB__c.SBU__c</members>
     <members>LOB__c.SBU_Description__c</members>
     <members>LOB__c.SBU_Picklist__c</members>
@@ -293,8 +411,11 @@
     <members>Opportunity.Budget_Confirmed__c</members>
     <members>Opportunity.Competitor_Lost_To__c</members>
     <members>Opportunity.Competitors__c</members>
+    <members>Opportunity.Currency_Code__c</members>
     <members>Opportunity.DB_Competitor__c</members>
     <members>Opportunity.Discovery_Completed__c</members>
+    <members>Opportunity.EMEA_SAP_Ready__c</members>
+    <members>Opportunity.EMEA_SAP_Required_Data_Checklist__c</members>
     <members>Opportunity.End_User__c</members>
     <members>Opportunity.Exclude_from_Exec_Pipeline__c</members>
     <members>Opportunity.Industry__c</members>
@@ -308,7 +429,12 @@
     <members>Opportunity.Primary_Quote_approved__c</members>
     <members>Opportunity.Project__c</members>
     <members>Opportunity.ROI_Analysis_Completed__c</members>
+    <members>Opportunity.Sales_Area_Code__c</members>
+    <members>Opportunity.Sales_Area_Data__c</members>
     <members>Opportunity.SBU__c</members>
+    <members>Opportunity.Select_Ship_To_SAD__c</members>
+    <members>Opportunity.Ship_To_Data__c</members>
+    <members>Opportunity.Ship_To_Name__c</members>
     <members>Opportunity.Site_Options__c</members>
     <members>Opportunity.Sub_Industry__c</members>
     <members>Opportunity.Technology__c</members>
@@ -447,6 +573,10 @@
     <members>Project__c.Potential_Probability__c</members>
     <members>Project__c.Start_Date__c</members>
     <members>Project__c.Type__c</members>
+    <members>Quote_Document_Dynamic_Section__c.Footer_Template_Content__c</members>
+    <members>Quote_Document_Dynamic_Section__c.Language__c</members>
+    <members>Quote_Document_Dynamic_Section__c.Sales_Organization__c</members>
+    <members>Quote_Document_Dynamic_Section__c.Terms_and_Conditions_Template_Content__c</members>
     <members>Release__c.End_Date__c</members>
     <members>Release__c.Month__c</members>
     <members>Release__c.of_Items__c</members>
@@ -462,34 +592,480 @@
     <members>RP_Approval__c.LOB__c</members>
     <members>RP_Approval__c.LOB_Descripton__c</members>
     <members>RP_Approval__c.LOB_Number__c</members>
+    <members>Sales_Area__c.Description__c</members>
+    <members>Sales_Area__c.Description_Name__c</members>
+    <members>Sales_Area__c.Distribution_Channel_Code__c</members>
+    <members>Sales_Area__c.Division_Code__c</members>
+    <members>Sales_Area__c.ExtId__c</members>
+    <members>Sales_Area__c.Sales_Organization__c</members>
+    <members>Sales_Area_data__c.Account_at_Customer_Code__c</members>
+    <members>Sales_Area_data__c.Account__c</members>
+    <members>Sales_Area_data__c.Account_w_Address__c</members>
+    <members>Sales_Area_data__c.Contact_in_the_Office__c</members>
+    <members>Sales_Area_data__c.Currency__c</members>
+    <members>Sales_Area_data__c.Currency_Code2__c</members>
+    <members>Sales_Area_data__c.Currency_Code__c</members>
+    <members>Sales_Area_data__c.Customer_Group_lookup__c</members>
+    <members>Sales_Area_data__c.Delivery_Priority__c</members>
+    <members>Sales_Area_data__c.Division_Code__c</members>
+    <members>Sales_Area_data__c.ExtId__c</members>
+    <members>Sales_Area_data__c.Incoterm_Code_lookup__c</members>
+    <members>Sales_Area_data__c.of_ship_tos__c</members>
+    <members>Sales_Area_data__c.Price_Group_lookup__c</members>
+    <members>Sales_Area_data__c.Sales_Area_Code_Text__c</members>
+    <members>Sales_Area_data__c.Sales_Area_Description__c</members>
+    <members>Sales_Area_data__c.Sales_Area_Distribution_Chanel_Code__c</members>
+    <members>Sales_Area_data__c.Sales_Area_Division_Code__c</members>
+    <members>Sales_Area_data__c.Sales_Area_Sales_Organisation_Code__c</members>
+    <members>Sales_Area_data__c.Sales_Contact__c</members>
+    <members>Sales_Area_data__c.Sales_District__c</members>
+    <members>Sales_Area_data__c.Sales_Office_lookup__c</members>
+    <members>Sales_Area_data__c.SAP_Customer_iD__c</members>
+    <members>Sales_Area_data__c.Shipcond_Code__c</members>
+    <members>Sales_Area_data__c.Shipping_Conditions__c</members>
+    <members>Sales_Area_data__c.Terms_of_Payment_lookup__c</members>
     <members>SAP_Reference__c.Code__c</members>
     <members>SAP_Reference__c.Code_Type__c</members>
     <members>SAP_Reference__c.Company__c</members>
+    <members>SAP_Reference__c.Country_Code__c</members>
     <members>SAP_Reference__c.Key__c</members>
     <members>SAP_Reference__c.Missing_Value__c</members>
     <members>SAP_Reference__c.System__c</members>
+    <members>SBQQ__ContractedPrice__c.Item_Group__c</members>
+    <members>SBQQ__PriceRule__c.ExtId__c</members>
+    <members>SBQQ__Quote__c.Account_Name__c</members>
+    <members>SBQQ__Quote__c.Americas__c</members>
+    <members>SBQQ__Quote__c.Auto_Approval_Flag__c</members>
+    <members>SBQQ__Quote__c.Bill_To__c</members>
+    <members>SBQQ__Quote__c.Bill_To_Lookup__c</members>
+    <members>SBQQ__Quote__c.Bill_To_Phone__c</members>
+    <members>SBQQ__Quote__c.Business_Area_EMEA__c</members>
+    <members>SBQQ__Quote__c.Cells__c</members>
+    <members>SBQQ__Quote__c.Competitor_s__c</members>
+    <members>SBQQ__Quote__c.Connector__c</members>
+    <members>SBQQ__Quote__c.ContractedAccountID__c</members>
+    <members>SBQQ__Quote__c.Contracted_Price_w_Discount_Flag__c</members>
+    <members>SBQQ__Quote__c.Cover_Letter__c</members>
+    <members>SBQQ__Quote__c.Currency_Code__c</members>
+    <members>SBQQ__Quote__c.Customer_Requested_Date__c</members>
+    <members>SBQQ__Quote__c.Deliver_Term_Change_Flag__c</members>
+    <members>SBQQ__Quote__c.Delivery_Priority__c</members>
+    <members>SBQQ__Quote__c.Delivery_Terms__c</members>
+    <members>SBQQ__Quote__c.Delivery_Terms_on_Creation__c</members>
+    <members>SBQQ__Quote__c.Delivery_Terms_Text__c</members>
+    <members>SBQQ__Quote__c.Display_Estimated_Tax_Flag__c</members>
+    <members>SBQQ__Quote__c.Display_Tax_Disclaimer__c</members>
+    <members>SBQQ__Quote__c.Distribution_Channel__c</members>
+    <members>SBQQ__Quote__c.Distribution_Channel_EMEA__c</members>
+    <members>SBQQ__Quote__c.Division__c</members>
+    <members>SBQQ__Quote__c.Document_Currency__c</members>
+    <members>SBQQ__Quote__c.DSM_ASM_Approval__c</members>
+    <members>SBQQ__Quote__c.Duration__c</members>
+    <members>SBQQ__Quote__c.EditLinesFieldSetName__c</members>
+    <members>SBQQ__Quote__c.EMEA_Final_Amount__c</members>
+    <members>SBQQ__Quote__c.EMEA_Footer_HTML__c</members>
+    <members>SBQQ__Quote__c.EMEA_Items_Total__c</members>
+    <members>SBQQ__Quote__c.EMEA_SAP_Ready__c</members>
+    <members>SBQQ__Quote__c.EMEA_SAP_Required_Data_Checklist__c</members>
+    <members>SBQQ__Quote__c.EMEA_Terms_and_Conditions_HTML__c</members>
+    <members>SBQQ__Quote__c.End_User_Address__c</members>
+    <members>SBQQ__Quote__c.End_User__c</members>
+    <members>SBQQ__Quote__c.End_User_City__c</members>
+    <members>SBQQ__Quote__c.End_User_ID__c</members>
+    <members>SBQQ__Quote__c.End_User_Phone__c</members>
+    <members>SBQQ__Quote__c.End_User_State__c</members>
+    <members>SBQQ__Quote__c.End_User_Street__c</members>
+    <members>SBQQ__Quote__c.End_User_temp__c</members>
+    <members>SBQQ__Quote__c.End_User_Zip__c</members>
+    <members>SBQQ__Quote__c.End_Voltage__c</members>
+    <members>SBQQ__Quote__c.Engineering_Approval_Count__c</members>
+    <members>SBQQ__Quote__c.Estimated_Tax_Amount__c</members>
+    <members>SBQQ__Quote__c.Estimated_Value_of_Rental__c</members>
+    <members>SBQQ__Quote__c.Feasability_Study_Approval_Number__c</members>
+    <members>SBQQ__Quote__c.Feasibility_Study_Approval_Number__c</members>
+    <members>SBQQ__Quote__c.GM_Approver__c</members>
+    <members>SBQQ__Quote__c.GSM_Dir_Approval__c</members>
+    <members>SBQQ__Quote__c.Has_Shipping_Address__c</members>
+    <members>SBQQ__Quote__c.Inconterms__c</members>
+    <members>SBQQ__Quote__c.Incoterms2__c</members>
+    <members>SBQQ__Quote__c.Incoterms2_Text__c</members>
+    <members>SBQQ__Quote__c.Incoterms__c</members>
+    <members>SBQQ__Quote__c.Industry__c</members>
+    <members>SBQQ__Quote__c.Industry_EMEA__c</members>
+    <members>SBQQ__Quote__c.JSON_Pricing_Conditions__c</members>
+    <members>SBQQ__Quote__c.KWb__c</members>
+    <members>SBQQ__Quote__c.Language__c</members>
+    <members>SBQQ__Quote__c.Last_Inbound_Message__c</members>
+    <members>SBQQ__Quote__c.Last_Inbound_Tag__c</members>
+    <members>SBQQ__Quote__c.Last_Inbound_Time__c</members>
+    <members>SBQQ__Quote__c.Last_Modified_Date__c</members>
+    <members>SBQQ__Quote__c.Lead_Time__c</members>
+    <members>SBQQ__Quote__c.Length_of_Rental__c</members>
+    <members>SBQQ__Quote__c.LOB__c</members>
+    <members>SBQQ__Quote__c.LOB_Number__c</members>
+    <members>SBQQ__Quote__c.L_x_W_X_H__c</members>
+    <members>SBQQ__Quote__c.Manager_Approver__c</members>
+    <members>SBQQ__Quote__c.Manufacturer__c</members>
+    <members>SBQQ__Quote__c.Marketing_Approval_Items_Count__c</members>
+    <members>SBQQ__Quote__c.Marketing_Approver__c</members>
+    <members>SBQQ__Quote__c.Model_Class__c</members>
+    <members>SBQQ__Quote__c.Opp_End_User__c</members>
+    <members>SBQQ__Quote__c.Payment_Terms__c</members>
+    <members>SBQQ__Quote__c.Payment_Terms_SAP__c</members>
+    <members>SBQQ__Quote__c.PoNumber__c</members>
+    <members>SBQQ__Quote__c.Price_Group__c</members>
+    <members>SBQQ__Quote__c.Pricing_Date__c</members>
+    <members>SBQQ__Quote__c.Primary_Contact_First_Name__c</members>
+    <members>SBQQ__Quote__c.Primary_Contact_Full_Name__c</members>
+    <members>SBQQ__Quote__c.Print_Cover_Letter__c</members>
+    <members>SBQQ__Quote__c.Print_Descriptions__c</members>
+    <members>SBQQ__Quote__c.Print_Discounts__c</members>
+    <members>SBQQ__Quote__c.Print_End_User_Info__c</members>
+    <members>SBQQ__Quote__c.Print_Freight_Disclaimer_MP__c</members>
+    <members>SBQQ__Quote__c.Print_Freight_Disclaimer_RP__c</members>
+    <members>SBQQ__Quote__c.Print_Introduction_Text_Block__c</members>
+    <members>SBQQ__Quote__c.Print_Line_Item_Prices__c</members>
+    <members>SBQQ__Quote__c.Print_List_Prices__c</members>
+    <members>SBQQ__Quote__c.Print_Names__c</members>
+    <members>SBQQ__Quote__c.Print_Notes__c</members>
+    <members>SBQQ__Quote__c.Print_Service_Options__c</members>
+    <members>SBQQ__Quote__c.Print_Ship_To_Only__c</members>
+    <members>SBQQ__Quote__c.Print_Signature_Block__c</members>
+    <members>SBQQ__Quote__c.Print_Terms_and_Conditions__c</members>
+    <members>SBQQ__Quote__c.Product_Approval_Count__c</members>
+    <members>SBQQ__Quote__c.Product_Approval_Reqd_Count__c</members>
+    <members>SBQQ__Quote__c.Product_Approvals_Remaining__c</members>
+    <members>SBQQ__Quote__c.Product_Approval_Status__c</members>
+    <members>SBQQ__Quote__c.Product_Detail__c</members>
+    <members>SBQQ__Quote__c.Protected_Account__c</members>
+    <members>SBQQ__Quote__c.Ready_to_Submit_for_Approval__c</members>
+    <members>SBQQ__Quote__c.Reason_for_Discount__c</members>
+    <members>SBQQ__Quote__c.Record_Type_Name__c</members>
+    <members>SBQQ__Quote__c.Reference_Information_Number__c</members>
+    <members>SBQQ__Quote__c.Rental_Rate__c</members>
+    <members>SBQQ__Quote__c.Requested_Delivery_Date__c</members>
+    <members>SBQQ__Quote__c.Requirements__c</members>
+    <members>SBQQ__Quote__c.Sales_Area_Code__c</members>
+    <members>SBQQ__Quote__c.Sales_Area_Data__c</members>
+    <members>SBQQ__Quote__c.Sales_District_lookup__c</members>
+    <members>SBQQ__Quote__c.Sales_Office__c</members>
+    <members>SBQQ__Quote__c.Sales_Office_Description__c</members>
+    <members>SBQQ__Quote__c.Sales_Organization__c</members>
+    <members>SBQQ__Quote__c.SAP_Customer_ID__c</members>
+    <members>SBQQ__Quote__c.SAP_Quote_Document_XML__c</members>
+    <members>SBQQ__Quote__c.SAP_Quote_Number__c</members>
+    <members>SBQQ__Quote__c.SAP_Sync_In_Progress__c</members>
+    <members>SBQQ__Quote__c.SAP_Sync_Last_Datetime__c</members>
+    <members>SBQQ__Quote__c.SAP_Sync_Last_Message__c</members>
+    <members>SBQQ__Quote__c.SAP_Sync_Last_Response__c</members>
+    <members>SBQQ__Quote__c.SAP_Sync_Last_Result__c</members>
+    <members>SBQQ__Quote__c.SBU__c</members>
+    <members>SBQQ__Quote__c.Select_Shipping_Address__c</members>
+    <members>SBQQ__Quote__c.Select_Ship_To_SAD__c</members>
+    <members>SBQQ__Quote__c.Shipping_Conditions__c</members>
+    <members>SBQQ__Quote__c.Shipping_Conditions_Text__c</members>
+    <members>SBQQ__Quote__c.Shipping_Terms__c</members>
+    <members>SBQQ__Quote__c.Ship_To_Data__c</members>
+    <members>SBQQ__Quote__c.Ship_To_Phone__c</members>
+    <members>SBQQ__Quote__c.Site_Options__c</members>
+    <members>SBQQ__Quote__c.Sub_Industry__c</members>
+    <members>SBQQ__Quote__c.Systems__c</members>
+    <members>SBQQ__Quote__c.Tax_Rate__c</members>
+    <members>SBQQ__Quote__c.Technology__c</members>
+    <members>SBQQ__Quote__c.Terms_of_Payment_Description__c</members>
+    <members>SBQQ__Quote__c.Today__c</members>
+    <members>SBQQ__Quote__c.Total_Monthly_Rental_Cost__c</members>
+    <members>SBQQ__Quote__c.Type_Cover__c</members>
+    <members>SBQQ__Quote__c.Valid_From__c</members>
+    <members>SBQQ__Quote__c.Valid_To__c</members>
+    <members>SBQQ__Quote__c.VehicleNotes__c</members>
+    <members>SBQQ__Quote__c.Volt_Term__c</members>
+    <members>SBQQ__Quote__c.VP_Approver__c</members>
+    <members>SBQQ__Quote__c.Weight__c</members>
+    <members>SBQQ__Quote__c.Your_Contact_in_the_Office__c</members>
+    <members>SBQQ__Quote__c.Your_Contact_in_the_Office_Email__c</members>
+    <members>SBQQ__Quote__c.Your_Contact_in_the_Office_Fax__c</members>
+    <members>SBQQ__Quote__c.Your_Contact_in_the_Office_Tel__c</members>
+    <members>SBQQ__Quote__c.Your_Contact_in_the_Office_Text__c</members>
+    <members>SBQQ__Quote__c.Your_Sales_Contact__c</members>
+    <members>SBQQ__Quote__c.Your_Sales_Contact_Email__c</members>
+    <members>SBQQ__Quote__c.Your_Sales_Contact_Fax__c</members>
+    <members>SBQQ__Quote__c.Your_Sales_Contact_Tel__c</members>
+    <members>SBQQ__Quote__c.Your_Sales_Contact_Text__c</members>
+    <members>SBQQ__QuoteLine__c.Actual_Price__c</members>
+    <members>SBQQ__QuoteLine__c.Americas__c</members>
+    <members>SBQQ__QuoteLine__c.Approval_Code__c</members>
+    <members>SBQQ__QuoteLine__c.Approval_Level__c</members>
+    <members>SBQQ__QuoteLine__c.Approval_Level_Text__c</members>
+    <members>SBQQ__QuoteLine__c.Approval_Required__c</members>
+    <members>SBQQ__QuoteLine__c.Approval_Required_Final__c</members>
+    <members>SBQQ__QuoteLine__c.Approval_Required_For_Quote_Line__c</members>
+    <members>SBQQ__QuoteLine__c.Approval_Required_For_Rollup__c</members>
+    <members>SBQQ__QuoteLine__c.Battery_AH_KWH__c</members>
+    <members>SBQQ__QuoteLine__c.Battery_Charger_Termination__c</members>
+    <members>SBQQ__QuoteLine__c.Battery_Dimensions__c</members>
+    <members>SBQQ__QuoteLine__c.Battery_Family__c</members>
+    <members>SBQQ__QuoteLine__c.Battery_Notes__c</members>
+    <members>SBQQ__QuoteLine__c.Battery_Part__c</members>
+    <members>SBQQ__QuoteLine__c.Battery_Product__c</members>
+    <members>SBQQ__QuoteLine__c.Battery_Type__c</members>
+    <members>SBQQ__QuoteLine__c.Battery_Weight__c</members>
+    <members>SBQQ__QuoteLine__c.Calculated_Discount_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.Calculated_Discount_Percent__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Family_Charger_Part__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Input_AC_Amps_Selected__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Max_AH__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Max_AH_Selected__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Max_A_In_AC_Out_DC__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Mod_Cab__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Notes__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Output_DC_Amps_Selected__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Product__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_VAC__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_VAC_Options__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_VAC_Options_Read_Only__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_VAC_Selected__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Voltage_Options__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Voltage_Options_Read_Only__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Voltage_Selected__c</members>
+    <members>SBQQ__QuoteLine__c.Charger_Volt_Phase__c</members>
+    <members>SBQQ__QuoteLine__c.CostPrice__c</members>
+    <members>SBQQ__QuoteLine__c.Customer_Material_Number__c</members>
+    <members>SBQQ__QuoteLine__c.Effective_Discount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Calculat_sconto_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Calculat_sconto__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Comission_Costs_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Comission_Costs__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Discount_From_Gross_Pricelist__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Discount_From_Gross_Pricelist_Total__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Eco_Contribution__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Eco_Contribution_Total__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_External_Discount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_External_Discount_Total__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Freight_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Freight__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Guarantee_Costs_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Guarantee_Costs__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Internal_Discount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Internal_Discount_Total__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Lead_Adjuster__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Lead_Adjuster_Total__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_List_Price__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_List_Total__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Net_Total__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Other_SDCS_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Other_SDCS__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Packing_Costs_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Packing_Costs__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Packing_Expenses__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Packing_Expenses_Total__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Price_Unit__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Profit_Margin_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Profit_Margin__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Raw_Material_Adjuster_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Raw_Material_Adjuster__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Shipment_Costs_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Shipment_Costs__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Transport_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Transport__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_VAT_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_VAT_Rate__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Volume_Discount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Volume_Discount_Total__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Volume_Rebate_Amount__c</members>
+    <members>SBQQ__QuoteLine__c.EMEA_Volume_Rebate__c</members>
+    <members>SBQQ__QuoteLine__c.External_Configuration__c</members>
+    <members>SBQQ__QuoteLine__c.External_Id__c</members>
+    <members>SBQQ__QuoteLine__c.Is_Discount_Applied__c</members>
+    <members>SBQQ__QuoteLine__c.Item_Group__c</members>
+    <members>SBQQ__QuoteLine__c.Item_Group_Desc__c</members>
+    <members>SBQQ__QuoteLine__c.Item_Type__c</members>
+    <members>SBQQ__QuoteLine__c.JSON_Pricing_Conditions__c</members>
+    <members>SBQQ__QuoteLine__c.JSON_SAP_configuration__c</members>
+    <members>SBQQ__QuoteLine__c.Lead_Time__c</members>
+    <members>SBQQ__QuoteLine__c.Line_Approved__c</members>
+    <members>SBQQ__QuoteLine__c.Line_Notes__c</members>
+    <members>SBQQ__QuoteLine__c.LOB__c</members>
+    <members>SBQQ__QuoteLine__c.LOB_Number__c</members>
+    <members>SBQQ__QuoteLine__c.Margin__c</members>
+    <members>SBQQ__QuoteLine__c.Monthly_Rental_Rate__c</members>
+    <members>SBQQ__QuoteLine__c.Monthly_Rental_Rate_ea__c</members>
+    <members>SBQQ__QuoteLine__c.Nominal_Voltage__c</members>
+    <members>SBQQ__QuoteLine__c.Product_Category__c</members>
+    <members>SBQQ__QuoteLine__c.Product_Selection_Confirmed__c</members>
+    <members>SBQQ__QuoteLine__c.Rental_Rate__c</members>
+    <members>SBQQ__QuoteLine__c.Sales_Highlight__c</members>
+    <members>SBQQ__QuoteLine__c.SAP_Line_Number__c</members>
+    <members>SBQQ__QuoteLine__c.SAP_Material_Number__c</members>
+    <members>SBQQ__QuoteLine__c.Set_Net_Total_Price__c</members>
+    <members>SBQQ__QuoteLine__c.Sort_Type__c</members>
+    <members>SBQQ__QuoteLine__c.Tier_1__c</members>
+    <members>SBQQ__QuoteLine__c.Tier1__c</members>
+    <members>SBQQ__QuoteLine__c.Tier_2__c</members>
+    <members>SBQQ__QuoteLine__c.Tier2__c</members>
+    <members>SBQQ__QuoteLine__c.Tier_3__c</members>
+    <members>SBQQ__QuoteLine__c.Tier3__c</members>
+    <members>SBQQ__QuoteLine__c.Watts_Cell__c</members>
+    <members>SBQQ__QuoteLineGroup__c.External_Configuration__c</members>
+    <members>SBQQ__QuoteLineGroup__c.External_Id__c</members>
+    <members>SBQQ__QuoteLineGroup__c.Truck_Connector__c</members>
+    <members>SBQQ__QuoteLineGroup__c.Truck_L_x_W_x_H__c</members>
+    <members>SBQQ__QuoteLineGroup__c.Truck_Manufacturer__c</members>
+    <members>SBQQ__QuoteLineGroup__c.Truck_Min_Weight__c</members>
+    <members>SBQQ__QuoteLineGroup__c.Truck_Model_Class__c</members>
+    <members>SBQQ__QuoteLineGroup__c.Truck_Notes__c</members>
+    <members>SBQQ__QuoteLineGroup__c.Truck_Type_Cover__c</members>
+    <members>SBQQ__QuoteLineGroup__c.Truck_Volt_Term__c</members>
+    <members>SBQQ__QuoteTemplate__c.Document_Revision__c</members>
+    <members>SBQQ__QuoteTemplate__c.ExtId__c</members>
+    <members>SBQQ__TemplateContent__c.ExtId__c</members>
+    <members>SBQQ__TemplateSection__c.ExtId__c</members>
+    <members>Ship_To_Data__c.Customer__c</members>
+    <members>Ship_To_Data__c.Distribution_Channel_Code__c</members>
+    <members>Ship_To_Data__c.Division_Code__c</members>
+    <members>Ship_To_Data__c.ExtId__c</members>
+    <members>Ship_To_Data__c.Partner_Function_Type_Code__c</members>
+    <members>Ship_To_Data__c.Sales_Area_Data__c</members>
+    <members>Ship_To_Data__c.Sales_Organisation_Code__c</members>
+    <members>Ship_To_Data__c.SAP_Customer_Id__c</members>
+    <members>Ship_To_Data__c.ship_from_Account__c</members>
+    <members>Ship_To_Data__c.Ship_To_Account__c</members>
+    <members>Ship_To_Data__c.Ship_To_Account_Name__c</members>
+    <members>Survey__c.Hide_Survey_Name__c</members>
+    <members>Survey__c.Submit_Response__c</members>
+    <members>Survey__c.Survey_Container_CSS__c</members>
+    <members>Survey__c.Survey_Header__c</members>
+    <members>Survey__c.thankYouLink__c</members>
+    <members>Survey__c.thankYouText__c</members>
+    <members>Survey__c.Thank_You_Text__c</members>
+    <members>Survey__c.URL__c</members>
+    <members>Survey_Question__c.Choices__c</members>
+    <members>Survey_Question__c.OrderNumber__c</members>
+    <members>Survey_Question__c.Question__c</members>
+    <members>Survey_Question__c.Required__c</members>
+    <members>Survey_Question__c.Survey__c</members>
+    <members>Survey_Question__c.Total_Responses__c</members>
+    <members>Survey_Question__c.Type__c</members>
+    <members>SurveyQuestionResponse__c.of_Time_Question_was_Responded_to__c</members>
+    <members>SurveyQuestionResponse__c.Response__c</members>
+    <members>SurveyQuestionResponse__c.Survey_Question__c</members>
+    <members>SurveyQuestionResponse__c.SurveyTaker__c</members>
+    <members>SurveyTaker__c.Case__c</members>
+    <members>SurveyTaker__c.Contact__c</members>
+    <members>SurveyTaker__c.Survey__c</members>
+    <members>SurveyTaker__c.Taken__c</members>
+    <members>SurveyTaker__c.User__c</members>
     <members>User.Company_Code__c</members>
     <members>User.DB_Region__c</members>
     <members>User.GM__c</members>
     <members>User.Marketing_Approver__c</members>
+    <members>User.Sales_Organization__c</members>
     <members>User.Sales_Rep__c</members>
     <members>User.SAP_Sales_Rep__c</members>
     <members>User.SBU__c</members>
     <members>User.Start__c</members>
-    <members>User.SUPER_USER__c</members>
+    <members>User.VP_Approver__c</members>
     <members>WS_Request__c.JSON_Payload__c</members>
     <members>WS_Request__c.Processing_Results__c</members>
     <name>CustomField</name>
   </types>
   <types>
+    <members>Account_Record_Type_Prospect</members>
+    <members>EMEA_Line_Item_Brand</members>
+    <members>EMEA_Line_Item_Currency</members>
+    <members>EMEA_Line_Item_Delivery_Date</members>
+    <members>EMEA_Line_Item_Dimensions</members>
+    <members>EMEA_Line_Item_Drawing_No</members>
+    <members>EMEA_Line_Item_EnerSys_LeadAdjuster</members>
+    <members>EMEA_Line_Item_External_rebate</members>
+    <members>EMEA_Line_Item_Final_amount</members>
+    <members>EMEA_Line_Item_Items_Total</members>
+    <members>EMEA_Line_Item_Material_Descirption</members>
+    <members>EMEA_Line_Item_Order_Value</members>
+    <members>EMEA_Line_Item_Position_net</members>
+    <members>EMEA_Line_Item_Price</members>
+    <members>EMEA_Line_Item_Price_Unit</members>
+    <members>EMEA_Line_Item_Quantity</members>
+    <members>EMEA_Line_Item_Ship_to_Party</members>
+    <members>EMEA_Line_Item_Subsequent_Items</members>
+    <members>EMEA_Line_Item_Value</members>
+    <members>EMEA_Line_Item_VAT</members>
+    <members>EMEA_Line_Item_Volume_Discount</members>
+    <members>EMEA_Quote_Line_Item</members>
+    <members>Exempt_Profiles</members>
+    <members>Fiori_Cannot_add_products</members>
+    <members>Fiori_Cannot_add_products_description</members>
+    <members>Fiori_Canvas_No_Default_URL_Specified</members>
+    <members>Fiori_Canvas_No_Record_Id_Specified</members>
+    <members>Gross_Profit</members>
     <members>Integration_User_ID</members>
+    <members>LABS_SF_AddQuestion</members>
+    <members>LABS_SF_Anonymous</members>
+    <members>LABS_SF_Answer_as</members>
+    <members>LABS_SF_Cancel</members>
+    <members>LABS_SF_Chatter</members>
+    <members>LABS_SF_Chatter_Link</members>
+    <members>LABS_SF_Community</members>
+    <members>LABS_SF_Edit</members>
+    <members>LABS_SF_Email_Link_Anonymous</members>
+    <members>LABS_SF_Email_Link_w_Contact_Case_Merge</members>
+    <members>LABS_SF_Email_Link_w_Contact_Merge</members>
+    <members>LABS_SF_External_Please_Create_Site</members>
+    <members>LABS_SF_For_community_assistance_with_Survey_Force</members>
+    <members>LABS_SF_Getting_Help</members>
+    <members>LABS_SF_HeaderAndThankYou</members>
+    <members>LABS_SF_Installation_Guide</members>
+    <members>LABS_SF_Learn_More</members>
+    <members>LABS_SF_MakeANewSurvey</members>
+    <members>LABS_SF_Make_a_Sample_Survey</members>
+    <members>LABS_SF_MakeNewSurvey</members>
+    <members>LABS_SF_Next_Steps</members>
+    <members>LABS_SF_PleaseEnterTheList</members>
+    <members>LABS_SF_please_visit</members>
+    <members>LABS_SF_Question</members>
+    <members>LABS_SF_Required</members>
+    <members>LABS_SF_RequiredQuestion</members>
+    <members>LABS_SF_Resources</members>
+    <members>LABS_SF_Results</members>
+    <members>LABS_SF_Salesforce_Answers</members>
+    <members>LABS_SF_Save</members>
+    <members>LABS_SF_SaveOrder</members>
+    <members>LABS_SF_SelectQuestionType</members>
+    <members>LABS_SF_SELECTTYPE</members>
+    <members>LABS_SF_Share</members>
+    <members>LABS_SF_Share_My_Survey</members>
+    <members>LABS_SF_Sharing_Options</members>
+    <members>LABS_SF_SubmitSurvey</members>
+    <members>LABS_SF_SurveyForceIsOpenSource</members>
+    <members>LABS_SF_Survey_Force_is_unsupported</members>
+    <members>LABS_SF_Survey_Force_on_Github</members>
+    <members>LABS_SF_Survey_Submitted_Thank_you</members>
+    <members>LABS_SF_To_submit_ideas_or_issues</members>
+    <members>LABS_SF_User_Guide</members>
+    <members>LABS_SF_View_Results_In_New_Window</members>
+    <members>LABS_SF_View_Sample_Survey</members>
+    <members>LABS_SF_Welcome_to_Survey_Force</members>
+    <members>LABS_SF_X1_Create_a_sample_survey</members>
+    <members>LABS_SF_X2_External_Setup_Site</members>
+    <members>LABS_SF_X3_Start_creating_your_first_survey</members>
+    <members>LABS_SF_You_have_already_taken_this_survey</members>
+    <members>LABS_SF_Your_next_few_steps_are_easy</members>
+    <members>Lead_Assignment_Body</members>
+    <members>Lead_Assignment_Subject</members>
     <members>LightningDomain</members>
+    <members>Net_Amount</members>
     <members>Opportunity_Record_Type_Repeat</members>
     <members>Order_Record_Type_Americas_Order</members>
     <members>Order_Record_Type_Americas_Validated</members>
     <members>Price_Book_MP_701</members>
     <members>Price_Book_RP_701</members>
     <members>Price_Book_RP_702</members>
+    <members>Profile_ID_EnerSys_Integration</members>
+    <members>Profile_ID_EnerSys_System_Administrator</members>
+    <members>Profile_ID_System_Administrator</members>
+    <members>Quote_Approval_Request</members>
+    <members>Quote_for_Approval</members>
+    <members>Quote_Number</members>
     <members>Quote_Record_Type_Approved</members>
     <members>Quote_Record_Type_Draft</members>
     <members>Quote_Record_Type_Rental</members>
@@ -497,6 +1073,7 @@
     <members>Quote_Template_MP</members>
     <members>Quote_Template_Rental</members>
     <members>Quote_Template_RP</members>
+    <members>View_the_Quote</members>
     <name>CustomLabel</name>
   </types>
   <types>
@@ -600,6 +1177,7 @@
     <members>Dependent_Picklist_Values.X97</members>
     <members>Dependent_Picklist_Values.X98</members>
     <members>Dependent_Picklist_Values.X99</members>
+    <members>Fiori_Canvas_Settings.Default</members>
     <name>CustomMetadata</name>
   </types>
   <types>
@@ -629,12 +1207,14 @@
     <members>ExchangeUserMapping</members>
     <members>External_Configuration__c</members>
     <members>FeedItem</members>
+    <members>Fiori_Canvas_Settings__mdt</members>
     <members>ForecastingAdjustment</members>
     <members>ForecastingCategoryMapping</members>
     <members>ForecastingOwnerAdjustment</members>
     <members>ForecastingQuota</members>
     <members>ForecastingTypeToCategory</members>
     <members>Idea</members>
+    <members>Integration_Settings__c</members>
     <members>Issues_Enhancements__c</members>
     <members>Item_Group__c</members>
     <members>Lead</members>
@@ -660,14 +1240,22 @@
     <members>ProfileSkillUser</members>
     <members>Project__c</members>
     <members>Quote</members>
+    <members>Quote_Document_Dynamic_Section__c</members>
     <members>QuoteLineItem</members>
     <members>Release__c</members>
     <members>RP_Approval__c</members>
+    <members>Sales_Area__c</members>
+    <members>Sales_Area_data__c</members>
     <members>SAP_Reference__c</members>
+    <members>Ship_To_Data__c</members>
     <members>Site</members>
     <members>SocialPersona</members>
     <members>Solution</members>
     <members>StreamingChannel</members>
+    <members>Survey__c</members>
+    <members>Survey_Question__c</members>
+    <members>SurveyQuestionResponse__c</members>
+    <members>SurveyTaker__c</members>
     <members>Task</members>
     <members>User</members>
     <members>WorkBadge</members>
@@ -680,55 +1268,410 @@
     <members>Account-de</members>
     <members>Account-en_US</members>
     <members>Account-fr</members>
+    <members>Account-it</members>
     <members>Account-ja</members>
+    <members>Account-sv</members>
+    <members>Activity-fr</members>
+    <members>Activity-it</members>
+    <members>Activity-sv</members>
     <members>Asset-de</members>
     <members>Asset-fr</members>
     <members>Asset-ja</members>
+    <members>Campaign-fr</members>
+    <members>Campaign-it</members>
+    <members>Campaign-sv</members>
     <members>Configurator_API_Settings__c-en_US</members>
+    <members>Contact-fr</members>
+    <members>Contact-it</members>
+    <members>Contact-sv</members>
     <members>Contract-de</members>
     <members>Contract-fr</members>
+    <members>Contract-it</members>
     <members>Contract-ja</members>
+    <members>Contract-sv</members>
     <members>Dependent_Picklist_Values__mdt-en_US</members>
+    <members>Dependent_Picklist_Values__mdt-fr</members>
+    <members>Dependent_Picklist_Values__mdt-it</members>
+    <members>Dependent_Picklist_Values__mdt-sv</members>
+    <members>Event-fr</members>
+    <members>Event-it</members>
+    <members>Event-sv</members>
     <members>External_Configuration__c-en_US</members>
+    <members>External_Configuration__c-fr</members>
+    <members>External_Configuration__c-it</members>
+    <members>External_Configuration__c-sv</members>
+    <members>Fiori_Canvas_Settings__mdt-en_US</members>
+    <members>Integration_Settings__c-en_US</members>
     <members>Issues_Enhancements__c-en_US</members>
+    <members>Issues_Enhancements__c-fr</members>
+    <members>Issues_Enhancements__c-it</members>
+    <members>Issues_Enhancements__c-sv</members>
     <members>Item_Group__c-en_US</members>
+    <members>Item_Group__c-fr</members>
+    <members>Item_Group__c-it</members>
+    <members>Item_Group__c-sv</members>
+    <members>Lead-fr</members>
+    <members>Lead-it</members>
+    <members>Lead-sv</members>
     <members>LOB__c-en_US</members>
+    <members>LOB__c-fr</members>
+    <members>LOB__c-it</members>
+    <members>LOB__c-sv</members>
     <members>Opportunity-de</members>
     <members>Opportunity-en_US</members>
     <members>Opportunity-fr</members>
+    <members>Opportunity-it</members>
     <members>Opportunity-ja</members>
     <members>OpportunityLineItem-de</members>
     <members>OpportunityLineItem-fr</members>
+    <members>OpportunityLineItem-it</members>
     <members>OpportunityLineItem-ja</members>
+    <members>OpportunityLineItem-sv</members>
+    <members>Opportunity-sv</members>
     <members>Opportunity_Trigger_Settings__c-en_US</members>
     <members>Order-de</members>
     <members>Order-fr</members>
+    <members>Order-it</members>
     <members>OrderItem-de</members>
     <members>OrderItem-fr</members>
+    <members>OrderItem-it</members>
     <members>OrderItem-ja</members>
+    <members>OrderItem-sv</members>
     <members>Order-ja</members>
+    <members>Order-sv</members>
+    <members>Pricebook2-fr</members>
+    <members>Pricebook2-it</members>
+    <members>Pricebook2-sv</members>
+    <members>PricebookEntry-fr</members>
+    <members>PricebookEntry-it</members>
+    <members>PricebookEntry-sv</members>
     <members>Product2-de</members>
     <members>Product2-fr</members>
+    <members>Product2-it</members>
     <members>Product2-ja</members>
+    <members>Product2-sv</members>
     <members>Project__c-en_US</members>
+    <members>Project__c-fr</members>
+    <members>Project__c-it</members>
+    <members>Project__c-sv</members>
+    <members>Quote_Document_Dynamic_Section__c-en_US</members>
     <members>Quote-en_US</members>
     <members>Release__c-en_US</members>
+    <members>Release__c-fr</members>
+    <members>Release__c-it</members>
+    <members>Release__c-sv</members>
     <members>RP_Approval__c-en_US</members>
+    <members>RP_Approval__c-fr</members>
+    <members>RP_Approval__c-it</members>
+    <members>RP_Approval__c-sv</members>
+    <members>Sales_Area__c-en_US</members>
+    <members>Sales_Area_data__c-en_US</members>
     <members>SAP_Reference__c-en_US</members>
+    <members>SAP_Reference__c-fr</members>
+    <members>SAP_Reference__c-it</members>
+    <members>SAP_Reference__c-sv</members>
+    <members>SBQQ__BlockPrice__c-de</members>
+    <members>SBQQ__BlockPrice__c-en_US</members>
+    <members>SBQQ__BlockPrice__c-fr</members>
+    <members>SBQQ__BlockPrice__c-ja</members>
+    <members>SBQQ__ConfigurationAttribute__c-de</members>
+    <members>SBQQ__ConfigurationAttribute__c-en_US</members>
+    <members>SBQQ__ConfigurationAttribute__c-fr</members>
+    <members>SBQQ__ConfigurationAttribute__c-ja</members>
+    <members>SBQQ__ConfigurationRule__c-de</members>
+    <members>SBQQ__ConfigurationRule__c-en_US</members>
+    <members>SBQQ__ConfigurationRule__c-fr</members>
+    <members>SBQQ__ConfigurationRule__c-ja</members>
+    <members>SBQQ__ContractedPrice__c-de</members>
+    <members>SBQQ__ContractedPrice__c-en_US</members>
+    <members>SBQQ__ContractedPrice__c-fr</members>
+    <members>SBQQ__ContractedPrice__c-it</members>
+    <members>SBQQ__ContractedPrice__c-ja</members>
+    <members>SBQQ__ContractedPrice__c-sv</members>
+    <members>SBQQ__Cost__c-de</members>
+    <members>SBQQ__Cost__c-en_US</members>
+    <members>SBQQ__Cost__c-fr</members>
+    <members>SBQQ__Cost__c-ja</members>
+    <members>SBQQ__CustomAction__c-de</members>
+    <members>SBQQ__CustomAction__c-en_US</members>
+    <members>SBQQ__CustomAction__c-fr</members>
+    <members>SBQQ__CustomAction__c-ja</members>
+    <members>SBQQ__CustomActionCondition__c-de</members>
+    <members>SBQQ__CustomActionCondition__c-en_US</members>
+    <members>SBQQ__CustomActionCondition__c-fr</members>
+    <members>SBQQ__CustomActionCondition__c-ja</members>
+    <members>SBQQ__CustomScript__c-de</members>
+    <members>SBQQ__CustomScript__c-en_US</members>
+    <members>SBQQ__CustomScript__c-fr</members>
+    <members>SBQQ__CustomScript__c-it</members>
+    <members>SBQQ__CustomScript__c-ja</members>
+    <members>SBQQ__CustomScript__c-sv</members>
+    <members>SBQQ__Dimension__c-de</members>
+    <members>SBQQ__Dimension__c-en_US</members>
+    <members>SBQQ__Dimension__c-fr</members>
+    <members>SBQQ__Dimension__c-ja</members>
+    <members>SBQQ__DiscountCategory__c-de</members>
+    <members>SBQQ__DiscountCategory__c-en_US</members>
+    <members>SBQQ__DiscountCategory__c-fr</members>
+    <members>SBQQ__DiscountCategory__c-ja</members>
+    <members>SBQQ__DiscountSchedule__c-de</members>
+    <members>SBQQ__DiscountSchedule__c-en_US</members>
+    <members>SBQQ__DiscountSchedule__c-fr</members>
+    <members>SBQQ__DiscountSchedule__c-ja</members>
+    <members>SBQQ__DiscountTier__c-de</members>
+    <members>SBQQ__DiscountTier__c-en_US</members>
+    <members>SBQQ__DiscountTier__c-fr</members>
+    <members>SBQQ__DiscountTier__c-ja</members>
+    <members>SBQQ__ErrorCondition__c-de</members>
+    <members>SBQQ__ErrorCondition__c-en_US</members>
+    <members>SBQQ__ErrorCondition__c-fr</members>
+    <members>SBQQ__ErrorCondition__c-ja</members>
+    <members>SBQQ__Favorite__c-de</members>
+    <members>SBQQ__Favorite__c-en_US</members>
+    <members>SBQQ__Favorite__c-fr</members>
+    <members>SBQQ__Favorite__c-ja</members>
+    <members>SBQQ__FavoriteProduct__c-de</members>
+    <members>SBQQ__FavoriteProduct__c-en_US</members>
+    <members>SBQQ__FavoriteProduct__c-fr</members>
+    <members>SBQQ__FavoriteProduct__c-ja</members>
+    <members>SBQQ__FavoriteShare__c-de</members>
+    <members>SBQQ__FavoriteShare__c-en_US</members>
+    <members>SBQQ__FavoriteShare__c-fr</members>
+    <members>SBQQ__FavoriteShare__c-it</members>
+    <members>SBQQ__FavoriteShare__c-ja</members>
+    <members>SBQQ__FavoriteShare__c-sv</members>
+    <members>SBQQ__FieldMetadata__c-en_US</members>
+    <members>SBQQ__ImportColumn__c-de</members>
+    <members>SBQQ__ImportColumn__c-en_US</members>
+    <members>SBQQ__ImportColumn__c-fr</members>
+    <members>SBQQ__ImportColumn__c-ja</members>
+    <members>SBQQ__ImportFormat__c-de</members>
+    <members>SBQQ__ImportFormat__c-en_US</members>
+    <members>SBQQ__ImportFormat__c-fr</members>
+    <members>SBQQ__ImportFormat__c-ja</members>
+    <members>SBQQ__InstallProcessorLog__c-de</members>
+    <members>SBQQ__InstallProcessorLog__c-en_US</members>
+    <members>SBQQ__InstallProcessorLog__c-fr</members>
+    <members>SBQQ__InstallProcessorLog__c-ja</members>
+    <members>SBQQ__LineColumn__c-de</members>
+    <members>SBQQ__LineColumn__c-en_US</members>
+    <members>SBQQ__LineColumn__c-fr</members>
+    <members>SBQQ__LineColumn__c-ja</members>
+    <members>SBQQ__Localization__c-de</members>
+    <members>SBQQ__Localization__c-en_US</members>
+    <members>SBQQ__Localization__c-fr</members>
+    <members>SBQQ__Localization__c-ja</members>
+    <members>SBQQ__LookupData__c-de</members>
+    <members>SBQQ__LookupData__c-en_US</members>
+    <members>SBQQ__LookupData__c-fr</members>
+    <members>SBQQ__LookupData__c-ja</members>
+    <members>SBQQ__LookupQuery__c-de</members>
+    <members>SBQQ__LookupQuery__c-en_US</members>
+    <members>SBQQ__LookupQuery__c-fr</members>
+    <members>SBQQ__LookupQuery__c-it</members>
+    <members>SBQQ__LookupQuery__c-ja</members>
+    <members>SBQQ__LookupQuery__c-sv</members>
+    <members>SBQQ__OptionConstraint__c-de</members>
+    <members>SBQQ__OptionConstraint__c-en_US</members>
+    <members>SBQQ__OptionConstraint__c-fr</members>
+    <members>SBQQ__OptionConstraint__c-ja</members>
+    <members>SBQQ__PriceAction__c-de</members>
+    <members>SBQQ__PriceAction__c-en_US</members>
+    <members>SBQQ__PriceAction__c-fr</members>
+    <members>SBQQ__PriceAction__c-it</members>
+    <members>SBQQ__PriceAction__c-ja</members>
+    <members>SBQQ__PriceAction__c-sv</members>
+    <members>SBQQ__PriceCondition__c-de</members>
+    <members>SBQQ__PriceCondition__c-en_US</members>
+    <members>SBQQ__PriceCondition__c-fr</members>
+    <members>SBQQ__PriceCondition__c-it</members>
+    <members>SBQQ__PriceCondition__c-ja</members>
+    <members>SBQQ__PriceCondition__c-sv</members>
+    <members>SBQQ__PriceRule__c-de</members>
+    <members>SBQQ__PriceRule__c-en_US</members>
+    <members>SBQQ__PriceRule__c-fr</members>
+    <members>SBQQ__PriceRule__c-it</members>
+    <members>SBQQ__PriceRule__c-ja</members>
+    <members>SBQQ__PriceRule__c-sv</members>
+    <members>SBQQ__PriceSchedule__c-de</members>
+    <members>SBQQ__PriceSchedule__c-en_US</members>
+    <members>SBQQ__PriceSchedule__c-fr</members>
+    <members>SBQQ__PriceSchedule__c-ja</members>
+    <members>SBQQ__PriceTier__c-de</members>
+    <members>SBQQ__PriceTier__c-en_US</members>
+    <members>SBQQ__PriceTier__c-fr</members>
+    <members>SBQQ__PriceTier__c-ja</members>
+    <members>SBQQ__ProcessInput__c-de</members>
+    <members>SBQQ__ProcessInput__c-en_US</members>
+    <members>SBQQ__ProcessInput__c-fr</members>
+    <members>SBQQ__ProcessInput__c-ja</members>
+    <members>SBQQ__ProcessInputCondition__c-de</members>
+    <members>SBQQ__ProcessInputCondition__c-en_US</members>
+    <members>SBQQ__ProcessInputCondition__c-fr</members>
+    <members>SBQQ__ProcessInputCondition__c-ja</members>
+    <members>SBQQ__ProcessInputValue__c-de</members>
+    <members>SBQQ__ProcessInputValue__c-en_US</members>
+    <members>SBQQ__ProcessInputValue__c-fr</members>
+    <members>SBQQ__ProcessInputValue__c-it</members>
+    <members>SBQQ__ProcessInputValue__c-ja</members>
+    <members>SBQQ__ProcessInputValue__c-sv</members>
+    <members>SBQQ__ProductAction__c-de</members>
+    <members>SBQQ__ProductAction__c-en_US</members>
+    <members>SBQQ__ProductAction__c-fr</members>
+    <members>SBQQ__ProductAction__c-ja</members>
+    <members>SBQQ__ProductFeature__c-de</members>
+    <members>SBQQ__ProductFeature__c-en_US</members>
+    <members>SBQQ__ProductFeature__c-fr</members>
+    <members>SBQQ__ProductFeature__c-ja</members>
+    <members>SBQQ__ProductOption__c-de</members>
+    <members>SBQQ__ProductOption__c-en_US</members>
+    <members>SBQQ__ProductOption__c-fr</members>
+    <members>SBQQ__ProductOption__c-ja</members>
+    <members>SBQQ__ProductRule__c-de</members>
+    <members>SBQQ__ProductRule__c-en_US</members>
+    <members>SBQQ__ProductRule__c-fr</members>
+    <members>SBQQ__ProductRule__c-it</members>
+    <members>SBQQ__ProductRule__c-ja</members>
+    <members>SBQQ__ProductRule__c-sv</members>
+    <members>SBQQ__Quote__c-de</members>
+    <members>SBQQ__Quote__c-en_US</members>
+    <members>SBQQ__Quote__c-fr</members>
+    <members>SBQQ__Quote__c-it</members>
+    <members>SBQQ__Quote__c-ja</members>
+    <members>SBQQ__Quote__c-sv</members>
+    <members>SBQQ__QuoteDocument__c-de</members>
+    <members>SBQQ__QuoteDocument__c-en_US</members>
+    <members>SBQQ__QuoteDocument__c-fr</members>
+    <members>SBQQ__QuoteDocument__c-ja</members>
+    <members>SBQQ__QuoteLine__c-de</members>
+    <members>SBQQ__QuoteLine__c-en_US</members>
+    <members>SBQQ__QuoteLine__c-fr</members>
+    <members>SBQQ__QuoteLine__c-it</members>
+    <members>SBQQ__QuoteLine__c-ja</members>
+    <members>SBQQ__QuoteLine__c-sv</members>
+    <members>SBQQ__QuoteLineGroup__c-de</members>
+    <members>SBQQ__QuoteLineGroup__c-en_US</members>
+    <members>SBQQ__QuoteLineGroup__c-fr</members>
+    <members>SBQQ__QuoteLineGroup__c-it</members>
+    <members>SBQQ__QuoteLineGroup__c-ja</members>
+    <members>SBQQ__QuoteLineGroup__c-sv</members>
+    <members>SBQQ__QuoteProcess__c-de</members>
+    <members>SBQQ__QuoteProcess__c-en_US</members>
+    <members>SBQQ__QuoteProcess__c-fr</members>
+    <members>SBQQ__QuoteProcess__c-ja</members>
+    <members>SBQQ__QuoteTemplate__c-de</members>
+    <members>SBQQ__QuoteTemplate__c-en_US</members>
+    <members>SBQQ__QuoteTemplate__c-fr</members>
+    <members>SBQQ__QuoteTemplate__c-it</members>
+    <members>SBQQ__QuoteTemplate__c-ja</members>
+    <members>SBQQ__QuoteTemplate__c-sv</members>
+    <members>SBQQ__QuoteTerm__c-de</members>
+    <members>SBQQ__QuoteTerm__c-en_US</members>
+    <members>SBQQ__QuoteTerm__c-fr</members>
+    <members>SBQQ__QuoteTerm__c-ja</members>
+    <members>SBQQ__RecordJob__c-de</members>
+    <members>SBQQ__RecordJob__c-en_US</members>
+    <members>SBQQ__RecordJob__c-fr</members>
+    <members>SBQQ__RecordJob__c-ja</members>
+    <members>SBQQ__RelatedContent__c-de</members>
+    <members>SBQQ__RelatedContent__c-en_US</members>
+    <members>SBQQ__RelatedContent__c-fr</members>
+    <members>SBQQ__RelatedContent__c-it</members>
+    <members>SBQQ__RelatedContent__c-ja</members>
+    <members>SBQQ__RelatedContent__c-sv</members>
+    <members>SBQQ__SearchFilter__c-de</members>
+    <members>SBQQ__SearchFilter__c-en_US</members>
+    <members>SBQQ__SearchFilter__c-fr</members>
+    <members>SBQQ__SearchFilter__c-ja</members>
+    <members>SBQQ__SolutionGroup__c-de</members>
+    <members>SBQQ__SolutionGroup__c-en_US</members>
+    <members>SBQQ__SolutionGroup__c-fr</members>
+    <members>SBQQ__SolutionGroup__c-ja</members>
+    <members>SBQQ__SubscribedAsset__c-de</members>
+    <members>SBQQ__SubscribedAsset__c-en_US</members>
+    <members>SBQQ__SubscribedAsset__c-fr</members>
+    <members>SBQQ__SubscribedAsset__c-ja</members>
+    <members>SBQQ__Subscription__c-de</members>
+    <members>SBQQ__Subscription__c-en_US</members>
+    <members>SBQQ__Subscription__c-fr</members>
+    <members>SBQQ__Subscription__c-ja</members>
+    <members>SBQQ__SummaryVariable__c-de</members>
+    <members>SBQQ__SummaryVariable__c-en_US</members>
+    <members>SBQQ__SummaryVariable__c-fr</members>
+    <members>SBQQ__SummaryVariable__c-ja</members>
+    <members>SBQQ__TemplateContent__c-de</members>
+    <members>SBQQ__TemplateContent__c-en_US</members>
+    <members>SBQQ__TemplateContent__c-fr</members>
+    <members>SBQQ__TemplateContent__c-it</members>
+    <members>SBQQ__TemplateContent__c-ja</members>
+    <members>SBQQ__TemplateContent__c-sv</members>
+    <members>SBQQ__TemplateSection__c-de</members>
+    <members>SBQQ__TemplateSection__c-en_US</members>
+    <members>SBQQ__TemplateSection__c-fr</members>
+    <members>SBQQ__TemplateSection__c-it</members>
+    <members>SBQQ__TemplateSection__c-ja</members>
+    <members>SBQQ__TemplateSection__c-sv</members>
+    <members>SBQQ__TermCondition__c-de</members>
+    <members>SBQQ__TermCondition__c-en_US</members>
+    <members>SBQQ__TermCondition__c-fr</members>
+    <members>SBQQ__TermCondition__c-ja</members>
+    <members>SBQQ__Theme__c-de</members>
+    <members>SBQQ__Theme__c-en_US</members>
+    <members>SBQQ__Theme__c-fr</members>
+    <members>SBQQ__Theme__c-ja</members>
+    <members>SBQQ__TimingLog__c-de</members>
+    <members>SBQQ__TimingLog__c-en_US</members>
+    <members>SBQQ__TimingLog__c-fr</members>
+    <members>SBQQ__TimingLog__c-ja</members>
+    <members>SBQQ__UpgradeSource__c-de</members>
+    <members>SBQQ__UpgradeSource__c-en_US</members>
+    <members>SBQQ__UpgradeSource__c-fr</members>
+    <members>SBQQ__UpgradeSource__c-ja</members>
+    <members>SBQQ__WebQuote__c-de</members>
+    <members>SBQQ__WebQuote__c-en_US</members>
+    <members>SBQQ__WebQuote__c-fr</members>
+    <members>SBQQ__WebQuote__c-it</members>
+    <members>SBQQ__WebQuote__c-ja</members>
+    <members>SBQQ__WebQuote__c-sv</members>
+    <members>SBQQ__WebQuoteLine__c-de</members>
+    <members>SBQQ__WebQuoteLine__c-en_US</members>
+    <members>SBQQ__WebQuoteLine__c-fr</members>
+    <members>SBQQ__WebQuoteLine__c-ja</members>
+    <members>Ship_To_Data__c-en_US</members>
+    <members>Survey__c-en_US</members>
+    <members>Survey_Question__c-en_US</members>
+    <members>SurveyQuestionResponse__c-en_US</members>
+    <members>SurveyTaker__c-en_US</members>
+    <members>Task-fr</members>
+    <members>Task-it</members>
+    <members>Task-sv</members>
     <members>User-de</members>
     <members>User-fr</members>
+    <members>User-it</members>
     <members>User-ja</members>
+    <members>User-sv</members>
     <members>WS_Request__c-en_US</members>
+    <members>WS_Request__c-fr</members>
+    <members>WS_Request__c-it</members>
+    <members>WS_Request__c-sv</members>
     <name>CustomObjectTranslation</name>
   </types>
   <types>
+    <members>Getting_Started_With_Survey_Force</members>
     <members>Issues_Enhancements__c</members>
     <members>Item_Group__c</members>
     <members>LOB__c</members>
     <members>Project__c</members>
+    <members>Quote_Document_Dynamic_Section__c</members>
     <members>Release__c</members>
     <members>RP_Approval__c</members>
+    <members>Sales_Area__c</members>
+    <members>Sales_Area_data__c</members>
     <members>SAP_Reference__c</members>
+    <members>Ship_To_Data__c</members>
+    <members>Survey__c</members>
+    <members>Survey_Question__c</members>
+    <members>SurveyTaker__c</members>
     <members>WS_Request__c</members>
     <name>CustomTab</name>
   </types>
@@ -741,11 +1684,15 @@
     <members>Sales_and_Marketing_Dashboards</members>
     <members>Sales_and_Marketing_Dashboards/AdoptionDashboard</members>
     <members>Sales_and_Marketing_Dashboards/Best_Practice_Leads_Dashboard</members>
+    <members>Sales_and_Marketing_Dashboards/Best_Practices_Dashboard6</members>
     <members>Salesforce_Adoption_Dashboards</members>
     <members>Salesforce_Adoption_Dashboards/X1_User_Adoption_Logins</members>
     <members>Salesforce_Adoption_Dashboards/X2_Key_Feature_Adoption</members>
     <members>Salesforce_Adoption_Dashboards/X3_Sales_Marketing_Adoption</members>
     <members>Service_Dashboards</members>
+    <members>Service_Dashboards/Agent_Supervisor_Overview</members>
+    <members>Service_Dashboards/Service_Exec_Overview</members>
+    <members>Service_Dashboards/Service_KPIs</members>
     <name>Dashboard</name>
   </types>
   <types>
@@ -753,6 +1700,14 @@
     <name>DelegateGroup</name>
   </types>
   <types>
+    <members>EMEA</members>
+    <members>EMEA/Enersys_Logo.jpg</members>
+    <members>EMEA/Footer_France_jpg.jpg</members>
+    <members>EMEA/Footer_Germany_gif.gif</members>
+    <members>EMEA/Footer_Italy_jpg.jpg</members>
+    <members>EMEA/Footer_Sweden.jpg</members>
+    <members>EMEA/Footer_UK_jpg.jpg</members>
+    <members>EMEA/Netherland_Footer_jpg.jpg</members>
     <members>Salesforce1_Branding_Resources</members>
     <members>Salesforce1_Branding_Resources/EnerSys_R_mark_high_png.png</members>
     <members>SalesTools</members>
@@ -778,11 +1733,13 @@
     <members>unfiled$public/I_E_Business_Owner</members>
     <members>unfiled$public/I_E_IT_Owner</members>
     <members>unfiled$public/I_E_Ready_for_Testing</members>
+    <members>unfiled$public/Lead_Assignment_Notification</members>
     <members>unfiled$public/LeadsNewassignmentnotificationSAMPLE</members>
     <members>unfiled$public/LeadsWebtoLeademailresponseSAMPLE</members>
     <members>unfiled$public/Order_Accepted</members>
     <members>unfiled$public/Order_Rejected</members>
     <members>unfiled$public/Quote_Approval_Request</members>
+    <members>unfiled$public/Quote_Template_Language</members>
     <members>unfiled$public/Rental_Quote_Approval_Request</members>
     <members>unfiled$public/Request_to_Revise_Quote</members>
     <members>unfiled$public/Sample_CallNoAnswer</members>
@@ -814,11 +1771,16 @@
     <name>EscalationRules</name>
   </types>
   <types>
+    <members>SBQQ__QuoteLine__c.Rental_Line_Editor</members>
+    <members>SBQQ__QuoteLine__c.RP_Line_Editor</members>
+    <name>FieldSet</name>
+  </types>
+  <types>
     <members>Account_Lightning_Layout</members>
     <members>Awesome_Admins_UtilityBar</members>
+    <members>Campaign_Record_Page</members>
     <members>Contact_Record_Page</members>
     <members>Contracted_Price_Record_Page</members>
-    <members>Coordinators_Customer_Service_Home_Page</members>
     <members>Default_Home_Page</members>
     <members>EnerSys_Chatter_UtilityBar</members>
     <members>EnerSys_Sales_UtilityBar</members>
@@ -837,6 +1799,9 @@
     <members>Quote_Document_Record_Page</members>
     <members>Quote_Lightning_Layout</members>
     <members>Release_Lightning_Page</members>
+    <members>Sales_Area_Data_Record_Page</members>
+    <members>Sales_Area_Record_Page</members>
+    <members>SAP_Reference_Record_Page</members>
     <name>FlexiPage</name>
   </types>
   <types>
@@ -846,36 +1811,90 @@
     <members>Approve_Quote-1</members>
     <members>Approve_Quote-2</members>
     <members>Approve_Quote-3</members>
-    <members>Approve_Quote-4</members>
     <members>Change_Record_Type_to_Draft</members>
     <members>Change_Record_Type_to_Draft-1</members>
     <members>Change_Record_Type_to_Draft-2</members>
-    <members>Change_Record_Type_to_Draft-3</members>
     <members>CreateOrder</members>
     <members>CreateOrder-1</members>
     <members>CreateRentalQuotation</members>
     <members>CreateRentalQuotation-1</members>
     <members>CreateSalesQuotation</members>
     <members>CreateSalesQuotation-1</members>
+    <members>CreateSalesQuote</members>
+    <members>Default_values-1</members>
+    <members>Default_values-2</members>
+    <members>Default_values-3</members>
+    <members>Default_values-4</members>
     <members>Opportunity_Default_Oppty_Naming_Convention</members>
+    <members>Opportunity_Default_Oppty_Naming_Convention-1</members>
     <members>Opportunity_Update_Fields</members>
+    <members>Opportunity_Update_Fields-1</members>
+    <members>Opportunity_Update_Fields-2</members>
+    <members>Opportunity_Update_Fields-3</members>
+    <members>Opportunity_Update_Fields-4</members>
+    <members>Opportunity_Update_Fields-5</members>
+    <members>Opportunity_Update_Fields-6</members>
+    <members>Opportunity_Update_Fields-7</members>
     <members>Order_product_company</members>
-    <members>Order_product_company-1</members>
     <members>Order_Update_Field</members>
     <members>Order_Update_Field-1</members>
     <members>Order_Update_Field-2</members>
     <members>Order_Update_Field-3</members>
+    <members>Order_Update_Field-4</members>
     <members>Order_Validation</members>
     <members>Quick_Quote</members>
     <members>Quick_Quote-1</members>
+    <members>Quick_Quote-10</members>
+    <members>Quick_Quote-11</members>
+    <members>Quick_Quote-12</members>
+    <members>Quick_Quote-13</members>
+    <members>Quick_Quote-14</members>
+    <members>Quick_Quote-15</members>
+    <members>Quick_Quote-16</members>
+    <members>Quick_Quote-17</members>
+    <members>Quick_Quote-18</members>
     <members>Quick_Quote-2</members>
     <members>Quick_Quote-3</members>
+    <members>Quick_Quote-4</members>
+    <members>Quick_Quote-5</members>
+    <members>Quick_Quote-6</members>
+    <members>Quick_Quote-7</members>
+    <members>Quick_Quote-9</members>
+    <members>Quote_EMEA_Default_Values</members>
+    <members>Quote_EMEA_Default_Values-1</members>
+    <members>Quote_EMEA_Default_Values-2</members>
     <members>Quote_Set_Bill_To</members>
+    <members>Quote_Set_Bill_To-1</members>
+    <members>Quote_Set_Bill_To-2</members>
+    <members>Quote_Set_Bill_To-4</members>
     <members>Quote_Update_fields</members>
     <members>Quote_Update_fields-1</members>
+    <members>Quote_Update_fields-10</members>
+    <members>Quote_Update_fields-11</members>
+    <members>Quote_Update_fields-12</members>
+    <members>Quote_Update_fields-13</members>
+    <members>Quote_Update_fields-14</members>
+    <members>Quote_Update_fields-15</members>
+    <members>Quote_Update_fields-16</members>
+    <members>Quote_Update_fields-17</members>
+    <members>Quote_Update_fields-18</members>
+    <members>Quote_Update_fields-19</members>
     <members>Quote_Update_fields-2</members>
+    <members>Quote_Update_fields-20</members>
+    <members>Quote_Update_fields-21</members>
+    <members>Quote_Update_fields-22</members>
+    <members>Quote_Update_fields-23</members>
+    <members>Quote_Update_fields-24</members>
+    <members>Quote_Update_fields-25</members>
+    <members>Quote_Update_fields-26</members>
+    <members>Quote_Update_fields-27</members>
     <members>Quote_Update_fields-3</members>
     <members>Quote_Update_fields-4</members>
+    <members>Quote_Update_fields-5</members>
+    <members>Quote_Update_fields-6</members>
+    <members>Quote_Update_fields-7</members>
+    <members>Quote_Update_fields-8</members>
+    <members>Quote_Update_fields-9</members>
     <members>Rental_Approval_Submission</members>
     <members>Sales_Approval_Submission</members>
     <members>setParentAccountID</members>
@@ -883,6 +1902,7 @@
     <members>setParentAccountID-2</members>
     <members>setParentAccoutIdtoChildren</members>
     <members>setParentAccoutIdtoChildren-1</members>
+    <members>Set_ship_to_parent</members>
     <members>UpdateParentAccount</members>
     <members>UpdateParentAccount-2</members>
     <members>UpdateParentAccount-5</members>
@@ -897,18 +1917,22 @@
     <members>CreateOrder</members>
     <members>CreateRentalQuotation</members>
     <members>CreateSalesQuotation</members>
+    <members>CreateSalesQuote</members>
+    <members>Default_values</members>
     <members>Opportunity_Default_Oppty_Naming_Convention</members>
     <members>Opportunity_Update_Fields</members>
     <members>Order_product_company</members>
     <members>Order_Update_Field</members>
     <members>Order_Validation</members>
     <members>Quick_Quote</members>
+    <members>Quote_EMEA_Default_Values</members>
     <members>Quote_Set_Bill_To</members>
     <members>Quote_Update_fields</members>
     <members>Rental_Approval_Submission</members>
     <members>Sales_Approval_Submission</members>
     <members>setParentAccountID</members>
     <members>setParentAccoutIdtoChildren</members>
+    <members>Set_ship_to_parent</members>
     <members>UpdateParentAccount</members>
     <name>FlowDefinition</name>
   </types>
@@ -916,8 +1940,10 @@
     <members>Company_Number</members>
     <members>Competitors</members>
     <members>Country</members>
+    <members>Gender</members>
     <members>Industry</members>
     <members>Product_Category</members>
+    <members>Sales_Organization</members>
     <members>SBU</members>
     <members>Site_Options</members>
     <members>State</members>
@@ -940,16 +1966,11 @@
     <name>Group</name>
   </types>
   <types>
-    <members>Coordinator Cust Service</members>
     <members>Dashboard Home Page Default</members>
     <name>HomePageLayout</name>
   </types>
   <types>
-    <members>DDC_clean</members>
     <members>mule</members>
-    <members>relateiq</members>
-    <members>relateiq</members>
-    <members>relateiq</members>
     <members>SBQQ</members>
     <members>sfadminapps</members>
     <members>sfadminapps</members>
@@ -997,13 +2018,13 @@
     <name>InstalledPackage</name>
   </types>
   <types>
-    <members>Account-Account Layout</members>
     <members>Account-America Customer Layout</members>
     <members>Account-America Prospect Layout</members>
     <members>Account-EMEA Customer Layout</members>
     <members>Account-EMEA Prospect Layout</members>
     <members>AccountTeamMember-Account Team Member Layout</members>
     <members>Asset-Asset Layout</members>
+    <members>Campaign-Big Event Campaign Layout</members>
     <members>Campaign-Campaign Layout</members>
     <members>CampaignInfluenceModel-Campaign Influence Model Layout</members>
     <members>CampaignMember-Campaign Member Page Layout</members>
@@ -1015,14 +2036,13 @@
     <members>ContentVersion-Content Version</members>
     <members>Contract-Contract Layout</members>
     <members>DandBCompany-D%26B Company Layout</members>
-    <members>DatacloudCompany-Data%2Ecom Company Layout</members>
     <members>Dependent_Picklist_Values__mdt-Dependent Picklist Value Layout</members>
-    <members>DuplicateRecordItem-Duplicate Record Item Layout</members>
     <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
     <members>EmailMessage-Email Message Layout</members>
     <members>Event-Event Layout</members>
     <members>External_Configuration__c-External Configuration Layout</members>
     <members>FeedItem-Feed Item Layout</members>
+    <members>Fiori_Canvas_Settings__mdt-Fiori Canvas Settings Layout</members>
     <members>Global-Global Layout</members>
     <members>Idea-Idea Layout</members>
     <members>Issues_Enhancements__c-Issues %26 Enhancements Layout</members>
@@ -1051,14 +2071,30 @@
     <members>ProfileSkill-Skill Layout</members>
     <members>ProfileSkillUser-Skill User Layout</members>
     <members>Project__c-Project Layout</members>
+    <members>Quote_Document_Dynamic_Section__c-Quote Dynamic Conent Layout</members>
     <members>QuoteLineItem-Quote Line Item Layout</members>
     <members>Quote-Quote Layout</members>
     <members>Release__c-Release Layout</members>
     <members>RP_Approval__c-RP Approval Matrix Layout</members>
+    <members>Sales_Area__c-Sales Area Layout</members>
+    <members>Sales_Area_data__c-Sales Area Data Layout</members>
     <members>SAP_Reference__c-SAP Reference Layout</members>
+    <members>SBQQ__Quote__c-Americas Quote Layout</members>
+    <members>SBQQ__Quote__c-Americas Quote Layout - Approved</members>
+    <members>SBQQ__Quote__c-Americas Rental Quote Layout</members>
+    <members>SBQQ__Quote__c-Americas Rental Quote Layout - Approved</members>
+    <members>SBQQ__Quote__c-EMEA Quote Layout</members>
+    <members>SBQQ__Quote__c-EMEA Quote Layout - Approved</members>
+    <members>SBQQ__Quote__c-EMEA Rental Quote Layout</members>
+    <members>SBQQ__Quote__c-EMEA Rental Quote Layout - Approved</members>
+    <members>Ship_To_Data__c-Ship To Data Layout</members>
     <members>SocialPersona-Social Persona Layout</members>
     <members>SocialPost-Social Post Layout</members>
     <members>Solution-Solution Layout</members>
+    <members>Survey__c-Survey Layout</members>
+    <members>Survey_Question__c-Survey Question Layout</members>
+    <members>SurveyQuestionResponse__c-Survey Question Answer Layout</members>
+    <members>SurveyTaker__c-SurveyTaker Layout</members>
     <members>Task-Task Layout</members>
     <members>UserAlt-User Profile Layout</members>
     <members>UserAppMenuItem-Application Layout</members>
@@ -1081,7 +2117,10 @@
     <members>Account.Americas_Prospect</members>
     <members>Account.Americas_Ship_To_Accounts</members>
     <members>Account.EMEA_Accounts</members>
-    <members>Account.EMEAS_Prospect</members>
+    <members>Account.EMEA_EAS_Accounts</members>
+    <members>Account.EMEA_MP_Accounts</members>
+    <members>Account.EMEA_Prospect</members>
+    <members>Account.EMEA_RP_Accounts</members>
     <members>Account.MyAccounts</members>
     <members>Activity.MyActivities</members>
     <members>Activity.MyDelegatedActivities</members>
@@ -1107,21 +2146,79 @@
     <members>Dependent_Picklist_Values__mdt.All</members>
     <members>Idea.Ideas_Last_7_Days</members>
     <members>Issues_Enhancements__c.All</members>
-    <members>Issues_Enhancements__c.Backlog</members>
-    <members>Issues_Enhancements__c.Bing_Tasks</members>
-    <members>Issues_Enhancements__c.Criticals</members>
     <members>Issues_Enhancements__c.Current_Release</members>
-    <members>Issues_Enhancements__c.EMEA_Tasks</members>
     <members>Issues_Enhancements__c.I_E_by_Status</members>
-    <members>Issues_Enhancements__c.Party_Responsible_Summa</members>
-    <members>Issues_Enhancements__c.Upcoming_Release</members>
     <members>Item_Group__c.All</members>
     <members>Item_Group__c.Motive_Power_Item_Groups</members>
     <members>Item_Group__c.Reserve_Power_Item_Groups</members>
+    <members>Lead.AD_Air_Leads_Lead</members>
+    <members>Lead.AD_Land_Leads_Lead</members>
+    <members>Lead.AD_Sea_Leads_Lead</members>
     <members>Lead.AllOpenLeads</members>
+    <members>Lead.MP_Arab_Countries_Leads_Lead</members>
+    <members>Lead.MP_Austria_Leads_Lead</members>
+    <members>Lead.MP_Balkans_Leads_Lead</members>
+    <members>Lead.MP_Baltic_States_Leads_Lead</members>
+    <members>Lead.MP_Belgium_Leads_Lead</members>
+    <members>Lead.MP_Caucasian_Eastern_Countries_Leads_Lead</members>
+    <members>Lead.MP_Czech_and_Slovakia_Leads_Lead</members>
+    <members>Lead.MP_Denmark_Leads_Lead</members>
+    <members>Lead.MP_Finland_Leads_Lead</members>
+    <members>Lead.MP_France_Leads_Lead</members>
+    <members>Lead.MP_Germany_Leads_Lead</members>
+    <members>Lead.MP_Greece_Leads_Lead</members>
+    <members>Lead.MP_Hungary_Leads_Lead</members>
+    <members>Lead.MP_Italy_Leads_Lead</members>
+    <members>Lead.MP_Netherlands_Leads_Lead</members>
+    <members>Lead.MP_North_America_Leads_Lead</members>
+    <members>Lead.MP_Norway_Leads_Lead</members>
+    <members>Lead.MP_Other_European_Countries_Lead</members>
+    <members>Lead.MP_Poland_Leads_Lead</members>
+    <members>Lead.MP_Rest_of_Africa_Leads_Lead</members>
+    <members>Lead.MP_Romania_and_Bulgaria_Leads_Lead</members>
+    <members>Lead.MP_Russia_Leads_Lead</members>
+    <members>Lead.MP_Slovenia_Leads_Lead</members>
+    <members>Lead.MP_South_Africa_Leads_Lead</members>
+    <members>Lead.MP_Spain_and_Portugal_Leads_Lead</members>
+    <members>Lead.MP_Sweden_Leads_Lead</members>
+    <members>Lead.MP_Switzerland_Leads_Lead</members>
+    <members>Lead.MP_Turkey_Leads_Lead</members>
+    <members>Lead.MP_UK_and_Ireland_Leads_Lead</members>
+    <members>Lead.MP_Ukraine_Leads_Lead</members>
     <members>Lead.MyLeads</members>
     <members>Lead.MyUnreadLeads</members>
     <members>Lead.Qualified_Leads</members>
+    <members>Lead.RP_Arab_Countries_Leads_Lead</members>
+    <members>Lead.RP_Austria_Leads_Lead</members>
+    <members>Lead.RP_Balkans_Leads_Lead</members>
+    <members>Lead.RP_Baltic_States_Leads_Lead</members>
+    <members>Lead.RP_Belgium_Leads_Lead</members>
+    <members>Lead.RP_Caucasian_Eastern_Countries_Leads_Lead</members>
+    <members>Lead.RP_Czech_and_Slovakia_Leads_Lead</members>
+    <members>Lead.RP_Denmark_Leads_Lead</members>
+    <members>Lead.RP_Finland_Leads_Lead</members>
+    <members>Lead.RP_France_Leads_Lead</members>
+    <members>Lead.RP_Germany_Leads_Lead</members>
+    <members>Lead.RP_Greece_Leads_Lead</members>
+    <members>Lead.RP_Hungary_Leads_Lead</members>
+    <members>Lead.RP_Italy_Leads_Lead</members>
+    <members>Lead.RP_Netherlands_Leads_Lead</members>
+    <members>Lead.RP_North_America_Leads_Lead</members>
+    <members>Lead.RP_Norway_Leads_Lead</members>
+    <members>Lead.RP_Other_European_Countries_Lead</members>
+    <members>Lead.RP_Poland_Leads_Lead</members>
+    <members>Lead.RP_Rest_of_Africa_Leads_Lead</members>
+    <members>Lead.RP_Romania_and_Bulgaria_Leads_Lead</members>
+    <members>Lead.RP_Russia_Leads_Lead</members>
+    <members>Lead.RP_Slovenia_Leads_Lead</members>
+    <members>Lead.RP_South_Africa_Leads_Lead</members>
+    <members>Lead.RP_Spain_and_Portugal_Leads_Lead</members>
+    <members>Lead.RP_Spain_Leads_Lead</members>
+    <members>Lead.RP_Sweden_Leads_Lead</members>
+    <members>Lead.RP_Switzerland_Leads_Lead</members>
+    <members>Lead.RP_Turkey_Leads_Lead</members>
+    <members>Lead.RP_UK_and_Ireland_Leads_Lead</members>
+    <members>Lead.RP_Ukraine_Leads_Lead</members>
     <members>Lead.TodaysLeads</members>
     <members>LOB__c.All</members>
     <members>LOB__c.MP_LOB_s</members>
@@ -1130,14 +2227,12 @@
     <members>Opportunity.ClosingNextMonth</members>
     <members>Opportunity.ClosingThisMonth</members>
     <members>Opportunity.Default_Opportunity_Pipeline</members>
-    <members>Opportunity.Drill_3</members>
     <members>Opportunity.MyOpportunities</members>
     <members>Opportunity.NewThisWeek</members>
     <members>Opportunity.Won</members>
+    <members>Order.AllActivatedOrders</members>
+    <members>Order.AllDraftOrders</members>
     <members>Order.AllOrders</members>
-    <members>Order.MY_COMPLETED_ORDERS</members>
-    <members>Order.MY_WORKING_ORDERS</members>
-    <members>Order.OPEN_ORDERS</members>
     <members>Pricebook2.All_Price_Books</members>
     <members>Product2.AllProducts</members>
     <members>Product2.Freight_Products</members>
@@ -1145,18 +2240,47 @@
     <members>Project__c.Motive_Power_Projects</members>
     <members>Project__c.My_Projects</members>
     <members>Project__c.Reserve_Power_Projects</members>
+    <members>Quote_Document_Dynamic_Section__c.All</members>
     <members>Quote.mine</members>
     <members>Release__c.All</members>
     <members>Release__c.Releases_This_Month</members>
     <members>RP_Approval__c.All</members>
+    <members>Sales_Area__c.All</members>
+    <members>Sales_Area_data__c.All</members>
     <members>SAP_Reference__c.All</members>
     <members>SAP_Reference__c.Delivery_Terms</members>
+    <members>SAP_Reference__c.EMEA_Customer_Group</members>
+    <members>SAP_Reference__c.EMEA_Customer_Language</members>
+    <members>SAP_Reference__c.EMEA_Delivery_Priority</members>
+    <members>SAP_Reference__c.EMEA_Delivery_Priority1</members>
+    <members>SAP_Reference__c.EMEA_Incoterm</members>
+    <members>SAP_Reference__c.EMEA_Price_Group</members>
+    <members>SAP_Reference__c.EMEA_Price_Group1</members>
+    <members>SAP_Reference__c.EMEA_Regions</members>
+    <members>SAP_Reference__c.EMEA_Sales_District</members>
+    <members>SAP_Reference__c.EMEA_Sales_Districts</members>
+    <members>SAP_Reference__c.EMEA_Sales_Office</members>
+    <members>SAP_Reference__c.EMEA_Shipping_Condition</members>
+    <members>SAP_Reference__c.EMEA_Terms_of_Payment</members>
+    <members>SAP_Reference__c.EMEA_Transportation_Zones</members>
     <members>SAP_Reference__c.Missing</members>
     <members>SAP_Reference__c.Order_Types</members>
     <members>SAP_Reference__c.Payment_Terms</members>
+    <members>SAP_Reference__c.Problem_Terms</members>
     <members>SAP_Reference__c.Warehouse_Codes</members>
+    <members>SBQQ__Quote__c.All_EMEA_Quotes</members>
+    <members>SBQQ__Quote__c.All_with_PB</members>
+    <members>SBQQ__Quote__c.My_Accepted_Quotes</members>
+    <members>SBQQ__Quote__c.My_Approved_Quotes</members>
+    <members>SBQQ__Quote__c.My_Draft_Quotes</members>
+    <members>SBQQ__Quote__c.My_Quotes</members>
+    <members>SBQQ__Quote__c.My_Quotes_to_Revise</members>
+    <members>Ship_To_Data__c.All</members>
     <members>Solution.AllReviewedSolutions</members>
     <members>Solution.AllUnreviewedSolutions</members>
+    <members>Survey__c.standard_view</members>
+    <members>Survey_Question__c.All</members>
+    <members>SurveyTaker__c.All</members>
     <members>User.ActiveUsers</members>
     <members>User.AdminUsers</members>
     <members>User.All_Americas_Users</members>
@@ -1191,9 +2315,10 @@
   <types>
     <members>Awesome_Admin_App_Access</members>
     <members>Business_Admin</members>
-    <members>Business_I_E</members>
+    <members>modify_all</members>
     <members>Modify_Item_Group_Records</members>
     <members>Sales_User</members>
+    <members>SAP_Sales_area_and_ship_to</members>
     <members>Summa_I_E</members>
     <name>PermissionSet</name>
   </types>
@@ -1225,6 +2350,70 @@
     <name>Profile</name>
   </types>
   <types>
+    <members>AD_Air_Leads</members>
+    <members>AD_Land_Leads</members>
+    <members>AD_Sea_Leads</members>
+    <members>MP_Arab_Countries_Leads</members>
+    <members>MP_Austria_Leads</members>
+    <members>MP_Balkans_Leads</members>
+    <members>MP_Baltic_States_Leads</members>
+    <members>MP_Belgium_Leads</members>
+    <members>MP_Caucasian_Eastern_Countries_Leads</members>
+    <members>MP_Czech_and_Slovakia_Leads</members>
+    <members>MP_Denmark_Leads</members>
+    <members>MP_Finland_Leads</members>
+    <members>MP_France_Leads</members>
+    <members>MP_Germany_Leads</members>
+    <members>MP_Greece_Leads</members>
+    <members>MP_Hungary_Leads</members>
+    <members>MP_Italy_Leads</members>
+    <members>MP_Netherlands_Leads</members>
+    <members>MP_North_America_Leads</members>
+    <members>MP_Norway_Leads</members>
+    <members>MP_Other_European_Countries</members>
+    <members>MP_Poland_Leads</members>
+    <members>MP_Rest_of_Africa_Leads</members>
+    <members>MP_Romania_and_Bulgaria_Leads</members>
+    <members>MP_Russia_Leads</members>
+    <members>MP_Slovenia_Leads</members>
+    <members>MP_South_Africa_Leads</members>
+    <members>MP_Spain_and_Portugal_Leads</members>
+    <members>MP_Sweden_Leads</members>
+    <members>MP_Switzerland_Leads</members>
+    <members>MP_Turkey_Leads</members>
+    <members>MP_UK_and_Ireland_Leads</members>
+    <members>MP_Ukraine_Leads</members>
+    <members>RP_Arab_Countries_Leads</members>
+    <members>RP_Austria_Leads</members>
+    <members>RP_Balkans_Leads</members>
+    <members>RP_Baltic_States_Leads</members>
+    <members>RP_Belgium_Leads</members>
+    <members>RP_Caucasian_Eastern_Countries_Leads</members>
+    <members>RP_Czech_and_Slovakia_Leads</members>
+    <members>RP_Denmark_Leads</members>
+    <members>RP_Finland_Leads</members>
+    <members>RP_France_Leads</members>
+    <members>RP_Germany_Leads</members>
+    <members>RP_Greece_Leads</members>
+    <members>RP_Hungary_Leads</members>
+    <members>RP_Italy_Leads</members>
+    <members>RP_Netherlands_Leads</members>
+    <members>RP_North_America_Leads</members>
+    <members>RP_Norway_Leads</members>
+    <members>RP_Other_European_Countries</members>
+    <members>RP_Poland_Leads</members>
+    <members>RP_Rest_of_Africa_Leads</members>
+    <members>RP_Romania_and_Bulgaria_Leads</members>
+    <members>RP_Russia_Leads</members>
+    <members>RP_Slovenia_Leads</members>
+    <members>RP_South_Africa_Leads</members>
+    <members>RP_Spain_and_Portugal_Leads</members>
+    <members>RP_Spain_Leads</members>
+    <members>RP_Sweden_Leads</members>
+    <members>RP_Switzerland_Leads</members>
+    <members>RP_Turkey_Leads</members>
+    <members>RP_UK_and_Ireland_Leads</members>
+    <members>RP_Ukraine_Leads</members>
     <members>trUnassigned</members>
     <name>Queue</name>
   </types>
@@ -1251,6 +2440,7 @@
     <members>Opportunity.Create_Rental_Quote</members>
     <members>Opportunity.CreateSalesQuote</members>
     <members>Opportunity.Create_Sales_Quote</members>
+    <members>Opportunity.Create_Sales_Quote_Apex</members>
     <members>Opportunity.NewQuote</members>
     <members>Opportunity.New_Quote</members>
     <members>Order.Validate</members>
@@ -1259,6 +2449,8 @@
     <members>SBQQ__Quote__c.Create_Order_Test</members>
     <members>SBQQ__Quote__c.Launch_BSP</members>
     <members>SBQQ__Quote__c.Launch_OEMSpec</members>
+    <members>SBQQ__Quote__c.SAP_Create_Quote</members>
+    <members>SBQQ__Quote__c.Send_to_SAP</members>
     <members>SBQQ__Quote__c.Submit_for_Approval</members>
     <members>SendEmail</members>
     <members>Task.Defer</members>
@@ -1290,6 +2482,7 @@
   <types>
     <members>Account.Customer</members>
     <members>Account.Prospect</members>
+    <members>Campaign.Campaigns</members>
     <members>Contact.EnerSys_Contact</members>
     <members>Event.EnerSys_Event</members>
     <members>Item_Group__c.Americas_Item_Group</members>
@@ -1312,11 +2505,11 @@
     <name>RecordType</name>
   </types>
   <types>
+    <members>Jitterbit_Create_Quote_Dev</members>
+    <name>RemoteSiteSetting</name>
+  </types>
+  <types>
     <members>Americas_Sales_Manager_Reports</members>
-    <members>Americas_Sales_Manager_Reports/My_Teams_Activities_Last_7_Days</members>
-    <members>Americas_Sales_Manager_Reports/Opportunity_Pipeline_by_Probability</members>
-    <members>Americas_Sales_Manager_Reports/Opportunity_Total_Pipeline</members>
-    <members>Americas_Sales_Manager_Reports/Opportunity_Total_Pipeline_by_SBU</members>
     <members>Americas_Sales_Manager_Reports/SE_Quotes_by_SE_Customer</members>
     <members>Americas_Sales_Manager_Reports/SM_Leads_by_Created_Date</members>
     <members>Americas_Sales_Manager_Reports/SM_Lost_Quotes_with_Reason_and_Amount</members>
@@ -1329,7 +2522,6 @@
     <members>Americas_Sales_Manager_Reports/SM_Quotes_by_Status</members>
     <members>Americas_Sales_Manager_Reports/SM_Won_Quotes_with_Reason_and_Amount</members>
     <members>Americas_Sales_Rep_Reports</members>
-    <members>Americas_Sales_Rep_Reports/My_Activities_Last_7_Days</members>
     <members>Americas_Sales_Rep_Reports/SE_Account_Summary_Report</members>
     <members>Americas_Sales_Rep_Reports/SE_Leads_by_Created_Date</members>
     <members>Americas_Sales_Rep_Reports/SE_Open_Opportunities_by_Type</members>
@@ -1341,9 +2533,6 @@
     <members>Americas_Sales_Rep_Reports/SE_Prospect_Accounts_Added</members>
     <members>Americas_Sales_Rep_Reports/SE_Quotes_by_Status</members>
     <members>Coordinators_Customer_Service</members>
-    <members>Coordinators_Customer_Service/MY_COMPLETED_ORDERS</members>
-    <members>Coordinators_Customer_Service/MY_WORKING_ORDERS</members>
-    <members>Coordinators_Customer_Service/OPEN_ORDERS</members>
     <members>Coordinators_Customer_Service/Orders_to_be_Reviewed</members>
     <members>DashboardReportsAdoption</members>
     <members>DashboardReportsAdoption/UsageActivitiesCompleted</members>
@@ -1392,14 +2581,11 @@
     <members>DB_Adoption/DB_Adoption_PROSPECT_w_Fields_Populated</members>
     <members>EMEA_Sales_Rep_Reports</members>
     <members>EnerSys_Admin_Report_Folder</members>
-    <members>EnerSys_Admin_Report_Folder/Chatter_Groups_and_Members</members>
     <members>EnerSys_Admin_Report_Folder/Delete_Test_Accounts</members>
     <members>EnerSys_Admin_Report_Folder/Delete_Test_Leads</members>
     <members>EnerSys_Admin_Report_Folder/Delete_Test_Opportunities</members>
-    <members>EnerSys_Admin_Report_Folder/Douglas_Hawker_Legacy</members>
     <members>Reports_MRR</members>
     <members>Sales_and_Marketing_Reports</members>
-    <members>Sales_and_Marketing_Reports/Account_Owner_Report</members>
     <members>Sales_and_Marketing_Reports/Activities_by_Salesperson</members>
     <members>Sales_and_Marketing_Reports/CampaignROIbyCampaignType</members>
     <members>Sales_and_Marketing_Reports/CampaignsbyROI</members>
@@ -1416,7 +2602,6 @@
     <members>Sales_and_Marketing_Reports/Marketing_Exec_Leads_Converted</members>
     <members>Sales_and_Marketing_Reports/Marketing_Exec_Lead_Trends_by_Status</members>
     <members>Sales_and_Marketing_Reports/Marketing_Exec_of_Leads</members>
-    <members>Sales_and_Marketing_Reports/My_Team_s_Quotes_by_Primary_Contact</members>
     <members>Sales_and_Marketing_Reports/OpportunityProductPipeline</members>
     <members>Sales_and_Marketing_Reports/Sales_Exec</members>
     <members>Sales_and_Marketing_Reports/Sales_Exec_Bookings_Trend</members>
@@ -1477,20 +2662,19 @@
     <members>Service_Dashboards_Reports/Trend_of_Case_Resolution_Time</members>
     <members>Service_Dashboards_Reports/Trend_of_Cases_Closed</members>
     <members>Service_Dashboards_Reports/Trend_of_Cases_Created</members>
+    <members>Survey_Force_Reports</members>
+    <members>Survey_Force_Reports/Survey_with_Questions_and_Responses</members>
     <members>System_Admin_Reports</members>
     <members>System_Admin_Reports/Active_Users_Log_In_Check</members>
-    <members>System_Admin_Reports/Delete_Orders</members>
     <members>System_Admin_Reports/Delete_Test_Projects</members>
-    <members>System_Admin_Reports/I_E_items</members>
+    <members>System_Admin_Reports/SAP_Personnel_ID</members>
     <members>unfiled$public</members>
+    <members>unfiled$public/Accounts_with_Ship_Tos</members>
     <members>unfiled$public/Approval_Status</members>
-    <members>unfiled$public/demo</members>
     <members>unfiled$public/items_grouped_by_Item_group</members>
     <members>unfiled$public/items_grouped_by_product</members>
     <members>unfiled$public/items_grouped_end_user_first_and_by_prod</members>
-    <members>unfiled$public/MP_Quotes_100K_w_Oppty_Info</members>
     <members>unfiled$public/Opportunity_Amount_by_Stage_Sample</members>
-    <members>unfiled$public/Quote_Activity_Last_30_Days</members>
     <members>unfiled$public/SampleReportActiveUsers</members>
     <members>unfiled$public/SampleReportCasesStatusbyRep</members>
     <members>unfiled$public/SampleReportClosedSales</members>
@@ -1522,18 +2706,17 @@
     <members>unfiled$public/SampleReportSolutionsAdded</members>
     <members>unfiled$public/SampleReportTopAccounts</members>
     <members>unfiled$public/SampleReportUsersLoggedIn</members>
-    <members>unfiled$public/Summit_Power_Migrated_Accounts</members>
-    <members>unfiled$public/X100K_Quotes_MP</members>
+    <members>unfiled$public/SAP_products</members>
     <name>Report</name>
   </types>
   <types>
     <members>Activities_with_Created_By_and_Owner_Info</members>
-    <members>Chatter_Groups_with_or_without_members</members>
     <members>Contacts_with_Created_By_and_Owner_Info</members>
-    <members>Issues_Enhancements</members>
     <members>Leads_with_Created_By_and_Owner_Info</members>
     <members>Opportunities_with_Quotes_and_Quote_Line_Items</members>
     <members>Opportunity_and_Roles</members>
+    <members>Sales_Areas</members>
+    <members>Survey_w_Questions_and_Answers</members>
     <name>ReportType</name>
   </types>
   <types>
@@ -1541,15 +2724,60 @@
     <members>EAS_Americas</members>
     <members>EAS_District</members>
     <members>EAS_EMEA</members>
-    <members>EAS_EMEA_District</members>
-    <members>EAS_EMEA_Territory</members>
+    <members>EAS_EMEA_Air</members>
+    <members>EAS_EMEA_Land</members>
+    <members>EAS_EMEA_Sea</members>
     <members>EAS_North_America</members>
     <members>EAS_Territory</members>
     <members>MP_Americas</members>
     <members>MP_Americas_NA_Support</members>
     <members>MP_EMEA</members>
-    <members>MP_EMEA_District</members>
-    <members>MP_EMEA_Territory</members>
+    <members>MP_EMEA_Arab_countries</members>
+    <members>MP_EMEA_Austria</members>
+    <members>MP_EMEA_Balkans</members>
+    <members>MP_EMEA_Baltic_states</members>
+    <members>MP_EMEA_Belgium</members>
+    <members>MP_EMEA_Caucasian_and_eastern_countries</members>
+    <members>MP_EMEA_Central_Europe</members>
+    <members>MP_EMEA_Czech_and_Slovakia</members>
+    <members>MP_EMEA_Denmark</members>
+    <members>MP_EMEA_Finland</members>
+    <members>MP_EMEA_France</members>
+    <members>MP_EMEA_France_and_Benelux</members>
+    <members>MP_EMEA_Germany</members>
+    <members>MP_EMEA_Germany_Dealer_business</members>
+    <members>MP_EMEA_Germany_Port_business</members>
+    <members>MP_EMEA_Germany_Rental</members>
+    <members>MP_EMEA_Germany_Service</members>
+    <members>MP_EMEA_Greece</members>
+    <members>MP_EMEA_Hungary</members>
+    <members>MP_EMEA_Italy</members>
+    <members>MP_EMEA_Italy_Center</members>
+    <members>MP_EMEA_Italy_North_east</members>
+    <members>MP_EMEA_Italy_North_west</members>
+    <members>MP_EMEA_Italy_South_and_islands</members>
+    <members>MP_EMEA_Middle_East_and_Africa</members>
+    <members>MP_EMEA_Netherlands</members>
+    <members>MP_EMEA_North_South_Germany</members>
+    <members>MP_EMEA_Norway</members>
+    <members>MP_EMEA_Poland</members>
+    <members>MP_EMEA_Poland_and_Nordics</members>
+    <members>MP_EMEA_Rest_of_Africa</members>
+    <members>MP_EMEA_Romania_and_Bulgaria</members>
+    <members>MP_EMEA_Russia</members>
+    <members>MP_EMEA_Russia_and_Eastern_Europe</members>
+    <members>MP_EMEA_Slovenia</members>
+    <members>MP_EMEA_South_Africa</members>
+    <members>MP_EMEA_South_East_Europe</members>
+    <members>MP_EMEA_South_Europe</members>
+    <members>MP_EMEA_Spain_and_Portugal</members>
+    <members>MP_EMEA_Sweden</members>
+    <members>MP_EMEA_Switzerland</members>
+    <members>MP_EMEA_Turkey</members>
+    <members>MP_EMEA_UK_and_Ireland</members>
+    <members>MP_EMEA_UK_and_Scandinavia</members>
+    <members>MP_EMEA_Ukraine</members>
+    <members>MP_EMEA_West_South_Germany</members>
     <members>MP_GA_GA_Territory</members>
     <members>MP_GA_Gulf_Atlantic_District</members>
     <members>MP_GL_Chicago_District</members>
@@ -1589,8 +2817,41 @@
     <members>RP_Americas_Stationary</members>
     <members>RP_East_Specialty</members>
     <members>RP_EMEA</members>
-    <members>RP_EMEA_District</members>
-    <members>RP_EMEA_Territory</members>
+    <members>RP_EMEA_Arab_countries</members>
+    <members>RP_EMEA_Austria</members>
+    <members>RP_EMEA_Balkans</members>
+    <members>RP_EMEA_Baltic_states</members>
+    <members>RP_EMEA_Belgium</members>
+    <members>RP_EMEA_Benelux</members>
+    <members>RP_EMEA_Caucasian_and_eastern_countries</members>
+    <members>RP_EMEA_Central_Europe</members>
+    <members>RP_EMEA_Czech_and_Slovakia</members>
+    <members>RP_EMEA_Finland</members>
+    <members>RP_EMEA_France</members>
+    <members>RP_EMEA_Germany</members>
+    <members>RP_EMEA_Greece</members>
+    <members>RP_EMEA_Hungary</members>
+    <members>RP_EMEA_Italy</members>
+    <members>RP_EMEA_Middle_East_Africa</members>
+    <members>RP_EMEA_Middle_South_East_Europe</members>
+    <members>RP_EMEA_Netherlands</members>
+    <members>RP_EMEA_Nordic</members>
+    <members>RP_EMEA_Norway</members>
+    <members>RP_EMEA_Poland</members>
+    <members>RP_EMEA_Rest_of_Africa</members>
+    <members>RP_EMEA_Romania_and_Bulgaria</members>
+    <members>RP_EMEA_Russia</members>
+    <members>RP_EMEA_Russia_and_Eastern_Europe</members>
+    <members>RP_EMEA_Slovenia</members>
+    <members>RP_EMEA_South_Africa</members>
+    <members>RP_EMEA_Southern_and_Middle_Europe</members>
+    <members>RP_EMEA_Spain</members>
+    <members>RP_EMEA_Sweden</members>
+    <members>RP_EMEA_Switzerland</members>
+    <members>RP_EMEA_Turkey</members>
+    <members>RP_EMEA_UK_and_Ireland</members>
+    <members>RP_EMEA_UK_and_Ireland1</members>
+    <members>RP_EMEA_Ukraine</members>
     <members>RP_E_Specialty_District</members>
     <members>RP_E_Specialty_Territory</members>
     <members>RP_GL_Specialty_District</members>
@@ -1640,7 +2901,6 @@
     <members>Order</members>
     <members>OrgPreference</members>
     <members>PathAssistant</members>
-    <members>PersonalJourney</members>
     <members>Product</members>
     <members>Quote</members>
     <members>Search</members>
@@ -1655,6 +2915,7 @@
     <members>Configurator_API_Settings__c</members>
     <members>Contact</members>
     <members>External_Configuration__c</members>
+    <members>Integration_Settings__c</members>
     <members>Item_Group__c</members>
     <members>Lead</members>
     <members>LOB__c</members>
@@ -1662,30 +2923,47 @@
     <members>Opportunity_Trigger_Settings__c</members>
     <members>Order</members>
     <members>Project__c</members>
+    <members>Quote_Document_Dynamic_Section__c</members>
     <members>Release__c</members>
     <members>RP_Approval__c</members>
+    <members>Sales_Area__c</members>
     <members>SAP_Reference__c</members>
+    <members>Survey__c</members>
+    <members>SurveyTaker__c</members>
     <members>User</members>
     <members>WS_Request__c</members>
     <name>SharingRules</name>
   </types>
   <types>
+    <members>SAPCreateQuoteTestHttpCalloutMock_Error</members>
+    <members>SAPCreateQuoteTestHttpCalloutMock_Ok</members>
     <members>SLDS221</members>
+    <members>SurveyForce</members>
+    <members>SurveyForce_jquery</members>
+    <members>SurveyForce_jquery_ui</members>
+    <members>SurveyForce_SLDS</members>
+    <members>SurveyForce_svg4everybody</members>
+    <members>SurveyForce_UserGuide</members>
     <name>StaticResource</name>
   </types>
   <types>
     <members>en_US</members>
     <members>es</members>
+    <members>it</members>
+    <members>nl_NL</members>
+    <members>sv</members>
     <name>Translations</name>
   </types>
   <types>
     <members>Account.Accounts_Not_Edit_Ship_Tos</members>
     <members>Account.Customer_Accounts_AccountName_ReadOnly</members>
-    <members>Issues_Enhancements__c.Blocked_Reason_Required</members>
+    <members>Account.EMEA_Prospect_Required_Field_Creation</members>
+    <members>Contact.Other_Field_For_Roles_Contact</members>
     <members>Issues_Enhancements__c.Check_for_Post_Deployment_Steps</members>
     <members>Issues_Enhancements__c.Checklist_Validation_for_Closed_Deployed</members>
     <members>Issues_Enhancements__c.Closed_Reason_Required</members>
     <members>Lead.One_Lead_Field_is_Mandatory</members>
+    <members>Lead.Other_Field_For_Roles</members>
     <members>Opportunity.Approved_primary_quote</members>
     <members>Opportunity.Closed_Lost_Competitor</members>
     <members>Opportunity.Closed_Reason</members>
@@ -1694,6 +2972,10 @@
     <members>Order.Rep_number_is_a_number</members>
     <members>Order.Restrict_User_from_Changing_Order_Status</members>
     <members>Release__c.Require_Month_if_Type_Equals_Monthly</members>
+    <members>Sales_Area_data__c.Lock_SAD_for_customer_accounts</members>
+    <members>SBQQ__Quote__c.Tax_Rate_and_Est_Amount</members>
+    <members>SBQQ__QuoteLine__c.Max_disc_amt_less_than_list_price</members>
+    <members>SBQQ__QuoteLine__c.Max_discount_100</members>
     <name>ValidationRule</name>
   </types>
   <types>
@@ -1707,6 +2989,7 @@
     <members>Lead.GoogleMaps</members>
     <members>Lead.GoogleNews</members>
     <members>Lead.GoogleSearch</members>
+    <members>SBQQ__Quote__c.Manage_Line_Items</members>
     <name>WebLink</name>
   </types>
   <types>
@@ -1729,7 +3012,9 @@
     <members>ExchangeUserMapping</members>
     <members>External_Configuration__c</members>
     <members>FeedItem</members>
+    <members>Fiori_Canvas_Settings__mdt</members>
     <members>Idea</members>
+    <members>Integration_Settings__c</members>
     <members>Issues_Enhancements__c</members>
     <members>Item_Group__c</members>
     <members>Lead</members>
@@ -1750,14 +3035,22 @@
     <members>ProfileSkillUser</members>
     <members>Project__c</members>
     <members>Quote</members>
+    <members>Quote_Document_Dynamic_Section__c</members>
     <members>QuoteLineItem</members>
     <members>Release__c</members>
     <members>RP_Approval__c</members>
+    <members>Sales_Area__c</members>
+    <members>Sales_Area_data__c</members>
     <members>SAP_Reference__c</members>
+    <members>Ship_To_Data__c</members>
     <members>Site</members>
     <members>SocialPersona</members>
     <members>Solution</members>
     <members>StreamingChannel</members>
+    <members>Survey__c</members>
+    <members>Survey_Question__c</members>
+    <members>SurveyQuestionResponse__c</members>
+    <members>SurveyTaker__c</members>
     <members>Task</members>
     <members>User</members>
     <members>UserLicense</members>
@@ -1781,6 +3074,7 @@
     <members>Opportunity.PriceBook_Update_MP</members>
     <members>Opportunity.PriceBook_Update_RP_701</members>
     <members>Opportunity.PriceBook_Update_RP_702</members>
+    <members>Sales_Area__c.set_sales_area_data_name</members>
     <members>SAP_Reference__c.SAP_Create_Key</members>
     <members>SBQQ__Quote__c.MP_Quote_Check_Group_Line_Items</members>
     <members>SBQQ__Quote__c.Quote_Template_ID_MP</members>
@@ -1794,20 +3088,24 @@
     <members>SBQQ__Quote__c.Update_Status_Approved</members>
     <members>SBQQ__Quote__c.Update_Status_Draft</members>
     <members>SBQQ__Quote__c.Update_Watermark_Checkbox</members>
+    <members>SBQQ__QuoteDocument__c.Watermark_checked</members>
     <name>WorkflowFieldUpdate</name>
   </types>
   <types>
     <members>Issues_Enhancements__c.I%26E Business Owner Assigned or Changed</members>
     <members>Issues_Enhancements__c.I%26E IT Owner Assigned or Changed</members>
     <members>Issues_Enhancements__c.I%26E Ready for Testing</members>
+    <members>Opportunity.SBU and Company Code Opp EMEA</members>
     <members>Opportunity.SBU and Company Code Opp MP - Americas</members>
     <members>Opportunity.SBU and Company Code Opp RP 701 - Americas</members>
     <members>Opportunity.SBU and Company Code Opp RP 702 - Americas</members>
+    <members>Sales_Area__c.set sales area name</members>
     <members>SAP_Reference__c.SAP%3A Create Key</members>
     <members>SBQQ__Quote__c.MP Quotes%3A Group Quote Line Items</members>
     <members>SBQQ__Quote__c.Template Preview MP - Americas</members>
     <members>SBQQ__Quote__c.Template Preview - Rental Quote</members>
     <members>SBQQ__Quote__c.Template Preview RP - Americas</members>
+    <members>SBQQ__QuoteDocument__c.Watermark on the Draft Quotes</members>
     <name>WorkflowRule</name>
   </types>
   <version>38.0</version>
