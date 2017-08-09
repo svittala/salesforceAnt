@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
   <types>
-    <members>Production_of 8_9_2017</members>
+    <members>QA as of 8_9_2017</members>
     <members>AccountUtil</members>
     <members>AccountUtilTest</members>
     <members>AuraExtConfigRecreateLinesController</members>
     <members>AuraExtConfigRecreateLinesControllerTest</members>
     <members>BaaNAccountIDSync</members>
     <members>BaaNAccountIDSyncTest</members>
+    <members>clonequote</members>
     <members>ConfiguratorWS</members>
     <members>ConfiguratorWSBso</members>
     <members>ConfiguratorWSCombinedTest</members>
@@ -56,6 +57,7 @@
     <members>QATestDataFactoryEMEATest</members>
     <members>QuickQuoteVFController</members>
     <members>QuickQuoteVFControllerTest</members>
+    <members>QuoteCloneExt</members>
     <members>QuoteConfigReceiptsController</members>
     <members>QuoteConfigReceiptsControllerTest</members>
     <members>QuoteController</members>
@@ -108,6 +110,7 @@
     <name>ApexComponent</name>
   </types>
   <types>
+    <members>CloneQuotepage</members>
     <members>ConfiguratorWSLaunchBSP</members>
     <members>ConfiguratorWSLaunchOEMSpec</members>
     <members>ConfiguratorWSLaunchPSR</members>
@@ -272,6 +275,7 @@
     <members>Account.Name2__c</members>
     <members>Account.Name3__c</members>
     <members>Account.Name4__c</members>
+    <members>Account.Number_of_SADs__c</members>
     <members>Account.Parent_DUNS_number__c</members>
     <members>Account.Payment_Terms__c</members>
     <members>Account.Prospect__c</members>
@@ -512,6 +516,7 @@
     <members>Order.Warehouse__c</members>
     <members>Pricebook2.Company_Code__c</members>
     <members>Pricebook2.Key__c</members>
+    <members>Pricebook2.SafeID__c</members>
     <members>PricebookEntry.Key__c</members>
     <members>Product2.A_H_KWH__c</members>
     <members>Product2.Approval_Required__c</members>
@@ -972,26 +977,21 @@
   </types>
   <types>
     <members>Account_Record_Type_Prospect</members>
+    <members>Back</members>
     <members>EMEA_Line_Item_Brand</members>
     <members>EMEA_Line_Item_Currency</members>
     <members>EMEA_Line_Item_Delivery_Date</members>
     <members>EMEA_Line_Item_Dimensions</members>
     <members>EMEA_Line_Item_Drawing_No</members>
-    <members>EMEA_Line_Item_EnerSys_LeadAdjuster</members>
-    <members>EMEA_Line_Item_External_rebate</members>
     <members>EMEA_Line_Item_Final_amount</members>
     <members>EMEA_Line_Item_Items_Total</members>
     <members>EMEA_Line_Item_Material_Descirption</members>
-    <members>EMEA_Line_Item_Order_Value</members>
-    <members>EMEA_Line_Item_Position_net</members>
     <members>EMEA_Line_Item_Price</members>
     <members>EMEA_Line_Item_Price_Unit</members>
     <members>EMEA_Line_Item_Quantity</members>
     <members>EMEA_Line_Item_Ship_to_Party</members>
     <members>EMEA_Line_Item_Subsequent_Items</members>
     <members>EMEA_Line_Item_Value</members>
-    <members>EMEA_Line_Item_VAT</members>
-    <members>EMEA_Line_Item_Volume_Discount</members>
     <members>EMEA_Quote_Line_Item</members>
     <members>Exempt_Profiles</members>
     <members>Fiori_Cannot_add_products</members>
@@ -1051,6 +1051,8 @@
     <members>LABS_SF_X3_Start_creating_your_first_survey</members>
     <members>LABS_SF_You_have_already_taken_this_survey</members>
     <members>LABS_SF_Your_next_few_steps_are_easy</members>
+    <members>Launch_BSP</members>
+    <members>Launch_PSR</members>
     <members>Lead_Assignment_Body</members>
     <members>Lead_Assignment_Subject</members>
     <members>LightningDomain</members>
@@ -1058,6 +1060,7 @@
     <members>Opportunity_Record_Type_Repeat</members>
     <members>Order_Record_Type_Americas_Order</members>
     <members>Order_Record_Type_Americas_Validated</members>
+    <members>Price_Book_EMEA</members>
     <members>Price_Book_MP_701</members>
     <members>Price_Book_RP_701</members>
     <members>Price_Book_RP_702</members>
@@ -1074,6 +1077,7 @@
     <members>Quote_Template_MP</members>
     <members>Quote_Template_Rental</members>
     <members>Quote_Template_RP</members>
+    <members>Refresh</members>
     <members>View_the_Quote</members>
     <name>CustomLabel</name>
   </types>
@@ -1890,6 +1894,7 @@
     <members>Quote_Update_fields-26</members>
     <members>Quote_Update_fields-27</members>
     <members>Quote_Update_fields-3</members>
+    <members>Quote_Update_fields-30</members>
     <members>Quote_Update_fields-4</members>
     <members>Quote_Update_fields-5</members>
     <members>Quote_Update_fields-6</members>
@@ -2447,6 +2452,7 @@
     <members>Order.Validate</members>
     <members>Order.Validate_Send</members>
     <members>Quote.SendEmail</members>
+    <members>SBQQ__Quote__c.Clone_Quote</members>
     <members>SBQQ__Quote__c.Create_Order_Test</members>
     <members>SBQQ__Quote__c.Launch_BSP</members>
     <members>SBQQ__Quote__c.Launch_OEMSpec</members>
@@ -2936,6 +2942,7 @@
     <name>SharingRules</name>
   </types>
   <types>
+    <members>LightingCSS</members>
     <members>SAPCreateQuoteTestHttpCalloutMock_Error</members>
     <members>SAPCreateQuoteTestHttpCalloutMock_Ok</members>
     <members>SLDS221</members>
@@ -2948,8 +2955,10 @@
     <name>StaticResource</name>
   </types>
   <types>
+    <members>de</members>
     <members>en_US</members>
     <members>es</members>
+    <members>fr</members>
     <members>it</members>
     <members>nl_NL</members>
     <members>sv</members>
@@ -2990,6 +2999,7 @@
     <members>Lead.GoogleMaps</members>
     <members>Lead.GoogleNews</members>
     <members>Lead.GoogleSearch</members>
+    <members>SBQQ__Quote__c.Clone</members>
     <members>SBQQ__Quote__c.Manage_Line_Items</members>
     <name>WebLink</name>
   </types>
@@ -3072,6 +3082,7 @@
     <name>WorkflowAlert</name>
   </types>
   <types>
+    <members>Opportunity.PriceBook_Update_EMEA</members>
     <members>Opportunity.PriceBook_Update_MP</members>
     <members>Opportunity.PriceBook_Update_RP_701</members>
     <members>Opportunity.PriceBook_Update_RP_702</members>
