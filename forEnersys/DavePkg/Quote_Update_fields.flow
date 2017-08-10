@@ -2,7 +2,7 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <processMetadataValues>
-            <hint> version 5 from Prod </hint>
+            <hint>QA Version 31</hint>
             <name>ActionCallType</name>
             <value>
                 <stringValue>process</stringValue>
@@ -14,14 +14,14 @@
                 <stringValue>Quote: Set Bill To</stringValue>
             </value>
         </processMetadataValues>
-        <name>myRule_11_A1</name>
-        <label>Bill To Is...</label>
-        <locationX>1100</locationX>
+        <name>myRule_14_A1</name>
+        <label>Set Bill To</label>
+        <locationX>1400</locationX>
         <locationY>200</locationY>
         <actionName>Quote_Set_Bill_To</actionName>
         <actionType>flow</actionType>
         <connector>
-            <targetReference>myDecision12</targetReference>
+            <targetReference>myDecision16</targetReference>
         </connector>
         <inputParameters>
             <processMetadataValues>
@@ -83,6 +83,102 @@
         </connector>
     </assignments>
     <decisions>
+        <name>isChangedDecision12_myRule_11_Select_Ship_To_SAD_c</name>
+        <label>isChangedDecision12_myRule_11_Select_Ship_To_SAD_c</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>isChangedDecision15_myRule_14_Bill_To_c</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>isChangedRule_12_myRule_11_Select_Ship_To_SAD_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>myVariable_old.Select_Ship_To_SAD__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>myVariable_current.Select_Ship_To_SAD__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>isChangedDecision15_myRule_14_Bill_To_c</targetReference>
+            </connector>
+            <label>isChangedRule_12_myRule_11_Select_Ship_To_SAD_c</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>isChangedDecision15_myRule_14_Bill_To_c</name>
+        <label>isChangedDecision15_myRule_14_Bill_To_c</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>isChangedDecision22_myRule_21_SBQQ_Account_c</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>isChangedRule_15_myRule_14_Bill_To_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>myVariable_old.SBQQ__Opportunity2__r.Bill_To__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>myVariable_current.SBQQ__Opportunity2__r.Bill_To__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>isChangedDecision22_myRule_21_SBQQ_Account_c</targetReference>
+            </connector>
+            <label>isChangedRule_15_myRule_14_Bill_To_c</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>isChangedDecision22_myRule_21_SBQQ_Account_c</name>
+        <label>isChangedDecision22_myRule_21_SBQQ_Account_c</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>isChangedRule_22_myRule_21_SBQQ_Account_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>myVariable_old.SBQQ__Account__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>myVariable_current.SBQQ__Account__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision</targetReference>
+            </connector>
+            <label>isChangedRule_22_myRule_21_SBQQ_Account_c</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>isChangedDecision6_myRule_5_SBQQ_Account_c</name>
         <label>isChangedDecision6_myRule_5_SBQQ_Account_c</label>
         <locationX>0</locationX>
@@ -120,7 +216,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>myDecision</targetReference>
+            <targetReference>isChangedDecision12_myRule_11_Select_Ship_To_SAD_c</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
@@ -141,7 +237,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>myDecision</targetReference>
+                <targetReference>isChangedDecision12_myRule_11_Select_Ship_To_SAD_c</targetReference>
             </connector>
             <label>isChangedRule_9_myRule_8_Select_Shipping_Address_c</label>
         </rules>
@@ -189,23 +285,78 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>myDecision12</targetReference>
+            <targetReference>myDecision13</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_11</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>formula_myRule_11</leftValueReference>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>isChangedRule_12_myRule_11_Select_Ship_To_SAD_c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Select_Ship_To_SAD__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>myRule_11_A1</targetReference>
             </connector>
-            <label>Bill To</label>
+            <label>Ship To Data</label>
         </rules>
     </decisions>
     <decisions>
@@ -215,16 +366,154 @@
                 <numberValue>5.0</numberValue>
             </value>
         </processMetadataValues>
-        <name>myDecision12</name>
-        <label>myDecision12</label>
+        <name>myDecision13</name>
+        <label>myDecision13</label>
         <locationX>50</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>myDecision14</targetReference>
+            <targetReference>myDecision16</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
-            <name>myRule_13</name>
+            <name>myRule_14</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>isChangedRule_15_myRule_14_Bill_To_c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Bill_To_Lookup__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_14_A1</targetReference>
+            </connector>
+            <label>Bill To</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>6.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision16</name>
+        <label>myDecision16</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision18</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_17</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>GlobalConstant</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.SBQQ__Opportunity2__r.End_User__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>myRule_17_A1</targetReference>
+            </connector>
+            <label>End User</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>7.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision18</name>
+        <label>myDecision18</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision20</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_19</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <processMetadataValues>
@@ -258,37 +547,9 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>myRule_13_A1</targetReference>
+                <targetReference>myRule_19_A1</targetReference>
             </connector>
             <label>Primary Quote</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <processMetadataValues>
-            <name>index</name>
-            <value>
-                <numberValue>6.0</numberValue>
-            </value>
-        </processMetadataValues>
-        <name>myDecision14</name>
-        <label>myDecision14</label>
-        <locationX>50</locationX>
-        <locationY>0</locationY>
-        <defaultConnectorLabel>default</defaultConnectorLabel>
-        <rules>
-            <name>myRule_15</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>formula_myRule_15</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>myRule_15_A1</targetReference>
-            </connector>
-            <label>Ship To Manual</label>
         </rules>
     </decisions>
     <decisions>
@@ -347,6 +608,144 @@
         <processMetadataValues>
             <name>index</name>
             <value>
+                <numberValue>8.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision20</name>
+        <label>myDecision20</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision24</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_21</name>
+            <conditionLogic>(1 OR 2)</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>isChangedRule_22_myRule_21_SBQQ_Account_c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Language__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_21_A1</targetReference>
+            </connector>
+            <label>EMEA Language</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>9.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision24</name>
+        <label>myDecision24</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_25</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Sales_Area_Data__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_25_A1</targetReference>
+            </connector>
+            <label>EMEA Sales Area</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
                 <numberValue>2.0</numberValue>
             </value>
         </processMetadataValues>
@@ -360,7 +759,7 @@
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_5</name>
-            <conditionLogic>or</conditionLogic>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
             <conditions>
                 <processMetadataValues>
                     <name>inputDataType</name>
@@ -419,6 +818,37 @@
                 </processMetadataValues>
                 <leftValueReference>myVariable_current.Delivery_Terms_on_Creation__c</leftValueReference>
                 <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.SBQQ__Account__r.Delivery_Terms__c</leftValueReference>
+                <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
                 </rightValue>
@@ -512,44 +942,43 @@
             <connector>
                 <targetReference>myRule_8_A1</targetReference>
             </connector>
-            <label>Select Ship To</label>
+            <label>Ship To</label>
         </rules>
     </decisions>
     <description>Update fields from Opportunity to Quote; Update from Quote to Opportunity when Quote is Primary</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>IF(ISBLANK([SBQQ__Quote__c].SBQQ__Account__c.Customer_Language__c), &apos;ENGLISH&apos;,
+IF([SBQQ__Quote__c].SBQQ__Account__c.Customer_Language__c.Key__c = &apos;SCL-EN&apos;, &apos;ENGLISH&apos;,
+IF([SBQQ__Quote__c].SBQQ__Account__c.Customer_Language__c.Key__c = &apos;SCL-DE&apos;, &apos;GERMAN&apos;, 
+IF([SBQQ__Quote__c].SBQQ__Account__c.Customer_Language__c.Key__c = &apos;SCL-NL&apos;, &apos;DUTCH&apos;, 
+IF( [SBQQ__Quote__c].SBQQ__Account__c.Customer_Language__c.Key__c  = &apos;SCL-FR&apos;, &apos;FRENCH&apos;, 
+IF([SBQQ__Quote__c].SBQQ__Account__c.Customer_Language__c.Key__c = &apos;SCL-IT&apos;, &apos;ITALIAN&apos;,  
+IF([SBQQ__Quote__c].SBQQ__Account__c.Customer_Language__c.Key__c = &apos;SCL-SV&apos;, &apos;SWEDISH&apos;,
+&apos;ENGLISH&apos;
+)))))))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_23_myRule_21_A1_1759156640</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!myVariable_current.SBQQ__Account__c.Customer_Language__c}), &apos;ENGLISH&apos;,
+IF({!myVariable_current.SBQQ__Account__c.Customer_Language__c.Key__c} = &apos;SCL-EN&apos;, &apos;ENGLISH&apos;,
+IF({!myVariable_current.SBQQ__Account__c.Customer_Language__c.Key__c} = &apos;SCL-DE&apos;, &apos;GERMAN&apos;, 
+IF({!myVariable_current.SBQQ__Account__c.Customer_Language__c.Key__c} = &apos;SCL-NL&apos;, &apos;DUTCH&apos;, 
+IF( {!myVariable_current.SBQQ__Account__c.Customer_Language__c.Key__c}  = &apos;SCL-FR&apos;, &apos;FRENCH&apos;, 
+IF({!myVariable_current.SBQQ__Account__c.Customer_Language__c.Key__c} = &apos;SCL-IT&apos;, &apos;ITALIAN&apos;,  
+IF({!myVariable_current.SBQQ__Account__c.Customer_Language__c.Key__c} = &apos;SCL-SV&apos;, &apos;SWEDISH&apos;,
+&apos;ENGLISH&apos;
+)))))))</expression>
+    </formulas>
     <formulas>
         <name>formula_myRule_1</name>
         <dataType>Boolean</dataType>
         <expression>true</expression>
     </formulas>
-    <formulas>
-        <name>formula_myRule_11</name>
-        <dataType>Boolean</dataType>
-        <expression>true</expression>
-    </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>AND(OR(
-ISCHANGED([SBQQ__Quote__c].SBQQ__ShippingName__c), 
-ISCHANGED([SBQQ__Quote__c].SBQQ__ShippingStreet__c), 
-ISCHANGED([SBQQ__Quote__c].SBQQ__ShippingCity__c),
-ISCHANGED([SBQQ__Quote__c].SBQQ__ShippingState__c), 
-ISCHANGED([SBQQ__Quote__c].SBQQ__ShippingCountry__c), 
-ISCHANGED([SBQQ__Quote__c].SBQQ__ShippingPostalCode__c)), NOT(ISCHANGED([SBQQ__Quote__c].Select_Shipping_Address__c)))</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_myRule_15</name>
-        <dataType>Boolean</dataType>
-        <expression>AND(OR(
-ISCHANGED({!myVariable_current.SBQQ__ShippingName__c}), 
-ISCHANGED({!myVariable_current.SBQQ__ShippingStreet__c}), 
-ISCHANGED({!myVariable_current.SBQQ__ShippingCity__c}),
-ISCHANGED({!myVariable_current.SBQQ__ShippingState__c}), 
-ISCHANGED({!myVariable_current.SBQQ__ShippingCountry__c}), 
-ISCHANGED({!myVariable_current.SBQQ__ShippingPostalCode__c})), NOT(ISCHANGED({!myVariable_current.Select_Shipping_Address__c})))</expression>
-    </formulas>
-    <interviewLabel>Quote_Update_fields-5_InterviewLabel</interviewLabel>
+    <interviewLabel>Quote_Update_fields-31_InterviewLabel</interviewLabel>
     <label>Quote: Update fields</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -592,15 +1021,15 @@ ISCHANGED({!myVariable_current.SBQQ__ShippingPostalCode__c})), NOT(ISCHANGED({!m
         <processMetadataValues>
             <name>reference</name>
             <value>
-                <stringValue>[SBQQ__Quote__c].Opportunity</stringValue>
+                <stringValue>[SBQQ__Quote__c]</stringValue>
             </value>
         </processMetadataValues>
-        <name>myRule_13_A1</name>
-        <label>Update Opportunity</label>
-        <locationX>1300</locationX>
+        <name>myRule_11_A1</name>
+        <label>Update Ship to Address</label>
+        <locationX>1100</locationX>
         <locationY>200</locationY>
         <connector>
-            <targetReference>myDecision14</targetReference>
+            <targetReference>myDecision13</targetReference>
         </connector>
         <filters>
             <processMetadataValues>
@@ -612,7 +1041,258 @@ ISCHANGED({!myVariable_current.SBQQ__ShippingPostalCode__c})), NOT(ISCHANGED({!m
             <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>myVariable_current.SBQQ__Opportunity2__c</elementReference>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Ship To City</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>SBQQ__ShippingCity__c</field>
+            <value>
+                <elementReference>myVariable_current.Select_Ship_To_SAD__r.Account__r.BillingCity</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Ship To Country</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>SBQQ__ShippingCountry__c</field>
+            <value>
+                <elementReference>myVariable_current.Select_Ship_To_SAD__r.Account__r.BillingCountry</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Ship To Name</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>SBQQ__ShippingName__c</field>
+            <value>
+                <elementReference>myVariable_current.Select_Ship_To_SAD__r.Account__r.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Ship To Postal Code</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>SBQQ__ShippingPostalCode__c</field>
+            <value>
+                <elementReference>myVariable_current.Select_Ship_To_SAD__r.Account__r.BillingPostalCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Ship To State</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>SBQQ__ShippingState__c</field>
+            <value>
+                <elementReference>myVariable_current.Select_Ship_To_SAD__r.Account__r.BillingState</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Ship To Street</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>SBQQ__ShippingStreet__c</field>
+            <value>
+                <elementReference>myVariable_current.Select_Ship_To_SAD__r.Account__r.BillingStreet</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Ship To Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Ship_To_Phone__c</field>
+            <value>
+                <elementReference>myVariable_current.Select_Ship_To_SAD__r.Account__r.Phone</elementReference>
+            </value>
+        </inputAssignments>
+        <object>SBQQ__Quote__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[SBQQ__Quote__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_17_A1</name>
+        <label>Update End User</label>
+        <locationX>1700</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision18</targetReference>
+        </connector>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
             </value>
         </filters>
         <inputAssignments>
@@ -642,9 +1322,50 @@ ISCHANGED({!myVariable_current.SBQQ__ShippingPostalCode__c})), NOT(ISCHANGED({!m
             </processMetadataValues>
             <field>End_User__c</field>
             <value>
-                <elementReference>myVariable_current.End_User__c</elementReference>
+                <elementReference>myVariable_current.SBQQ__Opportunity2__r.End_User__c</elementReference>
             </value>
         </inputAssignments>
+        <object>SBQQ__Quote__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[SBQQ__Quote__c].Opportunity</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_19_A1</name>
+        <label>Update Opportunity</label>
+        <locationX>1900</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision20</targetReference>
+        </connector>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.SBQQ__Opportunity2__c</elementReference>
+            </value>
+        </filters>
         <inputAssignments>
             <processMetadataValues>
                 <name>dataType</name>
@@ -816,71 +1537,6 @@ ISCHANGED({!myVariable_current.SBQQ__ShippingPostalCode__c})), NOT(ISCHANGED({!m
                 <stringValue>[SBQQ__Quote__c]</stringValue>
             </value>
         </processMetadataValues>
-        <name>myRule_15_A1</name>
-        <label>No Select Shipping Address</label>
-        <locationX>1500</locationX>
-        <locationY>200</locationY>
-        <filters>
-            <processMetadataValues>
-                <name>implicit</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </processMetadataValues>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </filters>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Select Shipping Address</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>GlobalConstant</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Select_Shipping_Address__c</field>
-        </inputAssignments>
-        <object>SBQQ__Quote__c</object>
-    </recordUpdates>
-    <recordUpdates>
-        <processMetadataValues>
-            <name>evaluationType</name>
-            <value>
-                <stringValue>always</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>isChildRelationship</name>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>reference</name>
-            <value>
-                <stringValue>[SBQQ__Quote__c]</stringValue>
-            </value>
-        </processMetadataValues>
         <name>myRule_1_A1</name>
         <label>Add Approvers</label>
         <locationX>100</locationX>
@@ -989,6 +1645,142 @@ ISCHANGED({!myVariable_current.SBQQ__ShippingPostalCode__c})), NOT(ISCHANGED({!m
             <field>Marketing_Approver__c</field>
             <value>
                 <elementReference>myVariable_current.Owner:User.Marketing_Approver__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>SBQQ__Quote__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[SBQQ__Quote__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_21_A1</name>
+        <label>Set Customer Language</label>
+        <locationX>2100</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Language</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Language__c</field>
+            <value>
+                <elementReference>formula_23_myRule_21_A1_1759156640</elementReference>
+            </value>
+        </inputAssignments>
+        <object>SBQQ__Quote__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[SBQQ__Quote__c]</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_25_A1</name>
+        <label>Update Sales Area Code</label>
+        <locationX>2500</locationX>
+        <locationY>200</locationY>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Sales Area Code</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Sales_Area_Code__c</field>
+            <value>
+                <elementReference>myVariable_current.Sales_Area_Data__r.Sales_Area_Sales_Organisation_Code__c</elementReference>
             </value>
         </inputAssignments>
         <object>SBQQ__Quote__c</object>
